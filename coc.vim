@@ -25,8 +25,6 @@ endif
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
-nnoremap <silent> K :call ShowDocumentation()<CR>
-
 function! ShowDocumentation()
   if CocAction('hasProvider', 'hover')
     call CocActionAsync('doHover')
@@ -36,7 +34,7 @@ function! ShowDocumentation()
 endfunction
 
 autocmd CursorHold * silent call CocActionAsync('highlight')
-nmap <leader>r <Plug>(coc-rename)
+" nmap <leader>r <Plug>(coc-rename)
 
 augroup mygroup
   autocmd!
