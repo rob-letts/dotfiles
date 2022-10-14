@@ -18,8 +18,8 @@ set hidden
 set shortmess+=c
 set nowrap
 set cmdheight=0
-set foldenable 
-set foldmethod=indent
+set scrolloff=5
+set clipboard+=unnamedplus
 au textyankpost * silent! lua vim.highlight.on_yank()
 
 " Plugins
@@ -42,7 +42,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'yaegassy/coc-volar', {'do': 'yarn install --frozen-lockfile'}
 
 " UI
-Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'kyazdani42/nvim-web-devicons'
@@ -50,6 +49,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'dracula/vim', { 'as': 'dracula' }
 
 " Utilities
+Plug 'tpope/vim-fugitive'
 Plug 'sudormrfbin/cheatsheet.nvim'
 Plug 'AckslD/nvim-neoclip.lua'
 Plug 'windwp/nvim-ts-autotag'
@@ -57,8 +57,6 @@ Plug 'tpope/vim-surround'
 Plug 'numToStr/Comment.nvim'
 Plug 'fedepujol/move.nvim'
 Plug 'm4xshen/autoclose.nvim'
-Plug 'kevinhwang91/nvim-ufo' 
-Plug 'kevinhwang91/promise-async'
 
 call plug#end()
 
@@ -68,7 +66,6 @@ require'nvim-ts-autotag'.setup()
 require'neoclip'.setup()
 require'Comment'.setup()
 require'treesitter-context'.setup()
-require'ufo'.setup()
 
 require'telescope'.setup{ 
  	defaults = { 
@@ -105,19 +102,21 @@ colorscheme dracula
 
 " Mappings
 nnoremap <leader>j <cmd>Telescope jumplist<CR>
+nnoremap <leader>c <cmd>Telescope coc<CR>
 nnoremap <leader>s <cmd>Telescope spell_suggest<CR>
-nnoremap <leader>g <cmd>Telescope git_commits<CR>
+nnoremap <leader>h <cmd>Telescope git_commits<CR>
 nnoremap <leader>p <cmd>Telescope find_files<cr>
 nnoremap <leader>t <cmd>Telescope buffers<cr>
-nnoremap <leader>f <cmd>Telescope live_grep<cr>
+nnoremap <leader>g <cmd>Telescope live_grep<cr>
 nnoremap <leader>e <cmd>Telescope file_browser<CR>
-nnoremap <leader>o <cmd>Telescope current_buffer_fuzzy_find sorting_strategy=ascending<CR>
+nnoremap <leader>f <cmd>Telescope current_buffer_fuzzy_find sorting_strategy=ascending<CR>
+nnoremap <leader>o <cmd>Telescope coc document_symbols<CR> 
+nnoremap <leader>c <cmd>Telescope coc commands<CR> 
+nnoremap <leader>m <cmd>Telescope coc diagnostics<CR>
+nnoremap <leader>x <cmd>CocList extensions<CR>
 nnoremap <leader>v <cmd>Telescope neoclip<CR>
-" TODO: Config :Rg to open in telescope vertical.
 nnoremap <leader>r <cmd>:Rg<cr>
 nnoremap <leader>l :nohlsearch <cr>:syntax sync fromstart<CR>
-nnoremap <leader>m <cmd>:CocList diagnostics<CR>
-nnoremap <leader>x <cmd>:CocList extensions<CR>
 nnoremap <leader>. <cmd>:call ShowDocumentation()<CR>
 
 nmap <silent> gd <Plug>(coc-definition)
