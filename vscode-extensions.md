@@ -1,41 +1,19 @@
-astro
-
-atom-one-dark-theme
-
-auto-close-tag
-
-auto-rename-tag
-
-c#
-
-color-highlight
-
-css-peek
-
-customize-ui
-
-deno
-
-error lens
-
-eslint
-
-eslint-disable-snippets
-
-file-utils
-
-material-icon-theme
-
-monkey-patch
-
-npm-intellisense
-
-sass
-
-tabout
-
-todo-highlight
-
-vue-language-features-volar
-
-web accessibility
+<ul>
+  <li>atom-one-dark-theme</li>
+  <li>auto-close-tag</li>
+  <li>auto-rename-tag</li>
+  <li>c#</li>
+  <li>customize-ui</li>
+  <li>error lens</li>
+  <li>eslint</li>
+  <li>eslint-disable-snippets</li>
+  <li>file-utils</li>
+  <li>material-icon-theme</li>
+  <li>monkey-patch</li>
+  <li>npm-intellisense</li>
+  <li>sass</li>
+  <li>tabout</li>
+  <li>todo-highlight</li>
+  <li>vue-language-features-volar</li>
+  <li>web accessibility</li>
+</ul>

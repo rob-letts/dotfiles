@@ -1,97 +1,51 @@
-appcleaner
-
-babeledit
-
-docker
-
-font-fira-code-nerd-font
-
-google-chrome
-
-visual-studio-code
-
-warp
-
-bat
-
-glow
-
-ncurses
-
-brotli
-
-icu4c
-
-neovim
-
-c-ares
-
-lazygit
-
-node
-
-ca-certificates
-
-libevent
-
-nvm
-
-cmake
-
-libnghttp2
-
-openssl@1.1
-
-deno
-
-libtermkey
-
-pcre2
-
-diff-so-fancy
-
-libuv
-
-pkg-config
-
-dust
-
-libvterm
-
-readline
-
-exa
-
-lua
-
-ripgrep
-
-fd
-
-luajit
-
-tig
-
-fzf
-
-luarocks
-
-tree
-
-gettext
-
-luv
-
-tree-sitter
-
-gh
-
-msgpack
-
-unibilium
-
-git
-
-ncdu
-
-utf8proc
+<ul>
+  <li>appcleaner</li>
+  <li>babeledit</li>
+  <li>docker</li>
+  <li>font-fira-code-nerd-font</li>
+  <li>google-chrome</li>
+  <li>visual-studio-code</li>
+  <li>warp</li>
+  <li>bat</li>
+  <li>glow</li>
+  <li>ncurses</li>
+  <li>brotli</li>
+  <li>icu4c</li>
+  <li>neovim</li>
+  <li>c-ares</li>
+  <li>lazygit</li>
+  <li>node</li>
+  <li>ca-certificates</li>
+  <li>libevent</li>
+  <li>nvm</li>
+  <li>cmake</li>
+  <li>libnghttp2</li>
+  <li>openssl@1.1</li>
+  <li>deno</li>
+  <li>libtermkey</li>
+  <li>pcre2</li>
+  <li>diff-so-fancy</li>
+  <li>libuv</li>
+  <li>pkg-config</li>
+  <li>dust</li>
+  <li>libvterm</li>
+  <li>readline</li>
+  <li>exa</li>
+  <li>lua</li>
+  <li>ripgrep</li>
+  <li>fd</li>
+  <li>luajit</li>
+  <li>tig</li>
+  <li>fzf</li>
+  <li>luarocks</li>
+  <li>tree</li>
+  <li>gettext</li>
+  <li>luv</li>
+  <li>tree-sitter</li>
+  <li>gh</li>
+  <li>msgpack</li>
+  <li>unibilium</li>
+  <li>git</li>
+  <li>ncdu</li>
+  <li>utf8proc</li>
+</ul>
