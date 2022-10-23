@@ -471,7 +471,7 @@
     "when": "terminal.active"
   },
   {
-    "key": "shift+cmd+backspace",
+    "key": "shift+cmd+k",
     "command": "editor.action.deleteLines",
     "when": "textInputFocus && !editorReadonly"
   },
@@ -2425,5 +2425,22 @@
     "key": "shift+cmd+l",
     "command": "-addCursorsAtSearchResults",
     "when": "fileMatchOrMatchFocus && searchViewletVisible"
+  },
+  {
+    "key": "cmd+t",
+    "command": "workbench.action.createTerminalEditor"
+  },
+  {
+    "key": "ctrl+shift+p",
+    "command": "workbench.action.pinEditor",
+    "when": "!activeEditorIsPinned"
+  },
+  {
+    "key": "cmd+r",
+    "command": "workbench.action.terminal.rename"
+  },
+  {
+    "key": "shift+alt+p",
+    "command": "workbench.action.unpinEditor"
   }
 ]

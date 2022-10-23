@@ -1,0 +1,7 @@
+format = "$directory$git_branch"
+
+[character] 
+success_symbol = "[➜](bold green)"
+
+[package]
+disabled = true

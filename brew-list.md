@@ -2,50 +2,52 @@
   <li>appcleaner</li>
   <li>babeledit</li>
   <li>docker</li>
+  <li>fig</li>
   <li>font-fira-code-nerd-font</li>
   <li>google-chrome</li>
   <li>visual-studio-code</li>
   <li>warp</li>
   <li>bat</li>
-  <li>glow</li>
-  <li>ncurses</li>
   <li>brotli</li>
-  <li>icu4c</li>
-  <li>neovim</li>
   <li>c-ares</li>
-  <li>lazygit</li>
-  <li>node</li>
-  <li>ca-certificates</li>
-  <li>libevent</li>
-  <li>nvm</li>
+  <li>ca-certificates gh</li>
   <li>cmake</li>
-  <li>libnghttp2</li>
-  <li>openssl@1.1</li>
   <li>deno</li>
-  <li>libtermkey</li>
-  <li>pcre2</li>
   <li>diff-so-fancy</li>
-  <li>libuv</li>
-  <li>pkg-config</li>
   <li>dust</li>
-  <li>libvterm</li>
-  <li>readline</li>
   <li>exa</li>
-  <li>lua</li>
-  <li>ripgrep</li>
   <li>fd</li>
-  <li>luajit</li>
-  <li>tig</li>
   <li>fzf</li>
-  <li>luarocks</li>
-  <li>tree</li>
   <li>gettext</li>
-  <li>luv</li>
-  <li>tree-sitter</li>
-  <li>gh</li>
-  <li>msgpack</li>
-  <li>unibilium</li>
   <li>git</li>
+  <li>glow</li>
+  <li>icu4c</li>
+  <li>lazygit</li>
+  <li>libevent</li>
+  <li>libnghttp2</li>
+  <li>libtermkey</li>
+  <li>libuv</li>
+  <li>libvterm</li>
+  <li>lua</li>
+  <li>luajit</li>
+  <li>luarocks</li>
+  <li>luv</li>
+  <li>msgpack</li>
   <li>ncdu</li>
+  <li>ncurses</li>
+  <li>neovim</li>
+  <li>node</li>
+  <li>nvm</li>
+  <li>openssl@1.1</li>
+  <li>pcre2</li>
+  <li>pkg-config</li>
+  <li>readline</li>
+  <li>ripgrep</li>
+  <li>starship</li>
+  <li>tig</li>
+  <li>tree</li>
+  <li>tree-sitter</li>
+  <li>unibilium</li>
   <li>utf8proc</li>
+  <li>zsh-async</li>
 </ul>
