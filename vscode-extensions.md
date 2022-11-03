@@ -1,19 +1,22 @@
 <ul>
-  <li>C#</li>
-  <li>css-peek</li>
   <li>c#</li>
   <li>customize-ui</li>
   <li>dracula-official</li>
   <li>error-lens</li>
   <li>eslint</li>
-  <li>fig</li>
   <li>file-utils</li>
-  <li>intellisense-for-css-class-names-in-html</li>
+  <li>github-copilot</li>
+  <li>gitlens</li>
+  <li>intellisense-for-css-class-names</li>
+  <li>javascript-and-typescript-nightly</li>
   <li>material-icon-theme</li>
   <li>monkey-patch</li>
   <li>npm-intellisense</li>
+  <li>path-intellisense</li>
+  <li>quick-and-simple-text-selection</li>
   <li>sass</li>
   <li>tabout</li>
-  <li>todo-highlight</li>
+  <li>text-maniplator</li>
+  <li>vitest</li>
   <li>vue-language-features-volar</li>
 </ul>

@@ -115,11 +115,7 @@
 		"key": "shift+cmd+a",
 		"command": "workbench.action.toggleActivityBarVisibility"
 	},
-	{
-		"key": "shift+cmd+s",
-		"command": "workbench.action.toggleStatusbarVisibility"
-	},
-	{
+  {
 		"key": "ctrl+a",
 		"command": "-cursorLineStart",
 		"when": "textInputFocus"
@@ -195,12 +191,7 @@
 		"command": "-rerunSearchEditorSearch",
 		"when": "inSearchEditor"
 	},
-	{
-		"key": "shift+cmd+h",
-		"command": "settings.cycle.lineNumbers",
-		"when": "editorFocus"
-	},
-	{
+  {
 		"key": "shift+cmd+t",
 		"command": "-workbench.action.reopenClosedEditor"
 	},
@@ -317,11 +308,7 @@
 		"command": "-gitlens.toggleFileBlame",
 		"when": "editorTextFocus && config.gitlens.keymap == 'alternate' && gitlens:activeFileStatus =~ /blameable/"
 	},
-	{
-		"key": "shift+cmd+t",
-		"command": "workbench.action.reopenClosedEditor"
-	},
-	{
+  {
 		"key": "cmd+k f12",
 		"command": "-editor.action.revealDefinitionAside",
 		"when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
@@ -337,7 +324,7 @@
 		"when": "editorHasReferenceProvider"
 	},
   {
-		"key": "cmd+k cmd+p",
+		"key": "cmd+k p",
 		"command": "editor.action.peekDefinition"
 	},
 	{
@@ -413,7 +400,7 @@
     "when": "editorTextFocus && foldingEnabled"
   },
   {
-    "key": "shift+cmd+space",
+    "key": "shift+space",
     "command": "editor.action.showHover",
     "when": "editorTextFocus"
   },
@@ -455,10 +442,6 @@
     "key": "shift+alt+f",
     "command": "-editor.action.formatDocument",
     "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
-  },
-  {
-    "key": "shift+cmd+r",
-    "command": "workbench.action.replaceInFiles"
   },
   {
     "key": "shift+cmd+.",
@@ -1378,7 +1361,7 @@
     "when": "inSettingsEditor && settingRowFocus"
   },
   {
-    "key": "cmd+k cmd+r",
+    "key": "shift+cmd+r",
     "command": "editor.action.rename",
     "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
   },
@@ -2312,11 +2295,7 @@
     "command": "workbench.view.scm"
   },
   {
-    "key": "shift+cmd+d",
-    "command": "workbench.view.debug"
-  },
-  {
-    "key": "cmd+k cmd+d",
+    "key": "cmd+k d",
     "command": "editor.action.revealDefinition"
   },
   {
@@ -2422,13 +2401,9 @@
     "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
   },
   {
-    "key": "shift+cmd+l",
+    "key": "shift+cmd+r",
     "command": "-addCursorsAtSearchResults",
     "when": "fileMatchOrMatchFocus && searchViewletVisible"
-  },
-  {
-    "key": "cmd+t",
-    "command": "workbench.action.createTerminalEditor"
   },
   {
     "key": "ctrl+shift+p",
@@ -2436,11 +2411,85 @@
     "when": "!activeEditorIsPinned"
   },
   {
-    "key": "cmd+r",
-    "command": "workbench.action.terminal.rename"
-  },
-  {
     "key": "shift+alt+p",
     "command": "workbench.action.unpinEditor"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "workbench.action.openRecent"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "-workbench.action.openRecent"
+  },
+  {
+    "key": "shift+cmd+backspace",
+    "command": "editor.emmet.action.removeTag"
+  },
+  {
+    "key": "shift+cmd+s",
+    "command": "workbench.action.toggleStatusbarVisibility"
+  },
+  {
+    "key": "shift+cmd+l",
+    "command": "-selectAllSearchEditorMatches",
+    "when": "inSearchEditor"
+  },
+  {
+    "key": "shift+cmd+l",
+    "command": "-editor.action.selectHighlights",
+    "when": "editorFocus"
+  },
+  {
+    "key": "shift+cmd+l",
+    "command": "gitlens.views.commits.focus"
+  },
+  {
+    "key": "ctrl+alt+left",
+    "command": "-cursorWordPartLeft",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+alt+left",
+    "command": "bracketeer.selectBracketContent"
+  },
+  {
+    "key": "shift+alt+cmd+h",
+    "command": "-bracketeer.selectBracketContent"
+  },
+  {
+    "key": "shift+cmd+h",
+    "command": "gitlens.views.fileHistory.focus"
+  },
+  {
+    "key": "shift+cmd+t",
+    "command": "workbench.view.extension.test"
+  },
+  {
+    "key": "cmd+k p",
+    "command": "-workbench.action.files.copyPathOfActiveFile"
+  },
+  {
+    "key": "cmd+k shift+.",
+    "command": "-extension.selectInTag",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+k ;",
+    "command": "-extension.selectEitherQuote",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+k shift+;",
+    "command": "-extension.switchQuotes",
+    "when": "editorFocus"
+  },
+  {
+    "key": "alt+space",
+    "command": "editor.action.triggerParameterHints"
+  },
+  {
+    "key": "shift+cmd+d",
+    "command": "workbench.debug.welcome.focus"
   }
 ]
