@@ -1,7 +1,23 @@
 " Settings
-let mapleader = ' '
+" [ ] Install repeat.vim -> Configure for Surround
+" [ ] Install LSPKind
+" [ ] Install Cinnamon
+
+" [ ] Fix Telescope preview panes
+" [ ] Fix Ripgrep UI	
+
+" [ ] Learn Folding
+
+" [ ] Config each plugin and LSP and update mappings
+
+" External Settings
+" Font size 18px
+" Line-height 1.7
+
+" Settings
+let mapleader = ' ' 
 set encoding=utf-8
-set fcs=eob:\
+set fcs=eob:\ 
 set number
 set relativenumber
 set autoindent
@@ -96,21 +112,21 @@ require'symbols-outline'.setup()
 require'trouble'.setup()
 require'twilight'.setup()
 
-require'telescope'.setup{
- 	defaults = {
+require'telescope'.setup{ 
+ 	defaults = { 
 		layout_strategy = 'vertical',
-		file_ignore_patterns = {
-			'node_modules'
-		}
+		file_ignore_patterns = { 
+			'node_modules' 
+		}		
 	},
-	extensions = {
-		fzf = {
-			fuzzy = true,
-			override_generic_sorter = true,
-			override_file_sorter = true,
-			case_mode = "smart_case"
+	extensions = { 
+		fzf = { 
+			fuzzy = true, 
+			override_generic_sorter = true, 
+			override_file_sorter = true, 
+			case_mode = "smart_case" 
 		}
-	}
+	} 
 }
 
 require'telescope'.load_extension'fzf'
@@ -120,7 +136,7 @@ local cmp = require'cmp'
 cmp.setup({
 	snippet = {
 		expand = function(args)
-			require('luasnip').lsp_expand(args.body)
+			require('luasnip').lsp_expand(args.body) 
 		end,
 	},
 	window = {
@@ -132,7 +148,7 @@ cmp.setup({
 		['<C-f>'] = cmp.mapping.scroll_docs(4),
 		['<C-Space>'] = cmp.mapping.complete(),
 		['<C-e>'] = cmp.mapping.abort(),
-		['<CR>'] = cmp.mapping.confirm({ select = true }),
+		['<CR>'] = cmp.mapping.confirm({ select = true }), 
 	}),
 	sources = cmp.config.sources({
 		{ name = 'nvim_lsp' },
@@ -144,7 +160,7 @@ cmp.setup({
 
 cmp.setup.filetype('gitcommit', {
 	sources = cmp.config.sources({
-		{ name = 'cmp_git' },
+		{ name = 'cmp_git' }, 
 	}, {
 		{ name = 'buffer' },
 	})
@@ -218,3 +234,4 @@ nnoremap <silent> <C-j> :MoveLine(1)<CR>
 nnoremap <silent> <C-k> :MoveLine(-1)<CR>
 vnoremap <silent> <C-k> :MoveBlock(-1)<CR>
 vnoremap <silent> <C-j> :MoveBlock(1)<CR>
+ilent> <C-j> :MoveBlock(1)<CR>

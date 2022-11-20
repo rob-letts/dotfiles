@@ -1,63 +1,61 @@
-<ul>
-  <li>bat</li>
-  <li>diff-so-fancy</li>
-  <li>git</li>
-  <li>libuv</li>
-  <li>navi</li>
-  <li>pkg-config</li>
-  <li>tig</li>
-  <li>brotli</li>
-  <li>dust</li>
-  <li>glow</li>
-  <li>libvterm</li>
-  <li>ncdu</li>
-  <li>python@3.10</li>
-  <li>tree</li>
-  <li>c-ares</li>
-  <li>exa</li>
-  <li>httpie</li>
-  <li>lua</li>
-  <li>ncurses</li>
-  <li>readline</li>
-  <li>tree-sitter</li>
-  <li>ca-certificates</li>
-  <li>fd</li>
-  <li>icu4c</li>
-  <li>luajit</li>
-  <li>neovim</li>
-  <li>ripgrep</li>
-  <li>unibilium</li>
-  <li>cmake</li>
-  <li>fzf</li>
-  <li>lazygit</li>
-  <li>luarocks</li>
-  <li>node</li>
-  <li>six</li>
-  <li>utf8proc</li>
-  <li>cowsay</li>
-  <li>gdbm</li>
-  <li>libevent</li>
-  <li>luv</li>
-  <li>nvm</li>
-  <li>sqlite</li>
-  <li>xz</li>
-  <li>curlie</li>
-  <li>gettext</li>
-  <li>libnghttp2</li>
-  <li>mpdecimal</li>
-  <li>openssl@1.1</li>
-  <li>starship</li>
-  <li>zsh-async</li>
-  <li>deno</li>
-  <li>gh</li>
-  <li>libtermkey</li>
-  <li>msgpack</li>
-  <li>pcre2</li>
-  <li>tealdeer</li>
-  <li>appcleaner</li>
-  <li>babeledit</li>
-  <li>docker</li>
-  <li>firefox</li>
-  <li>google-chrome</li>
-  <li>warp</li>
-</ul>
+<li> bat </li>
+<li> deno </li>
+<li> gettext </li>
+<li> libevent </li>
+<li> luarocks </li>
+<li> neovim </li>
+<li> readline </li>
+<li> tree </li>
+<li> brotli </li>
+<li> diff-so-fancy </li>
+<li> gh </li>
+<li> libnghttp2 </li>
+<li> luv </li>
+<li> node </li>
+<li> ripgrep </li>
+<li> tree-sitter </li>
+<li> c-ares </li>
+<li> dust </li>
+<li> git </li>
+<li> libtermkey </li>
+<li> mpdecimal </li>
+<li> nvm </li>
+<li> six </li>
+<li> unibilium </li>
+<li> ca-certificates </li>
+<li> exa </li>
+<li> glow </li>
+<li> libuv </li>
+<li> msgpack </li>
+<li> openssl@1.1 </li>
+<li> sqlite </li>
+<li> utf8proc </li>
+<li> cmake </li>
+<li> fd </li>
+<li> httpie </li>
+<li> libvterm </li>
+<li> navi </li>
+<li> pcre2 </li>
+<li> starship </li>
+<li> xz </li>
+<li> cowsay </li>
+<li> fzf </li>
+<li> icu4c </li>
+<li> lua </li>
+<li> ncdu </li>
+<li> pkg-config </li>
+<li> tealdeer </li>
+<li> zsh-async </li>
+<li> curlie </li>
+<li> gdbm </li>
+<li> lazygit </li>
+<li> luajit </li>
+<li> ncurses </li>
+<li> python@3.10 </li>
+<li> tig </li>
+<li> appcleaner </li>
+<li> babeledit </li>
+<li> docker </li>
+<li> firefox </li>
+<li> google-chrome </li>
+<li> warp </li>

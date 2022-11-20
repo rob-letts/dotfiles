@@ -2,15 +2,14 @@
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Prompt
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
 
 # Aliases: Version Control
 alias ts="tig status"
-alias gb="git branch | fzf| xargs git checkout"
+alias gb="git branch | fzf | xargs git checkout"
 alias gp="git push"
 alias lg="lazygit"
 alias glo="git log --oneline"
-alias gcm "git commit -m"
 alias gc="deno run --allow-run ~/Dev/scripts/custom-commit.ts"
 alias gco="git checkout"
 alias git-history="git-file-history"
@@ -19,8 +18,8 @@ alias git-prs="gh pr view --web"
 alias git-recent="git log --oneline -30 | fzf"
 alias git-current="git branch --show-current | pbcopy"
 alias git-get="git branch -a | fzf | pbcopy"
-alias git-ignore="git update-index --assume-unchanged" # file name
-alias git-no-ignore="git update-index --assume-unchanged" # file name
+alias git-ignore="git update-index --assume-unchanged" # file name 
+alias git-no-ignore="git update-index --no-assume-unchanged" # file name 
 
 # Aliases: Redirections
 alias ls="exa"
@@ -28,6 +27,7 @@ alias lsa="exa -a"
 alias cat="bat"
 alias code="code-insiders"
 alias ll="ls -l"
+alias l="ll -a"
 
 # Aliases: Tool Management
 alias aliases="bat ~/.zshrc"

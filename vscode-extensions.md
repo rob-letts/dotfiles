@@ -1,17 +1,17 @@
 <ul>
-  <li>c#</li>
-  <li>customize-ui</li>
+	<li>auto-rename-tag</li>
+	<li>c#</li>
+  <li>console-ninja</li>
   <li>dracula-official</li>
-  <li>error-lens</li>
   <li>eslint</li>
+  <li>eslint-disable-snippets</li>
   <li>file-utils</li>
   <li>github-copilot</li>
   <li>gitlens</li>
+	<li>html-css-support</li>
   <li>intellisense-for-css-class-names</li>
   <li>javascript-and-typescript-nightly</li>
   <li>material-icon-theme</li>
-  <li>monkey-patch</li>
-  <li>npm-intellisense</li>
   <li>path-intellisense</li>
   <li>quick-and-simple-text-selection</li>
   <li>sass</li>
