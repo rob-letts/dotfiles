@@ -94,14 +94,6 @@
     "when": "!terminalFocus"
   },
   {
-    "key": "ctrl+alt+down",
-    "command": "editor.emmet.action.balanceIn"
-  },
-  {
-    "key": "ctrl+alt+up",
-    "command": "editor.emmet.action.balanceOut"
-  },
-  {
     "key": "cmd+backspace",
     "command": "deleteFile",
     "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
@@ -2277,7 +2269,7 @@
     "command": "workbench.view.scm"
   },
   {
-    "key": "cmd+k d",
+    "key": "shift+cmd+t",
     "command": "editor.action.revealDefinition"
   },
   {
@@ -2440,14 +2432,6 @@
     "command": "-bracketeer.selectBracketContent"
   },
   {
-    "key": "shift+cmd+h",
-    "command": "gitlens.views.fileHistory.focus"
-  },
-  {
-    "key": "shift+cmd+t",
-    "command": "workbench.view.extension.test"
-  },
-  {
     "key": "cmd+k p",
     "command": "-workbench.action.files.copyPathOfActiveFile"
   },
@@ -2475,7 +2459,7 @@
     "command": "gitlens.toggleFileBlame"
   },
   {
-    "key": "shift+cmd+r",
+    "key": "cmd+r",
     "command": "editor.action.rename",
     "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
   },
@@ -2483,10 +2467,6 @@
     "key": "f2",
     "command": "-editor.action.rename",
     "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "cmd+t",
-    "command": "testing.runAll"
   },
   {
     "key": "alt+t",
@@ -2513,7 +2493,58 @@
     "when": "config.github.copilot.inlineSuggest.enable && editorTextFocus && !editorHasSelection && !inlineSuggestionsVisible"
   },
   {
+    "key": "ctrl+alt+up",
+    "command": "editor.action.smartSelect.expand"
+  },
+  {
+    "key": "ctrl+alt+down",
+    "command": "editor.action.smartSelect.shrink"
+  },
+  {
+    "key": "ctrl+shift+`",
+    "command": "workbench.action.terminal.new"
+  },
+  {
+    "key": "shift+cmd+[",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "shift+cmd+]",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "shift+cmd+backspace",
+    "command": "workbench.action.terminal.kill"
+  },
+  {
+    "key": "shift+cmd+l",
+    "command": "-addCursorsAtSearchResults",
+    "when": "fileMatchOrMatchFocus && searchViewletVisible"
+  },
+  {
+    "key": "ctrl+shift+l",
+    "command": "-lntoggle.toggle"
+  },
+  {
+    "key": "cmd+e",
+    "command": "editor.action.marker.next"
+  },
+  {
+    "key": "cmd+k o",
+    "command": "workbench.action.showAllSymbols"
+  },
+  {
+    "key": "shift+cmd+r",
+    "command": "volar.vue.findAllFileReferences"
+  },
+  {
     "key": "shift+cmd+,",
-    "command": "breadcrumbs.toggle"
+    "command": "volar.action.showComponentMeta"
+  },
+  {
+    "key": "cmd+t",
+    "command": "workbench.action.terminal.toggleTerminal"
   }
 ]
