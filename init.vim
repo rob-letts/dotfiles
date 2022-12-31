@@ -1,17 +1,13 @@
-" https://linuxize.com/post/vim-find-replace/
-" https://github.com/nvim-telescope/telescope-file-browser.nvim
-" https://github.com/tpope/vim-surround
-" https://github.com/tpope/vim-repeat
-" https://github.com/github/copilot.vim
-" https://github.com/filipdutescu/renamer.nvim
-" https://github.com/folke/which-key.nvim-cmp
-" https://github.com/utilyre/barbecue.nvim
-" https://github.com/SmiteshP/nvim-navic
+" Learn: https://linuxize.com/post/vim-find-replace/
+" Learn: https://github.com/nvim-telescope/telescope-file-browser.nvim
+" Learn: https://github.com/tpope/vim-surround
+" Check: https://github.com/SmiteshP/nvim-navic + https://github.com/utilyre/barbecue.nvim
+" Check: https://github.com/folke/lazy.nvim + Port to Lua?
 
 " Settings
-let mapleader = ' ' 
+let mapleader = ' '
 set encoding=utf-8
-set fcs=eob:\ 
+set fcs=eob:\
 set number
 set relativenumber
 set autoindent
@@ -36,7 +32,7 @@ set cursorline
 set cursorlineopt=line
 set foldmethod=manual
 set signcolumn=yes
-au textyankpost * silent! lua vim.highlight.on_yank() 
+au textyankpost * silent! lua vim.highlight.on_yank()
 autocmd BufWritePre *.ts,*.js,*.html,*.vue EslintFixAll
 
 " Plugins
@@ -54,6 +50,7 @@ Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'L3MON4D3/LuaSnip'
+Plug 'github/copilot.vim'
 
 " Syntax Highlighting
 Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
@@ -86,6 +83,7 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'AckslD/nvim-neoclip.lua'
 Plug 'windwp/nvim-ts-autotag'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
 Plug 'numToStr/Comment.nvim'
 Plug 'fedepujol/move.nvim'
 Plug 'wellle/targets.vim'
@@ -104,21 +102,21 @@ require'treesitter-context'.setup()
 require'twilight'.setup()
 require'startup'.setup()
 
-require'telescope'.setup{ 
- 	defaults = { 
+require'telescope'.setup{
+ 	defaults = {
 		layout_strategy = 'vertical',
-		file_ignore_patterns = { 
-			'node_modules' 
-		}		
-	},
-	extensions = { 
-		fzf = { 
-			fuzzy = true, 
-			override_generic_sorter = true, 
-			override_file_sorter = true, 
-			case_mode = "smart_case" 
+		file_ignore_patterns = {
+			'node_modules'
 		}
-	} 
+	},
+	extensions = {
+		fzf = {
+			fuzzy = true,
+			override_generic_sorter = true,
+			override_file_sorter = true,
+			case_mode = "smart_case"
+		}
+	}
 }
 
 require'telescope'.load_extension'fzf'
@@ -131,7 +129,7 @@ local lspkind = require'lspkind'
 cmp.setup({
 	snippet = {
 		expand = function(args)
-			require('luasnip').lsp_expand(args.body) 
+			require('luasnip').lsp_expand(args.body)
 		end,
 	},
 	window = {
@@ -143,7 +141,7 @@ cmp.setup({
 		-- ['<C-f>'] = cmp.mapping.scroll_docs(4),
 		['<C-Space>'] = cmp.mapping.complete(),
 		-- ['<C-e>'] = cmp.mapping.abort(),
-		-- ['<CR>'] = cmp.mapping.confirm({ select = true }), 
+		-- ['<CR>'] = cmp.mapping.confirm({ select = true }),
 	}),
 	sources = cmp.config.sources({
 		{ name = 'nvim_lsp' },
@@ -162,7 +160,7 @@ cmp.setup({
 
 -- cmp.setup.filetype('gitcommit', {
 -- 	sources = cmp.config.sources({
--- 		{ name = 'cmp_git' }, 
+-- 		{ name = 'cmp_git' },
 -- 	}, {
 -- 		{ name = 'buffer' },
 -- 	})
@@ -186,18 +184,19 @@ cmp.setup.cmdline(':', {
 
 -- Setup LSP Config.
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
-require('lspconfig')['html'].setup { capabilities = capabilities }
-require('lspconfig')['cssls'].setup { capabilities = capabilities }
-require('lspconfig')['emmet_ls'].setup { capabilities = capabilities }
-require('lspconfig')['volar'].setup { capabilities = capabilities }
-require('lspconfig')['eslint'].setup { capabilities = capabilities }
-require('lspconfig')['jsonls'].setup { capabilities = capabilities }
+require'lspconfig'['html'].setup { capabilities = capabilities }
+require'lspconfig'['cssls'].setup { capabilities = capabilities }
+require'lspconfig'['emmet_ls'].setup { capabilities = capabilities }
+require'lspconfig'['volar'].setup { capabilities = capabilities }
+require'lspconfig'['eslint'].setup { capabilities = capabilities }
+require'lspconfig'['jsonls'].setup { capabilities = capabilities }
+require'lspconfig'['tsserver'].setup { capabilities = capabilities }
 
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = { "css", "vue", "typescript" },
+  ensure_installed = { "css", "vue", "typescript", "javascript" },
   sync_install = false,
   auto_install = true,
-  -- ignore_install = { "javascript" },
+  ignore_install = { "javascript" },
   highlight = {
     enable = true,
     -- disable = { "c", "rust" },
@@ -244,6 +243,8 @@ nnoremap <leader>f <cmd>Telescope current_buffer_fuzzy_find<CR>
 nnoremap <leader>v <cmd>Telescope neoclip<CR>
 nnoremap <leader>c <cmd>let @+ = expand('%:p') <CR>
 nnoremap <leader>h :nohlsearch <cr>:syntax sync fromstart<CR>
+nnoremap <F2> :lua vim.lsp.buf.rename() <CR>
+
 nnoremap <silent> <M-j> :MoveLine(1)<CR>
 nnoremap <silent> <M-k> :MoveLine(-1)<CR>
 vnoremap <silent> <M-k> :MoveBlock(-1)<CR>
@@ -254,4 +255,3 @@ noremap <Up> <nop>
 noremap <Down> <nop>
 noremap <Left> <nop>
 noremap <Right> <nop>
-
