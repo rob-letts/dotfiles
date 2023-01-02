@@ -7,8 +7,8 @@ Plug 'williamboman/mason-lspconfig.nvim'
 Plug 'neovim/nvim-lspconfig'
 
 " Winbar
-Plug 'SmiteshP/nvim-navic'
-Plug 'utilyre/barbecue.nvim'
+" Plug 'SmiteshP/nvim-navic'
+" Plug 'utilyre/barbecue.nvim'
 
 " Code Completion
 Plug 'folke/which-key.nvim'
@@ -29,7 +29,7 @@ Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
-Plug 'nvim-telescope/telescope-file-browser.nvim'
+" Plug 'nvim-telescope/telescope-file-browser.nvim'
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'startup-nvim/startup.nvim'

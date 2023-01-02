@@ -27,7 +27,7 @@ require'telescope'.setup{
 
 require'telescope'.load_extension'fzf'
 require'telescope'.load_extension'neoclip'
-require'telescope'.load_extension'file_browser'
+-- require'telescope'.load_extension'file_browser'
 
 local cmp = require'cmp'
 local lspkind = require'lspkind'
@@ -88,12 +88,12 @@ require'lspconfig'['eslint'].setup { capabilities = capabilities }
 require'lspconfig'['jsonls'].setup { capabilities = capabilities }
 require'lspconfig'['tsserver'].setup { capabilities = capabilities }
 
-local navic = require("nvim-navic")
-require('lspconfig').clangd.setup {
-    on_attach = function(client, bufnr)
-        navic.attach(client, bufnr)
-    end
-}
+-- local navic = require("nvim-navic")
+-- require('lspconfig').clangd.setup {
+--     on_attach = function(client, bufnr)
+--         navic.attach(client, bufnr)
+--     end
+-- }
 
 -- Currently not working
 -- require'barbecue'.setup()
@@ -117,7 +117,8 @@ require'nvim-treesitter.configs'.setup {
 }
 
 vim.cmd [[ colorscheme dracula ]]
+
 vim.diagnostic.config({ virtual_text = false })
 vim.g['airline#extensions#whitespace#enabled'] = 0
-vim.g['airline#extensions#default#layout'] = {{ 'a', 'c' }, { 'x', 'b' }}
+vim.g['airline#extensions#default#layout'] = {{ 'a', 'c' }, { 'x', 'B' }}
 

@@ -1,8 +1,10 @@
+" Vim Options
 let mapleader = ' '
 set encoding=utf-8
 set fcs=eob:\
 set number
 set relativenumber
+set nohlsearch
 set autoindent
 set smarttab
 set tabstop=2
@@ -26,12 +28,15 @@ set cursorlineopt=line
 set foldmethod=manual
 set signcolumn=yes
 
-au textyankpost * silent! lua vim.highlight.on_yank()
+" Linting
 autocmd BufWritePre *.ts,*.js,*.html,*.vue EslintFixAll
+
+" UI
+au textyankpost * silent! lua vim.highlight.on_yank()
+
+set termguicolors
 let g:dracula_colorterm = 0
 let g:dracula_italic = 0
-set termguicolors
-
 hi DiagnosticError guifg=#eae979
 hi DiagnosticWarn guifg=#eae979
 hi DiagnosticInfo guifg=#eae979
