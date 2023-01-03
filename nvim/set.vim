@@ -17,7 +17,6 @@ set ignorecase
 set autoread
 set shortmess+=c
 set nowrap
-" set cmdheight=0
 set scrolloff=4
 set clipboard+=unnamedplus
 set completeopt=menu,menuone,noselect
