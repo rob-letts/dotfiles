@@ -1,4 +1,4 @@
-source ~/.config/nvim/settings.vim
-source ~/.config/nvim/plugins.vim
-lua require('plugin-setup')
-source ~/.config/nvim/mappings.vim
+source ~/.config/nvim/set.vim
+source ~/.config/nvim/remap.vim
+source ~/.config/nvim/vim-plug.vim
+lua require('plugins')
