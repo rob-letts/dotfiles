@@ -13,9 +13,10 @@ lspconfig['eslint'].setup { capabilities = capabilities }
 lspconfig['jsonls'].setup { capabilities = capabilities }
 lspconfig['tsserver'].setup { capabilities = capabilities }
 
--- Setup treesitter
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = { "css", "vue", "typescript", "javascript" },
+  ensure_installed = {
+		"html", "css", "javascript", "json", "markdown", "scss", "typescript", "vim", "vue", "lua"
+	},
   sync_install = false,
   auto_install = true,
   highlight = {

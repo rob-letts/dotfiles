@@ -7,7 +7,6 @@ set autoindent
 set smarttab
 set tabstop=2
 set softtabstop=2
-set nohlsearch
 set shiftwidth=2
 set hidden
 set nobackup
