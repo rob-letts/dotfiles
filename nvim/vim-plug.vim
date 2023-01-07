@@ -7,6 +7,7 @@ Plug 'williamboman/mason-lspconfig.nvim'
 Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
 Plug 'nvim-treesitter/nvim-treesitter-context'
+Plug 'wellle/targets.vim'
 
 " Completion
 Plug 'hrsh7th/cmp-nvim-lsp'
@@ -40,6 +41,5 @@ Plug 'windwp/nvim-autopairs'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'numToStr/Comment.nvim'
-Plug 'wellle/targets.vim'
 
 call plug#end()

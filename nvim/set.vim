@@ -3,11 +3,9 @@ let &fcs='eob: '
 set encoding=utf-8
 set number
 set relativenumber
-set autoindent
+set shiftwidth=4
 set smarttab
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
+set autoindent
 set hidden
 set nobackup
 set nowritebackup
@@ -25,7 +23,7 @@ set foldmethod=manual
 set signcolumn=yes
 
 " Linting
-autocmd BufWritePre *.ts,*.js,*.html,*.vue EslintFixAll
+autocmd BufWritePre *.ts,*.js,*.vue,*.html EslintFixAll
 
 " UI
 au textyankpost * silent! lua vim.highlight.on_yank()
