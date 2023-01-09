@@ -28,7 +28,6 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
 " UI
 Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'startup-nvim/startup.nvim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'

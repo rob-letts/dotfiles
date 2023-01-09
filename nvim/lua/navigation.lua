@@ -1,4 +1,4 @@
-require'startup'.setup()
+-- require'startup'.setup()
 
 require'telescope'.setup{
     defaults = {
