@@ -21,13 +21,15 @@ set cursorline
 set cursorlineopt=line
 set foldmethod=manual
 set signcolumn=yes
+set noshowmode
+set termguicolors
 
-" Linting
+" Autocommands
 autocmd BufWritePre *.ts,*.js,*.vue,*.html EslintFixAll
+autocmd textyankpost * silent! lua vim.highlight.on_yank()
 
 " UI
-au textyankpost * silent! lua vim.highlight.on_yank()
-set termguicolors
+let g:netrw_banner = 0
 let g:dracula_colorterm = 0
 let g:dracula_italic = 0
 hi DiagnosticError guifg=#eae979
