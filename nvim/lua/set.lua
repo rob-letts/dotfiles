@@ -32,15 +32,8 @@ vim.opt.autoread = true
 vim.opt.completeopt = {'menu', 'menuone', 'noselect'}
 
 local api = vim.api
-
 local yankGrp = api.nvim_create_augroup("YankHighlight", { clear = true })
 api.nvim_create_autocmd("TextYankPost", {
   command = "silent! lua vim.highlight.on_yank()",
   group = yankGrp,
 })
-
--- local lintGroup = api.nvim_create_augroup("LintOnSave", { clear = true })
--- vim.api.nvim_create_autocmd({"BufWritePre"}, {
---   command = "*.ts,*.js,*.vue,*.html EslintFixAll",
---   group = lintGroup
--- })
