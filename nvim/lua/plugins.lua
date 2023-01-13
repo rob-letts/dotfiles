@@ -20,9 +20,7 @@ require("lazy").setup({
 	build = function()
 	    pcall(require('nvim-treesitter.install').update { with_sync = true })
 	end,
-	dependencies = {
-	    'nvim-treesitter/nvim-treesitter-textobjects'
-	}
+	dependencies = {'nvim-treesitter/nvim-treesitter-textobjects'}
     },
     {'nvim-treesitter/nvim-treesitter-context'},
     {'wellle/targets.vim'},
@@ -36,10 +34,11 @@ require("lazy").setup({
     {'hrsh7th/nvim-cmp'},
     {'hrsh7th/cmp-buffer'},
     {'hrsh7th/cmp-path'},
-    {'saadparwaiz1/cmp_luasnip'},
     {'hrsh7th/cmp-nvim-lsp'},
     {'hrsh7th/cmp-nvim-lua'},
+    {'saadparwaiz1/cmp_luasnip'},
     {'L3MON4D3/LuaSnip'},
+    {'hrsh7th/cmp-cmdline'},
 
     -- Navigation
     {'nvim-lua/popup.nvim'},
@@ -64,11 +63,23 @@ require("lazy").setup({
     },
 
     -- Utilities
-    {'hrsh7th/cmp-cmdline'},
     {'github/copilot.vim'},
     {'windwp/nvim-ts-autotag'},
     {'windwp/nvim-autopairs'},
     {'tpope/vim-surround'},
     {'numToStr/Comment.nvim'},
     {'tpope/vim-repeat'},
+    {'tpope/vim-sleuth'},
+    {
+	"folke/which-key.nvim",
+	config = function()
+	    vim.o.timeout = true
+	    vim.o.timeoutlen = 300
+	    require("which-key").setup({
+		-- your configuration comes here
+		-- or leave it empty to use the default settings
+		-- refer to the configuration section below
+	    })
+	end,
+    }
 })

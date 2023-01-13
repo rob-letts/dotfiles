@@ -10,7 +10,7 @@ vim.opt.cursorlineopt = 'line'
 vim.opt.signcolumn = 'yes'
 vim.opt.clipboard = 'unnamedplus'
 
-vim.opt.shiftwidth = 4
+-- vim.opt.shiftwidth = 2
 vim.opt.scrolloff = 4
 vim.opt.updatetime = 300
 

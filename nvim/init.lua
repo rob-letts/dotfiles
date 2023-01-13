@@ -1,6 +1,3 @@
--- TODO: Lazy load optional plugins
--- TODO: New theme? Improve Vue syntax highlighting
-
 require('set')
 require('remap')
 require('plugins')
