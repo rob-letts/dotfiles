@@ -3,6 +3,7 @@ vim.keymap.set('n', '<leader>m', '<cmd>Mason<CR>')
 vim.keymap.set('n', '<leader>r', '<cmd>Rg<CR>')
 vim.keymap.set('n', '<leader>z', '<cmd>Lazy<CR>')
 vim.keymap.set('n', '<leader>l', '<cmd>EslintFixAll<CR>')
+vim.keymap.set('n', '<leader>?', '<cmd>WhichKey<CR>')
 
 vim.keymap.set('n', '<leader>d', '<cmd>Telescope diagnostics<CR>')
 vim.keymap.set('n', '<leader>j', '<cmd>Telescope jumplist<CR>')

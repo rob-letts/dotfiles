@@ -36,9 +36,9 @@ require("lazy").setup({
     {'hrsh7th/cmp-path'},
     {'hrsh7th/cmp-nvim-lsp'},
     {'hrsh7th/cmp-nvim-lua'},
-    {'saadparwaiz1/cmp_luasnip'},
-    {'L3MON4D3/LuaSnip'},
     {'hrsh7th/cmp-cmdline'},
+    {'L3MON4D3/LuaSnip'},
+    {'saadparwaiz1/cmp_luasnip'},
 
     -- Navigation
     {'nvim-lua/popup.nvim'},
@@ -63,13 +63,13 @@ require("lazy").setup({
     },
 
     -- Utilities
-    {'github/copilot.vim'},
     {'windwp/nvim-ts-autotag'},
     {'windwp/nvim-autopairs'},
     {'tpope/vim-surround'},
-    {'numToStr/Comment.nvim'},
     {'tpope/vim-repeat'},
     {'tpope/vim-sleuth'},
+    {'numToStr/Comment.nvim'},
+    {'github/copilot.vim'},
     {
 	"folke/which-key.nvim",
 	config = function()
