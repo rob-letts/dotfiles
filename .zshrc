@@ -1,6 +1,9 @@
 # Fuzzy Finder
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export FZF_DEFAULT_OPTS='--color=fg:#f8f8f2,bg:#282a36,hl:#bd93f9 --color=fg+:#f8f8f2,bg+:#44475a,hl+:#bd93f9 --color=info:#ffb86c,prompt:#50fa7b,pointer:#ff79c6 --color=marker:#ff79c6,spinner:#ffb86c,header:#6272a4'
+export FZF_DEFAULT_OPTS=" \
+--color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
+--color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
+--color=marker:#f5e0dc,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8"
 
 # Prompt
 eval "$(starship init zsh)"
@@ -35,7 +38,7 @@ alias l="ll -a"
 alias aliases="bat ~/.zshrc"
 alias zsh-config="nvim ~/.zshrc"
 alias zsh-source="source ~/.zshrc"
-alias nvim-config="cd ~/.config/nvim && nvim init.vim"
+alias nvim-config="cd ~/.config/nvim && nvim"
 alias starship-config="nvim ~/.config/starship.toml"
 
 # Aliases: Lower Level Config

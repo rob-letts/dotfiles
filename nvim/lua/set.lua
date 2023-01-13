@@ -1,8 +1,6 @@
 vim.g.mapleader = ' '
 
 vim.g.netrw_banner = 0
-vim.g.dracula_colorterm = 0
-vim.g.dracula_italic = 0
 
 vim.opt.encoding = 'utf-8'
 vim.opt.fillchars = 'eob: '
@@ -10,7 +8,6 @@ vim.opt.cursorlineopt = 'line'
 vim.opt.signcolumn = 'yes'
 vim.opt.clipboard = 'unnamedplus'
 
--- vim.opt.shiftwidth = 2
 vim.opt.scrolloff = 4
 vim.opt.updatetime = 300
 

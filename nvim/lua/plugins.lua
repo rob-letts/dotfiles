@@ -49,7 +49,7 @@ require("lazy").setup({
     {'junegunn/fzf'},
 
     -- UI
-    {'dracula/vim', name = 'dracula'},
+    {'catppuccin/nvim', name = 'catppuccin'},
     {'nvim-lualine/lualine.nvim'},
     {'ryanoasis/vim-devicons'},
     {'kyazdani42/nvim-web-devicons'},
@@ -69,13 +69,5 @@ require("lazy").setup({
     {'tpope/vim-repeat'},
     {'tpope/vim-sleuth'},
     {'numToStr/Comment.nvim'},
-    {'github/copilot.vim'},
-    {
-	"folke/which-key.nvim",
-	config = function()
-	    vim.o.timeout = true
-	    vim.o.timeoutlen = 300
-	    require("which-key").setup()
-	end,
-    }
+    {'github/copilot.vim'}
 })
