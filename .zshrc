@@ -1,3 +1,6 @@
+# Prompt
+eval "$(starship init zsh)"
+
 # Fuzzy Finder
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_OPTS=" \
@@ -5,8 +8,12 @@ export FZF_DEFAULT_OPTS=" \
 --color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
 --color=marker:#f5e0dc,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8"
 
-# Prompt
-eval "$(starship init zsh)"
+# Environment Variables
+export BAT_THEME="Catppuccin-mocha"
+export GIT_EDITOR='vim'
+export VISUAL='vim'
+export EDITOR='vim'
+export TERM=xterm-256color
 
 # Aliases: Version Control
 alias pr="gh pr create && gh pr edit"
@@ -38,10 +45,12 @@ alias l="ll -a"
 alias aliases="bat ~/.zshrc"
 alias zsh-config="nvim ~/.zshrc"
 alias zsh-source="source ~/.zshrc"
+alias alacritty-config="cd ~/.config/alacritty && nvim"
 alias nvim-config="cd ~/.config/nvim && nvim"
 alias starship-config="nvim ~/.config/starship.toml"
 
 # Aliases: Lower Level Config
+alias mouse-speed="defaults write -g com.apple.mouse.scaling 5.0"
 alias keyspeed-read="defaults read -g KeyRepeat -int 1 && defaults read -g InitialKeyRepeat -int 12"
 alias keyspeed-write="defaults write -g KeyRepeat -int 1 && defaults write -g InitialKeyRepeat -int 12"
 alias get-process-id="sudo lsof -i" # Add :portNumber
@@ -63,12 +72,6 @@ alias gc="deno run --allow-run ~/Scripts/custom-commit.ts"
 
 # Autocomplete
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-export GIT_EDITOR='vim'
-export VISUAL='vim'
-export EDITOR='vim'
-export TERM=xterm-256color
-
 if type brew &>/dev/null
 then
   FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
