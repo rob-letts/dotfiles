@@ -48,7 +48,9 @@ alias zsh-source="source ~/.zshrc"
 alias alacritty-config="cd ~/.config/alacritty && nvim"
 alias nvim-config="cd ~/.config/nvim && nvim"
 alias starship-config="nvim ~/.config/starship.toml"
-
+alias tmux-config="nvim ~/.tmux.conf"
+alias tmux-source="tmux source ~/.tmux.conf"
+#
 # Aliases: Lower Level Config
 alias mouse-speed="defaults write -g com.apple.mouse.scaling 5.0"
 alias keyspeed-read="defaults read -g KeyRepeat -int 1 && defaults read -g InitialKeyRepeat -int 12"
@@ -58,6 +60,7 @@ alias kill-process="kill -9" # Add PID
 
 # Aliases: Navigation
 alias percy="cd ~/Dev"
+alias dotfiles="cd ~/Dev/dotfiles"
 
 # Aliases: Utilities
 alias dev="npm run dev"
