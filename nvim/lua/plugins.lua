@@ -15,7 +15,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-    -- Treesitter
+    -- Treesitter / LSP
     {
 	'nvim-treesitter/nvim-treesitter', 
 	build = function()
@@ -23,10 +23,7 @@ require("lazy").setup({
 	end,
 	dependencies = {'nvim-treesitter/nvim-treesitter-textobjects'}
     },
-    {'nvim-treesitter/nvim-treesitter-context'},
     {'wellle/targets.vim'},
-
-    -- LSP
     {'neovim/nvim-lspconfig'},
     {'williamboman/mason.nvim'},
     {'williamboman/mason-lspconfig.nvim'},
@@ -72,6 +69,4 @@ require("lazy").setup({
     {'windwp/nvim-autopairs'},
     {'numToStr/Comment.nvim'},
     {'github/copilot.vim'},
-    -- {'vimwiki/vimwiki'},
-    -- {'folke/todo-comments.nvim'}
 })

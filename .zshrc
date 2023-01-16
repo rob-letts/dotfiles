@@ -17,7 +17,7 @@ export TERM=xterm-256color
 
 # Aliases: Version Control
 alias ts="tig status"
-alias gb="git branch | fzf| xargs git checkout"
+alias gb="git branch | fzf | xargs git checkout"
 alias gp="git push"
 alias glo="git log --oneline"
 alias gbd="git branch -D"
@@ -39,6 +39,7 @@ alias ll="ls -l"
 alias l="ll -a"
 
 # Aliases: Tool Management
+alias n="fzf | xargs nvim"
 alias aliases="bat ~/.zshrc"
 alias alacritty-config="cd ~/.config/alacritty && nvim"
 alias nvim-config="cd ~/.config/nvim && nvim"
