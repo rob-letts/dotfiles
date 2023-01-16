@@ -1,9 +1,10 @@
 1Password
 Always Clear Downloads 2
-Infinity New Tab
+Bookmark Favicon Changer
 JSON Viewer
 Privacy Badger
 Stylus
 Tab Pinner
 uBlock Origin
+test
 Vue.js DevTools

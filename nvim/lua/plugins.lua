@@ -1,3 +1,4 @@
+-- Setup Plugin Manager
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 
 if not vim.loop.fs_stat(lazypath) then
@@ -63,12 +64,14 @@ require("lazy").setup({
     },
 
     -- Utilities
-    {'windwp/nvim-ts-autotag'},
-    {'windwp/nvim-autopairs'},
     {'tpope/vim-surround'},
     {'tpope/vim-repeat'},
     {'tpope/vim-sleuth'},
+    {'tpope/vim-fugitive'},
+    {'windwp/nvim-ts-autotag'},
+    {'windwp/nvim-autopairs'},
     {'numToStr/Comment.nvim'},
     {'github/copilot.vim'},
-    {'kdheepak/lazygit.nvim'}
+    -- {'vimwiki/vimwiki'},
+    -- {'folke/todo-comments.nvim'}
 })
