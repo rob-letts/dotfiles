@@ -1,5 +1,5 @@
 # dotfiles
 
-Over the top customisation of my Neovim and VS Code development environments.
+Over the top configs for Neovim and Zsh.
 
-Got some ESLint, Zsh, and Starship in there as well.
+Got some ESLint, VS Code, and Starship in there as well.
