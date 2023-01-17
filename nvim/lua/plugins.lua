@@ -27,6 +27,9 @@ require("lazy").setup({
     {'neovim/nvim-lspconfig'},
     {'williamboman/mason.nvim'},
     {'williamboman/mason-lspconfig.nvim'},
+    
+    -- Rust
+    'simrat39/rust-tools.nvim',
 
     -- Completion
     {'hrsh7th/nvim-cmp'},
