@@ -1,8 +1,8 @@
-require'mason'.setup()
-require'mason-lspconfig'.setup()
+require('mason').setup()
+require('mason-lspconfig').setup()
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
-local lspconfig = require'lspconfig'
+local lspconfig = require('lspconfig')
 
 lspconfig['html'].setup { capabilities = capabilities }
 lspconfig['cssls'].setup { capabilities = capabilities }

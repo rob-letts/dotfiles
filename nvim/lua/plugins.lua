@@ -67,5 +67,5 @@ require("lazy").setup({
     {'windwp/nvim-ts-autotag'},
     {'windwp/nvim-autopairs'},
     {'numToStr/Comment.nvim'},
-    {'github/copilot.vim'},
+    {'github/copilot.vim'}
 })
