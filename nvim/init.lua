@@ -4,7 +4,6 @@ require('plugins')
 
 require('plugins.treesitter')
 require('plugins.lsp')
-require('plugins.rust')
 require('plugins.completion')
 require('plugins.navigation')
 require('plugins.utilities')
