@@ -64,7 +64,6 @@ require("lazy").setup({
     {'tpope/vim-surround'},
     {'tpope/vim-repeat'},
     {'tpope/vim-sleuth'},
-    {'tpope/vim-fugitive'},
     {'windwp/nvim-ts-autotag'},
     {'windwp/nvim-autopairs'},
     {'numToStr/Comment.nvim'},
