@@ -10,6 +10,7 @@ vim.opt.clipboard = 'unnamedplus'
 
 vim.opt.scrolloff = 4
 vim.opt.updatetime = 300
+vim.opt.tabstop = 4
 
 vim.opt.cursorline = true
 vim.opt.wrap = false
