@@ -1,3 +1,4 @@
+Astro
 Auto Rename Tag
 C#
 Catppuccin for VSCode
