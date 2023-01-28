@@ -1,5 +1,3 @@
 # dotfiles
 
-Over the top configs for Neovim and Zsh.
-
-Got some ESLint, VS Code, and Starship in there as well.
+Over the top configs for Neovim and VS Code plus some other random bits.
