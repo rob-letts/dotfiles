@@ -199,11 +199,6 @@
     "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
   },
   {
-    "key": "cmd+k cmd+i",
-    "command": "editor.action.goToImplementation",
-    "when": "editorHasImplementationProvider && editorTextFocus && !isInEmbeddedEditor"
-  },
-  {
     "key": "cmd+f12",
     "command": "-editor.action.goToImplementation",
     "when": "editorHasImplementationProvider && editorTextFocus && !isInEmbeddedEditor"
@@ -412,11 +407,6 @@
     "key": "shift+cmd+space",
     "command": "-editor.action.triggerParameterHints",
     "when": "editorHasSignatureHelpProvider && editorTextFocus"
-  },
-  {
-    "key": "cmd+k f",
-    "command": "editor.action.formatDocument",
-    "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
   },
   {
     "key": "shift+alt+f",
@@ -658,11 +648,6 @@
     "key": "cmd+k o",
     "command": "-workbench.action.files.showOpenedFileInNewWindow",
     "when": "emptyWorkspaceSupport"
-  },
-  {
-    "key": "cmd+k cmd+f",
-    "command": "revealFileInOS",
-    "when": "!editorFocus"
   },
   {
     "key": "alt+cmd+r",
@@ -2257,14 +2242,6 @@
     "when": "inQuickOpen"
   },
   {
-    "key": "shift+cmd+t",
-    "command": "editor.action.revealDefinition"
-  },
-  {
-    "key": "cmd+k cmd+t",
-    "command": "editor.action.goToTypeDefinition"
-  },
-  {
     "key": "shift+f5",
     "command": "-workbench.action.debug.disconnect",
     "when": "focusedSessionIsAttach && inDebugMode"
@@ -2494,24 +2471,12 @@
     "command": "editor.action.marker.next"
   },
   {
-    "key": "cmd+k cmd+o",
-    "command": "workbench.action.showAllSymbols"
-  },
-  {
     "key": "shift+cmd+r",
     "command": "volar.vue.findAllFileReferences"
   },
   {
-    "key": "shift+cmd+,",
-    "command": "volar.action.showComponentMeta"
-  },
-  {
     "key": "cmd+k v",
     "command": "toggleVim"
-  },
-  {
-    "key": "cmd+t",
-    "command": "workbench.action.createTerminalEditor"
   },
   {
     "key": "cmd+k cmd+[",
@@ -2552,10 +2517,6 @@
     "command": "workbench.view.debug"
   },
   {
-    "key": "shift+cmd+y",
-    "command": "workbench.panel.repl.view.focus"
-  },
-  {
     "key": "ctrl+alt+left",
     "command": "workbench.action.moveEditorLeftInGroup"
   },
@@ -2567,5 +2528,41 @@
     "key": "ctrl+alt+right",
     "command": "-cursorWordPartRight",
     "when": "textInputFocus"
+  },
+  {
+    "key": "shift+cmd+o",
+    "command": "workbench.action.files.openFileFolder",
+    "when": "isMacNative && openFolderWorkspaceSupport"
+  },
+  {
+    "key": "cmd+o",
+    "command": "-workbench.action.files.openFileFolder",
+    "when": "isMacNative && openFolderWorkspaceSupport"
+  },
+  {
+    "key": "cmd+o",
+    "command": "workbench.action.gotoSymbol"
+  },
+  {
+    "key": "shift+cmd+o",
+    "command": "-workbench.action.gotoSymbol"
+  },
+  {
+    "key": "shift+cmd+u",
+    "command": "-workbench.action.output.toggleOutput",
+    "when": "workbench.panel.output.active"
+  },
+  {
+    "key": "cmd+k cmd+]",
+    "command": "-editor.unfoldRecursively",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "cmd+g",
+    "command": "workbench.action.gotoLine"
+  },
+  {
+    "key": "ctrl+g",
+    "command": "-workbench.action.gotoLine"
   }
 ]
