@@ -28,7 +28,8 @@ alias git-recent="git log --oneline -30 | fzf"
 alias git-current="git branch --show-current | pbcopy"
 alias git-get="git branch -a | fzf | pbcopy"
 alias git-ignore="git update-index --assume-unchanged" # file name
-alias git-no-ignore="git update-index --no-assume-unchanged" # file name
+alias git-no-ignore="git update-index --no-assume-unchanged" # file name 
+alias lg="lazygit"
 
 # Aliases: Redirections
 alias vim="nvim"
@@ -41,11 +42,8 @@ alias l="ll -a"
 # Aliases: Tool Management
 alias n="fzf | xargs nvim"
 alias aliases="bat ~/.zshrc"
-alias alacritty-config="cd ~/.config/alacritty && nvim"
 alias nvim-config="cd ~/.config/nvim && nvim"
 alias starship-config="nvim ~/.config/starship.toml"
-alias tmux-config="nvim ~/.tmux.conf"
-alias tmux-source="tmux source ~/.tmux.conf"
 alias zsh-config="nvim ~/.zshrc"
 alias zsh-source="source ~/.zshrc"
 
