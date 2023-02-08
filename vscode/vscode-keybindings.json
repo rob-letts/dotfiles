@@ -2375,10 +2375,6 @@
     "when": "editorFocus"
   },
   {
-    "key": "shift+cmd+l",
-    "command": "gitlens.views.commits.focus"
-  },
-  {
     "key": "ctrl+alt+left",
     "command": "-cursorWordPartLeft",
     "when": "textInputFocus"
@@ -2530,9 +2526,9 @@
     "when": "textInputFocus"
   },
   {
-    "key": "shift+cmd+o",
+    "key": "cmd+o",
     "command": "workbench.action.files.openFileFolder",
-    "when": "isMacNative && openFolderWorkspaceSupport"
+    "when": "openFolderWorkspaceSupport"
   },
   {
     "key": "cmd+o",
@@ -2540,7 +2536,7 @@
     "when": "isMacNative && openFolderWorkspaceSupport"
   },
   {
-    "key": "cmd+o",
+    "key": "shift+cmd+o",
     "command": "workbench.action.gotoSymbol"
   },
   {
@@ -2564,5 +2560,18 @@
   {
     "key": "ctrl+g",
     "command": "-workbench.action.gotoLine"
+  },
+  {
+    "key": "cmd+s",
+    "command": "searchEditorApplyChanges.apply",
+    "when": "inSearchEditor"
+  },
+  {
+    "key": "cmd+l",
+    "command": "editor.action.formatSelection"
+  },
+  {
+    "key": "shift+cmd+l",
+    "command": "editor.action.formatDocument"
   }
 ]
