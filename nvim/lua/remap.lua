@@ -17,7 +17,6 @@ vim.keymap.set('n', 'gd', '<cmd>:lua vim.lsp.buf.definition()<CR>')
 vim.keymap.set('n', 'gr', '<cmd>:lua vim.lsp.buf.references()<CR>')
 
 vim.keymap.set('n', '<leader>c', '<cmd>let @+ = expand(\'%:p\')<CR>')
-vim.keymap.set('n', '<leader>f', 'vatzf')
 
 vim.keymap.set('n', '<Up>', '<nop>')
 vim.keymap.set('n', '<Down>', '<nop>')

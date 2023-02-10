@@ -66,5 +66,10 @@ require("lazy").setup({
     {'tpope/vim-sleuth'},
     {'windwp/nvim-ts-autotag'},
     {'windwp/nvim-autopairs'},
-    {'numToStr/Comment.nvim'}
+    {'numToStr/Comment.nvim'},
+    {'fgheng/winbar.nvim'},
+    {
+	'SmiteshP/nvim-navic', 	
+	dependencies = {'neovim/nvim-lspconfig'}
+    }
 })
