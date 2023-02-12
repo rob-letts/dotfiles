@@ -1,4 +1,4 @@
--- Setup Plugin Manager
+-- Plugin Manager
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 
 if not vim.loop.fs_stat(lazypath) then
@@ -15,7 +15,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-    -- Treesitter / LSP
+    -- Treesitter 
     {
 	'nvim-treesitter/nvim-treesitter', 
 	build = function()
@@ -23,7 +23,8 @@ require("lazy").setup({
 	end,
 	dependencies = {'nvim-treesitter/nvim-treesitter-textobjects'}
     },
-    {'wellle/targets.vim'},
+
+    -- LSP
     {'neovim/nvim-lspconfig'},
     {'williamboman/mason.nvim'},
     {'williamboman/mason-lspconfig.nvim'},
@@ -64,12 +65,8 @@ require("lazy").setup({
     {'tpope/vim-surround'},
     {'tpope/vim-repeat'},
     {'tpope/vim-sleuth'},
+    {'wellle/targets.vim'},
     {'windwp/nvim-ts-autotag'},
     {'windwp/nvim-autopairs'},
-    {'numToStr/Comment.nvim'},
-    {'fgheng/winbar.nvim'},
-    {
-	'SmiteshP/nvim-navic', 	
-	dependencies = {'neovim/nvim-lspconfig'}
-    }
+    {'numToStr/Comment.nvim'}
 })
