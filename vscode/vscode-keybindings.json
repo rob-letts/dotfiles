@@ -508,7 +508,7 @@
     "when": "notebookCellInputIsCollapsed && notebookCellListFocused"
   },
   {
-    "key": "cmd+g p",
+    "key": "cmd+k p",
     "command": "copyFilePath",
     "when": "editorFocus"
   },
@@ -2422,11 +2422,6 @@
     "when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorTabMovesFocus"
   },
   {
-    "key": "alt+cmd+space",
-    "command": "editor.action.inlineSuggest.trigger",
-    "when": "config.github.copilot.inlineSuggest.enable && editorTextFocus && !editorHasSelection && !inlineSuggestionsVisible"
-  },
-  {
     "key": "alt+\\",
     "command": "-editor.action.inlineSuggest.trigger",
     "when": "config.github.copilot.inlineSuggest.enable && editorTextFocus && !editorHasSelection && !inlineSuggestionsVisible"
@@ -2448,10 +2443,6 @@
   {
     "key": "cmd+e",
     "command": "editor.action.marker.next"
-  },
-  {
-    "key": "cmd+k v",
-    "command": "toggleVim"
   },
   {
     "key": "cmd+k cmd+[",
@@ -2510,7 +2501,7 @@
     "when": "isMacNative && openFolderWorkspaceSupport"
   },
   {
-    "key": "shift+cmd+o",
+    "key": "cmd+o",
     "command": "workbench.action.gotoSymbol"
   },
   {
@@ -2528,7 +2519,7 @@
     "when": "editorTextFocus && foldingEnabled"
   },
   {
-    "key": "ctrl+g",
+    "key": "cmd+g",
     "command": "workbench.action.gotoLine"
   },
   {
@@ -2576,10 +2567,6 @@
     "command": "workbench.action.focusCommentsPanel"
   },
   {
-    "key": "cmd+o",
-    "command": "workbench.action.files.openFolder"
-  },
-  {
     "key": "ctrl+alt+up",
     "command": "editor.emmet.action.balanceOut"
   },
@@ -2588,15 +2575,15 @@
     "command": "editor.emmet.action.balanceIn"
   },
   {
-    "key": "cmd+g r",
+    "key": "cmd+k r",
     "command": "editor.action.goToReferences"
   },
   {
-    "key": "cmd+g d",
+    "key": "cmd+k d",
     "command": "editor.action.revealDefinition"
   },
   {
-    "key": "shift+cmd+r",
+    "key": "cmd+k v",
     "command": "volar.vue.findAllFileReferences"
   },
   {
@@ -2705,7 +2692,7 @@
   "command": "workbench.action.focusThirdEditorGroup"
 },
 {
-  "key": "cmd+t",
+  "key": "alt+t",
   "command": "workbench.action.createTerminalEditor"
 },
 {
@@ -2771,10 +2758,64 @@
 },
 {
   "key": "cmd+]",
-  "command": "workbench.action.nextPanelView"
+  "command": "workbench.action.nextPanelView",
+  "when": "panelVisible"
 },
 {
   "key": "cmd+[",
-  "command": "workbench.action.previousPanelView"
+  "command": "workbench.action.previousPanelView",
+  "when": "panelVisible"
+},
+{
+  "key": "cmd+t",
+  "command": "workbench.action.terminal.new"
+},
+{
+  "key": "shift+cmd+r",
+  "command": "pr:github.focus"
+},
+{
+  "key": "alt+a",
+  "command": "bracket-select.select",
+  "when": "editorTextFocus"
+},
+{
+  "key": "alt+a",
+  "command": "-bracket-select.select",
+  "when": "editorTextFocus"
+},
+{
+  "key": "ctrl+shift+a",
+  "command": "-cursorLineStartSelect",
+  "when": "textInputFocus"
+},
+{
+  "key": "shift+alt+a",
+  "command": "bracket-select.select-include",
+  "when": "editorTextFocus"
+},
+{
+  "key": "alt+cmd+a",
+  "command": "-bracket-select.select-include",
+  "when": "editorTextFocus"
+},
+{
+  "key": "alt+z",
+  "command": "bracket-select.undo-select",
+  "when": "editorTextFocus"
+},
+{
+  "key": "alt+z",
+  "command": "-bracket-select.undo-select",
+  "when": "editorTextFocus"
+},
+{
+  "key": "shift+cmd+e",
+  "command": "workbench.files.action.showActiveFileInExplorer",
+  "when": "editorFocus"
+},
+{
+  "key": "shift+cmd+o",
+  "command": "outline.focus"
 }
 ]
