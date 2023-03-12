@@ -2501,7 +2501,7 @@
     "when": "isMacNative && openFolderWorkspaceSupport"
   },
   {
-    "key": "cmd+o",
+    "key": "shift+cmd+o",
     "command": "workbench.action.gotoSymbol"
   },
   {
@@ -2583,7 +2583,7 @@
     "command": "editor.action.revealDefinition"
   },
   {
-    "key": "cmd+k v",
+    "key": "shift+cmd+r",
     "command": "volar.vue.findAllFileReferences"
   },
   {
@@ -2692,7 +2692,7 @@
   "command": "workbench.action.focusThirdEditorGroup"
 },
 {
-  "key": "alt+t",
+  "key": "cmd+t",
   "command": "workbench.action.createTerminalEditor"
 },
 {
@@ -2702,16 +2702,6 @@
 {
   "key": "cmd+b",
   "command": "workbench.action.toggleSidebarVisibility"
-},
-{
-  "key": "shift+cmd+]",
-  "command": "workbench.action.terminal.focusNext",
-  "when": "terminalFocus"
-},
-{
-  "key": "shift+cmd+[",
-  "command": "workbench.action.terminal.focusPrevious",
-  "when": "terminalFocus"
 },
 {
   "key": "cmd+r",
@@ -2767,14 +2757,6 @@
   "when": "panelVisible"
 },
 {
-  "key": "cmd+t",
-  "command": "workbench.action.terminal.new"
-},
-{
-  "key": "shift+cmd+r",
-  "command": "pr:github.focus"
-},
-{
   "key": "alt+a",
   "command": "bracket-select.select",
   "when": "editorTextFocus"
@@ -2815,7 +2797,29 @@
   "when": "editorFocus"
 },
 {
-  "key": "shift+cmd+o",
-  "command": "outline.focus"
+  "key": "alt+down",
+  "command": "-editor.action.moveLinesDownAction",
+  "when": "editorTextFocus && !editorReadonly"
+},
+{
+  "key": "alt+down",
+  "command": "editor.action.moveLinesDownAction"
+},
+{
+  "key": "cmd+o",
+  "command": "workbench.action.files.openFolder"
+},
+{
+  "key": "cmd+l",
+  "command": "expandLineSelection"
+},
+{
+  "key": "ctrl+q",
+  "command": "-workbench.action.quickOpenNavigateNextInViewPicker",
+  "when": "inQuickOpen && inViewsPicker"
+},
+{
+  "key": "ctrl+q",
+  "command": "-workbench.action.quickOpenView"
 }
 ]
