@@ -23,6 +23,8 @@ require("lazy").setup({
 	end,
 	dependencies = {'nvim-treesitter/nvim-treesitter-textobjects'}
     },
+    {'nvim-treesitter/nvim-treesitter-context'},
+
 
     -- LSP
     {'neovim/nvim-lspconfig'},
@@ -62,11 +64,14 @@ require("lazy").setup({
     },
 
     -- Utilities
+    {'mbbill/undotree'},
     {'tpope/vim-surround'},
     {'tpope/vim-repeat'},
     {'tpope/vim-sleuth'},
     {'wellle/targets.vim'},
     {'windwp/nvim-ts-autotag'},
     {'windwp/nvim-autopairs'},
-    {'numToStr/Comment.nvim'}
+    {'numToStr/Comment.nvim'},
+    {'fgheng/winbar.nvim'},
+    {'github/copilot.vim'}
 })
