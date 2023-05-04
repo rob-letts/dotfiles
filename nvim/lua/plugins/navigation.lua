@@ -1,4 +1,6 @@
-require('telescope').setup{
+local telescope = require('telescope')
+
+telescope.setup{
     defaults = {
 	layout_strategy = 'vertical',
 	file_ignore_patterns = {
@@ -15,4 +17,5 @@ require('telescope').setup{
     }
 }
 
-require('telescope').load_extension('fzf')
+telescope.load_extension('fzf')
+telescope.load_extension('dap')

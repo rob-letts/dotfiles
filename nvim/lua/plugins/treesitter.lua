@@ -1,6 +1,6 @@
 require('nvim-treesitter.configs').setup {
     ensure_installed = {
-	"html", "css", "javascript", "json", "markdown", "scss", "typescript", "vim", "vue", "lua"
+	"html", "css", "javascript", "json", "markdown", "scss", "typescript", "vim", "vue", "lua", "rust"
     },
     sync_install = false,
     auto_install = true,
@@ -16,3 +16,5 @@ require('nvim-treesitter.configs').setup {
 	additional_vim_regex_highlighting = false,
     },
 }
+
+require('treesitter-context').setup {}

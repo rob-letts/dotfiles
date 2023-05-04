@@ -63,6 +63,10 @@ require("lazy").setup({
 	end
     },
 
+    -- DAP
+    {'mfussenegger/nvim-dap'},
+    {'nvim-telescope/telescope-dap.nvim'},
+
     -- Utilities
     {'mbbill/undotree'},
     {'tpope/vim-surround'},
