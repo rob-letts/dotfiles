@@ -12,10 +12,10 @@ vim.keymap.set('n', '<leader>p', '<cmd>Telescope find_files<CR>')
 vim.keymap.set('n', '<leader>g', '<cmd>Telescope live_grep<CR>')
 vim.keymap.set('n', '<leader>b', '<cmd>Telescope buffers<CR>')
 vim.keymap.set('n', '<leader>o', '<cmd>Telescope lsp_document_symbols<CR>')
-vim.keymap.set('n', '<leader>d', '<cmd>Telescope dap commands<CR>')
 
 vim.keymap.set('n', '<leader>.', '<cmd>lua vim.lsp.buf.code_action()<CR>')
 vim.keymap.set('n', '<leader>h', '<cmd>lua vim.lsp.buf.hover()<CR>')
+vim.keymap.set('n', '<leader>d', '<cmd>lua vim.diagnostic.open_float()<CR>')
 vim.keymap.set('n', '<leader>}', '<cmd>lua vim.diagnostic.goto_next()<CR>')
 vim.keymap.set('n', '<leader>{', '<cmd>lua vim.diagnostic.goto_prev()<CR>')
 
@@ -23,6 +23,7 @@ vim.keymap.set('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>')
 vim.keymap.set('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>')
 vim.keymap.set('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>')
 vim.keymap.set('n', 'gt', '<cmd>lua vim.lsp.buf.type_definition()<CR>')
+vim.keymap.set('n', '<F5>', '<cmd>lua require\'dap\'.continue()<CR>')
 
 vim.keymap.set('n', '<leader>c', '<cmd>let @+ = expand(\'%:p\')<CR>')
 
@@ -36,3 +37,4 @@ vim.keymap.set('n', '<Up>', '<nop>')
 vim.keymap.set('n', '<Down>', '<nop>')
 vim.keymap.set('n', '<Left>', '<nop>')
 vim.keymap.set('n', '<Right>', '<nop>')
+
