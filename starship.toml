@@ -1,5 +1,6 @@
-format = "$directory$git_branch"
+"$schema" = 'https://starship.rs/config-schema.json'
 
+format = "$directory$git_branch$deno$nodejs"
 add_newline = false
 
 [package]
