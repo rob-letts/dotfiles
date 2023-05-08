@@ -13,6 +13,4 @@
 
 - [Starship](https://github.com/rob-letts/dotfiles/blob/main/starship.toml)
 
-- [Warp](https://github.com/rob-letts/dotfiles/blob/main/warp_theme_cattpuccin_mocha.yml)
-
 - [Kitty](https://github.com/rob-letts/dotfiles/blob/main/kitty.conf)
