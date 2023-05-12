@@ -64,7 +64,6 @@ require("lazy").setup({
     },
 
     -- Utilities
-    {'mbbill/undotree'},
     {'tpope/vim-surround'},
     {'tpope/vim-repeat'},
     {'tpope/vim-sleuth'},
