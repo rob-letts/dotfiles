@@ -6,12 +6,9 @@ source ~/.work-env
 
 # Fuzzy Finder
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export FZF_DEFAULT_OPTS=" \
---color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
---color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
---color=marker:#f5e0dc,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8"
 
 # Environment Variables
+export FZF_DEFAULT_OPTS='--preview "bat --style=numbers --color=always --line-range :500 {}" --pointer="→" --color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 --color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc --color=marker:#f5e0dc,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8'
 export BAT_THEME="Catppuccin-mocha"
 export EDITOR=nvim
 export GIT_EDITOR="$EDITOR"
@@ -34,21 +31,22 @@ alias git-current="git branch --show-current | pbcopy"
 alias git-get="git branch -a | fzf | pbcopy"
 alias git-ignore="git update-index --assume-unchanged" # file name
 alias git-no-ignore="git update-index --no-assume-unchanged" # file name 
+alias git-config="nvim ~/.gitconfig"
 
 # Aliases: Redirections
 alias vim="nvim"
 alias ls="exa --icons -l"
+alias lsa="ls -a"
 alias tree="lsd --tree"
 alias cat="bat"
 alias lg="lazygit"
 alias ld="lazydocker"
 alias ln="lazynpm"
-alias z="zellij attach --create work"
+alias z="zellij attach --create dev"
 
 # Aliases: Tool Management
-alias n="fzf | xargs nvim"
+alias fzfn="fzf | xargs nvim"
 alias aliases="bat ~/.zshrc"
-alias git-config="nvim ~/.gitconfig"
 alias nvim-config="cd ~/.config/nvim && nvim"
 alias starship-config="nvim ~/.config/starship.toml"
 alias zsh-config="nvim ~/.zshrc"
@@ -62,7 +60,10 @@ alias get-process-id="sudo lsof -i" # Add :portNumber
 alias kill-process="kill -9" # Add PID
 
 # Aliases: Navigation
-alias percy="cd ~/Dev"
+alias dv="cd ~/Dev"
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
+alias dc="cd ~/Documents"
 
 # Aliases: Scripts
 alias gittum="source ~/Dev/scripts/scripts/gittum.sh"
