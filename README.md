@@ -1,8 +1,12 @@
 # dotfiles
 
+- VSCode
+  - [Keybindings](https://github.com/rob-letts/dotfiles/blob/main/VSCode/keybindings.json)
+  - [Settings](https://github.com/rob-letts/dotfiles/blob/main/VSCode/settings.json)
+
 - Neovim
   - [Keybindings](https://github.com/rob-letts/dotfiles/blob/main/nvim/lua/remap.lua)
-  - [Preferences](https://github.com/rob-letts/dotfiles/blob/main/nvim/lua/set.lua)
+  - [Settings](https://github.com/rob-letts/dotfiles/blob/main/nvim/lua/set.lua)
   - [Plugins](https://github.com/rob-letts/dotfiles/blob/main/nvim/lua/plugins.lua)
 
 - [Zellij](https://github.com/rob-letts/dotfiles/blob/main/zellij/config.kdl)
