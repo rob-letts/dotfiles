@@ -23,8 +23,6 @@ require("lazy").setup({
 	end,
 	dependencies = {'nvim-treesitter/nvim-treesitter-textobjects'}
     },
-    {'nvim-treesitter/nvim-treesitter-context'},
-
 
     -- LSP
     {'neovim/nvim-lspconfig'},

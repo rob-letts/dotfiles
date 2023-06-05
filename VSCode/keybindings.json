@@ -379,11 +379,6 @@
     "when": "!notebookEditorFocused && editorLangId == 'markdown'"
   },
   {
-    "key": "shift+cmd+g",
-    "command": "workbench.view.scm",
-    "when": "workbench.scm.active"
-  },
-  {
     "key": "ctrl+shift+g",
     "command": "-workbench.view.scm",
     "when": "workbench.scm.active"
@@ -425,5 +420,18 @@
   {
     "key": "ctrl+q",
     "command": "-workbench.action.quickOpenView"
+  },
+  {
+    "key": "shift+cmd+backspace",
+    "command": "workbench.action.terminal.kill",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "shift+cmd+g",
+    "command": "copilotSidebar.generateTests.focus"
+  },
+  {
+    "key": "cmd+j",
+    "command": "workbench.action.closePanel"
   }
 ]
