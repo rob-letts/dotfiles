@@ -13,7 +13,6 @@ lspconfig['cssls'].setup {  capabilities = capabilities }
 lspconfig['eslint'].setup {  capabilities = capabilities }
 lspconfig['volar'].setup { capabilities = capabilities }
 lspconfig['jsonls'].setup {  capabilities = capabilities }
-lspconfig['rust_analyzer'].setup {  capabilities = capabilities }
 
 lspconfig.denols.setup {
   capabilities = capabilities,

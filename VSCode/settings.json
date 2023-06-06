@@ -68,7 +68,7 @@
   "editor.fontLigatures": false,
   "editor.fontSize": 16,
   "editor.formatOnPaste": false,
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "editor.formatOnType": false,
   "editor.glyphMargin": false,
   "editor.guides.indentation": false,
@@ -192,5 +192,5 @@
   "git.enableStatusBarSync": false,
   "git.showCommitInput": false,
   "workbench.activityBar.visible": false,
-  "workbench.statusBar.visible": false,
+  "workbench.statusBar.visible": false
 }

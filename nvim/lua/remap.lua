@@ -22,7 +22,6 @@ vim.keymap.set('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>')
 vim.keymap.set('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>')
 vim.keymap.set('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>')
 vim.keymap.set('n', 'gt', '<cmd>lua vim.lsp.buf.type_definition()<CR>')
-vim.keymap.set('n', '<F5>', '<cmd>lua require\'dap\'.continue()<CR>')
 
 vim.keymap.set('n', '<leader>c', '<cmd>let @+ = expand(\'%:p\')<CR>')
 
