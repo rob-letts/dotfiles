@@ -13,12 +13,18 @@ lspconfig['cssls'].setup {  capabilities = capabilities }
 lspconfig['eslint'].setup {  capabilities = capabilities }
 lspconfig['volar'].setup { capabilities = capabilities }
 lspconfig['jsonls'].setup {  capabilities = capabilities }
-lspconfig['rust_analyzer'].setup {  capabilities = capabilities }
 
 lspconfig.denols.setup {
   capabilities = capabilities,
   on_attach = on_attach,
   root_dir = lspconfig.util.root_pattern("deno.json", "deno.jsonc"),
+      settings = {
+        deno = {
+          enable = true,
+          unstable = true,
+          lint = true
+        }
+    }
 }
 
 lspconfig.tsserver.setup {
