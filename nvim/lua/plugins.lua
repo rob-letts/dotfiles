@@ -21,7 +21,7 @@ require("lazy").setup({
 	build = function()
 	    pcall(require('nvim-treesitter.install').update { with_sync = true })
 	end,
-	dependencies = {'nvim-treesitter/nvim-treesitter-textobjects'}
+	dependencies = { 'nvim-treesitter/nvim-treesitter-textobjects' }
     },
 
     -- LSP
@@ -29,7 +29,7 @@ require("lazy").setup({
     {'williamboman/mason.nvim'},
     {'williamboman/mason-lspconfig.nvim'},
 
-    -- Completion
+    -- Auto Complete
     {'hrsh7th/nvim-cmp'},
     {'hrsh7th/cmp-buffer'},
     {'hrsh7th/cmp-path'},
@@ -38,6 +38,8 @@ require("lazy").setup({
     {'hrsh7th/cmp-cmdline'},
     {'L3MON4D3/LuaSnip'},
     {'saadparwaiz1/cmp_luasnip'},
+    {'windwp/nvim-ts-autotag'},
+    {'windwp/nvim-autopairs'},
 
     -- Navigation
     {'nvim-lua/popup.nvim'},
@@ -66,9 +68,8 @@ require("lazy").setup({
     {'tpope/vim-repeat'},
     {'tpope/vim-sleuth'},
     {'wellle/targets.vim'},
-    {'windwp/nvim-ts-autotag'},
-    {'windwp/nvim-autopairs'},
     {'numToStr/Comment.nvim'},
-    {'fgheng/winbar.nvim'},
-    {'github/copilot.vim'}
+    {'github/copilot.vim'},
+    {'weilbith/nvim-code-action-menu'},
+    {'nacro90/numb.nvim'}
 })
