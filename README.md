@@ -18,3 +18,5 @@
 - [Starship](https://github.com/rob-letts/dotfiles/blob/main/starship.toml)
 
 - [Kitty](https://github.com/rob-letts/dotfiles/blob/main/kitty.conf)
+
+- [Brew](https://github.com/rob-letts/dotfiles/blob/main/brew-leaves.md)
