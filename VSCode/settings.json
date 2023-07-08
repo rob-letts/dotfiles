@@ -186,10 +186,16 @@
     "git.closeDiffOnOperation": true,
     "git.enableStatusBarSync": false,
     "git.showCommitInput": false,
-    "workbench.activityBar.visible": false,
     "[rust]": {
       "editor.defaultFormatter": "rust-lang.rust-analyzer"
     },
-    "workbench.statusBar.visible": false,
-    "breadcrumbs.enabled": false
+    "[typescript]": {
+      "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "editor.multiCursorModifier": "ctrlCmd",
+    "workbench.activityBar.visible": false,
+    "breadcrumbs.enabled": false,
+    "workbench.editor.showTabs": false,
+    "go.toolsManagement.autoUpdate": true,
+    "workbench.statusBar.visible": false
   }

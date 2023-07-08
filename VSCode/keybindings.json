@@ -278,7 +278,7 @@
       "when": "editorHasImplementationProvider && editorTextFocus && !isInEmbeddedEditor"
     },
     {
-      "key": "cmd+g l",
+      "key": "ctrl+g",
       "command": "workbench.action.gotoLine"
     },
     {
@@ -467,5 +467,28 @@
       "key": "cmd+k shift+enter",
       "command": "-workbench.action.unpinEditor",
       "when": "activeEditorIsPinned"
+    },
+    {
+      "key": "ctrl+=",
+      "command": "editor.emmet.action.incrementNumberByOne"
+    },
+    {
+      "key": "ctrl+-",
+      "command": "editor.emmet.action.decrementNumberByOne"
+    },
+    {
+      "key": "ctrl+-",
+      "command": "-workbench.action.navigateBack",
+      "when": "canNavigateBack"
+    },
+    {
+      "key": "ctrl+-",
+      "command": "-workbench.action.quickInputBack",
+      "when": "inQuickOpen"
+    },
+    {
+      "key": "cmd+/",
+      "command": "-toggleExplainMode",
+      "when": "suggestWidgetVisible"
     }
   ]
