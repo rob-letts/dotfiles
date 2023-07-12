@@ -1,7 +1,6 @@
 # Prompt
 eval "$(starship init zsh)"
 
-source ~/Dev/scripts/scripts/banner.sh
 source ~/.work-env
 
 # Fuzzy Finder
@@ -37,6 +36,7 @@ alias git-config="nvim ~/.gitconfig"
 alias vim="nvim"
 alias ls="exa --icons -l"
 alias lsa="ls -a"
+alias lsf="lsd -d */"
 alias tree="lsd --tree"
 alias cat="bat"
 alias lg="lazygit"
@@ -65,15 +65,13 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias dc="cd ~/Documents"
 
-# Aliases: Scripts
-alias gittum="source ~/Dev/scripts/scripts/gittum.sh"
-
 # Aliases: Utilities
 alias raycast="open /Applications/Raycast.app"
 alias dev="npm run dev"
 alias lint="npm run lint"
 alias unit="npm run test:unit"
 alias e2e="npm run test:e2e"
+alias headless="npx cypress run --record false"
 alias tldrf='tldr --list | fzf --preview "tldr {1} --color=always" --preview-window=right,70% | xargs tldr'
 
 # Autocomplete
