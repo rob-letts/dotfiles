@@ -9,11 +9,12 @@ vim.g.markdown_fenced_languages = {
 
 lspconfig['html'].setup {  capabilities = capabilities }
 lspconfig['emmet_ls'].setup {  capabilities = capabilities }
+lspconfig['astro'].setup {  capabilities = capabilities }
+lspconfig['lua_ls'].setup {  capabilities = capabilities }
 lspconfig['cssls'].setup {  capabilities = capabilities }
 lspconfig['eslint'].setup {  capabilities = capabilities }
 lspconfig['volar'].setup { capabilities = capabilities }
 lspconfig['jsonls'].setup {  capabilities = capabilities }
-lspconfig['gopls'].setup {  capabilities = capabilities }
 
 lspconfig.denols.setup {
   capabilities = capabilities,

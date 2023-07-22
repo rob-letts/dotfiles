@@ -431,10 +431,6 @@
       "command": "-workbench.action.togglePanel"
     },
     {
-      "key": "cmd+j",
-      "command": "workbench.action.closePanel"
-    },
-    {
       "key": "shift+cmd+g",
       "command": "workbench.scm.focus"
     },
@@ -490,5 +486,18 @@
       "key": "cmd+/",
       "command": "-toggleExplainMode",
       "when": "suggestWidgetVisible"
+    },
+    {
+      "key": "cmd+m",
+      "command": "workbench.action.toggleMaximizedPanel"
+    },
+    {
+      "key": "cmd+j",
+      "command": "workbench.action.togglePanel"
+    },
+    {
+      "key": "cmd+r",
+      "command": "workbench.action.terminal.rename",
+      "when": "terminalFocus"
     }
-  ]
+  ] ]
