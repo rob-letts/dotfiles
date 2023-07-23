@@ -1,0 +1,11 @@
+[[language]]
+name = "vue"
+file-types = ["vue"]
+language-server = { command = "vue-language-server", args = ["--stdio"] }
+scope = "text.html.vue"
+roots = ["package.json"]
+injection-regex = "vue"
+auto-format = true
+[language.config.typescript]
+tsdk = "/opt/homebrew/lib/node_modules/typescript/lib"
+
