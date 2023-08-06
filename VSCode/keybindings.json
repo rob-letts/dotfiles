@@ -495,10 +495,6 @@
     "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
   },
   {
-    "key": "shift+cmd+s",
-    "command": "terminal.focus"
-  },
-  {
     "key": "cmd+m",
     "command": "workbench.action.toggleMaximizedPanel"
   },
@@ -523,5 +519,15 @@
     "key": "shift+cmd+[",
     "command": "workbench.action.previousPanelView",
     "when": "panelMaximized"
+  },
+  {
+    "key": "shift+cmd+s",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active"
+  },
+  {
+    "key": "ctrl+`",
+    "command": "-workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active"
   }
 ]

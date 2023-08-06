@@ -1,14 +1,12 @@
 {
   "[astro]": { "editor.defaultFormatter": "astro-build.astro-vscode" },
   "[css]": { "editor.defaultFormatter": "vscode.css-language-features" },
-  "[go]": { "editor.defaultFormatter": "golang.go" },
   "[html]": { "editor.defaultFormatter": "vscode.html-language-features" },
   "[json]": { "editor.defaultFormatter": "vscode.json-language-features" },
   "[jsonc]": { "editor.defaultFormatter": "vscode.json-language-features" },
   "[scss]": { "editor.defaultFormatter": "vscode.css-language-features" },
   "[typescript]": { "editor.defaultFormatter": "vscode.typescript-language-features" },
   "[vue]": { "editor.defaultFormatter": "Vue.volar" },
-  "breadcrumbs.enabled": false,
   "catppuccin.italicComments": false,
   "catppuccin.italicKeywords": false,
   "catppuccin.workbenchMode": "flat",
@@ -81,7 +79,7 @@
   "editor.unicodeHighlight.allowedCharacters": { "’": true },
   "editor.wordBasedSuggestions": false,
   "emmet.triggerExpansionOnTab": true,
-  "errorLens.enabled": false,
+  "errorLens.enabled": true,
   "eslint.format.enable": true,
   "eslint.probe": ["javascript", "javascriptreact", "typescript", "html", "vue", "markdown", "css", "scss"],
   "explorer.autoReveal": false,
@@ -135,7 +133,6 @@
   "vue.complete.casing.status": false,
   "vue.inlayHints.optionsWrapper": false,
   "window.title": " ",
-  "workbench.activityBar.visible": false,
   "workbench.colorTheme": "Catppuccin Mocha",
   "workbench.editor.closeOnFileDelete": true,
   "workbench.editor.enablePreview": false,
@@ -150,5 +147,8 @@
   "workbench.startupEditor": "none",
   "workbench.statusBar.visible": false,
   "workbench.tips.enabled": false,
-  "workbench.tree.renderIndentGuides": "none"
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.activityBar.visible": false,
+  "workbench.editor.showTabs": false,
+  "breadcrumbs.enabled": false
 }
