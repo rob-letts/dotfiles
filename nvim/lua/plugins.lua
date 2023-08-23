@@ -44,10 +44,11 @@ require("lazy").setup({
     -- Navigation
     {'nvim-lua/popup.nvim'},
     {'nvim-lua/plenary.nvim'},
-    {'nvim-telescope/telescope.nvim', tag = '0.1.0' },
-    {'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
     {'junegunn/fzf.vim'},
     {'junegunn/fzf'},
+    {'nvim-telescope/telescope.nvim', tag = '0.1.0' },
+    {'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
+    {'aaronhallaert/advanced-git-search.nvim'},
 
     -- UI
     {'catppuccin/nvim', name = 'catppuccin'},
@@ -56,7 +57,7 @@ require("lazy").setup({
     {'kyazdani42/nvim-web-devicons'},
     {'onsails/lspkind.nvim'},
     {
-	'goolord/alpha-nvim', 
+	'goolord/alpha-nvim',
 	dependencies = {'kyazdani42/nvim-web-devicons'},
 	config = function()
 	    require('alpha').setup(require('alpha.themes.startify').config)

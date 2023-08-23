@@ -1,6 +1,6 @@
 local telescope = require('telescope')
 
-telescope.setup{
+telescope.setup {
     defaults = {
 	layout_strategy = 'vertical',
 	file_ignore_patterns = {
@@ -13,8 +13,12 @@ telescope.setup{
 	    override_generic_sorter = true,
 	    override_file_sorter = true,
 	    case_mode = "smart_case",
+	},
+	advanced_git_search = {
+	    -- See Config
 	}
     }
 }
 
 telescope.load_extension('fzf')
+telescope.load_extension('advanced_git_search')
