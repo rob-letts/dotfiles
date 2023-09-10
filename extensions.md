@@ -1,20 +1,56 @@
 <ul>
-  <li>(1Password – Password Manager)[https://chrome.google.com/webstore/detail/1password-%E2%80%93-password-mana/aeblfdkhhhdcdjpifhhbdiojplfjncoa]</li>
-  <li>(Always Clear Downloads 2)[https://chrome.google.com/webstore/detail/always-clear-downloads-2/jcajchndfkmnaefkhoaoiagemplbfffn]</li>
-  <li>(Capo: get your head in order)[https://chrome.google.com/webstore/detail/capo-get-your-%EF%B9%A4%F0%9D%9A%91%F0%9D%9A%8E%F0%9D%9A%8A%F0%9D%9A%8D%EF%B9%A5/ohabpnaccigjhkkebjofhpmebofgpbeb]</li>
-  <li>(Auto-Group Tabs)[https://chrome.google.com/webstore/detail/auto-group-tabs/danncghahncanipdoajmakdbeaophenb]</li>
-  <li>(CSS Stacking Context inspector)[https://chrome.google.com/webstore/detail/css-stacking-context-insp/apjeljpachdcjkgnamgppgfkmddadcki]</li>
-  <li>(GhostText)[https://chrome.google.com/webstore/detail/ghosttext/godiecgffnchndlihlpaajjcplehddca]</li>
-  <li>(JSON Viewer)[https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh]</li>
-  <li>(Motion DevTools)[https://chrome.google.com/webstore/detail/motion-devtools/mnbliiaiiflhmnndmoidhddombbmgcdk]</li>
-  <li>(Multiselect for YouTube™)[https://chrome.google.com/webstore/detail/multiselect-for-youtube/gpgbiinpmelaihndlegbgfkmnpofgfei]</li>
-  <li>(PerfectPixel by WellDoneCode)[https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi]</li>
-  <li>(Postman Interceptor)[https://chrome.google.com/webstore/detail/postman-interceptor/aicmkgpgakddgnaphhhpliifpcfhicfo]</li>
-  <li>(Privacy Badger)[https://chrome.google.com/webstore/detail/privacy-badger/pkehgijcmpdhfbdbbnkijodmdjhbjlgp]</li>
-  <li>(Stylus)[https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne]</li>
-  <li>(Tab Pinner)[https://chrome.google.com/webstore/detail/tab-pinner-keyboard-short/mbcjcnomlakhkechnbhmfjhnnllpbmlh]</li>
-  <li>(uBlock Origin)[https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm]</li>
-  <li>(VisBug)[https://chrome.google.com/webstore/detail/visbug/cdockenadnadldjbbgcallicgledbeoc]</li>
-  <li>(Vue.js devtools)[https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd]</li>
-  <li>(Web Vitals)[https://chrome.google.com/webstore/detail/web-vitals/ahfhijdlegdabablpippeagghigmibma]</li>
+  <li>
+    <a href="https://chrome.google.com/webstore/detail/1password-%E2%80%93-password-mana/aeblfdkhhhdcdjpifhhbdiojplfjncoa">1Password – Password Manager</a>
+    </li>
+  <li>
+    <a href="https://chrome.google.com/webstore/detail/always-clear-downloads-2/jcajchndfkmnaefkhoaoiagemplbfffn">Always Clear Downloads 2</a>
+    </li>
+  <li>
+    <a href="https://chrome.google.com/webstore/detail/capo-get-your-%EF%B9%A4%F0%9D%9A%91%F0%9D%9A%8E%F0%9D%9A%8A%F0%9D%9A%8D%EF%B9%A5/ohabpnaccigjhkkebjofhpmebofgpbeb">Capo: get your head in order</a>
+    </li>
+  <li>
+    <a href="https://chrome.google.com/webstore/detail/auto-group-tabs/danncghahncanipdoajmakdbeaophenb">Auto-Group Tabs</a>
+    </li>
+  <li>
+    <a href="https://chrome.google.com/webstore/detail/css-stacking-context-insp/apjeljpachdcjkgnamgppgfkmddadcki">CSS Stacking Context inspector</a>
+    </li>
+  <li>
+    <a href="https://chrome.google.com/webstore/detail/ghosttext/godiecgffnchndlihlpaajjcplehddca">GhostText</a>
+    </li>
+  <li>
+    <a href="https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh">JSON Viewer</a>
+    </li>
+  <li>
+    <a href="https://chrome.google.com/webstore/detail/motion-devtools/mnbliiaiiflhmnndmoidhddombbmgcdk">Motion DevTools</a>
+    </li>
+  <li>
+    <a href="https://chrome.google.com/webstore/detail/multiselect-for-youtube/gpgbiinpmelaihndlegbgfkmnpofgfei">Multiselect for YouTube™</a>
+    </li>
+  <li>
+    <a href="https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi">PerfectPixel by WellDoneCode</a>
+    </li>
+  <li>
+    <a href="https://chrome.google.com/webstore/detail/postman-interceptor/aicmkgpgakddgnaphhhpliifpcfhicfo">Postman Interceptor</a>
+    </li>
+  <li>
+    <a href="https://chrome.google.com/webstore/detail/privacy-badger/pkehgijcmpdhfbdbbnkijodmdjhbjlgp">Privacy Badger</a>
+    </li>
+  <li>
+    <a href="https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne">Stylus</a>
+    </li>
+  <li>
+    <a href="https://chrome.google.com/webstore/detail/tab-pinner-keyboard-short/mbcjcnomlakhkechnbhmfjhnnllpbmlh">Tab Pinner</a>
+    </li>
+  <li>
+    <a href="https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm">uBlock Origin</a>
+    </li>
+  <li>
+    <a href="https://chrome.google.com/webstore/detail/visbug/cdockenadnadldjbbgcallicgledbeoc">VisBug</a>
+    </li>
+  <li>
+    <a href="https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd">Vue.js devtools</a>
+    </li>
+  <li>
+    <a href="https://chrome.google.com/webstore/detail/web-vitals/ahfhijdlegdabablpippeagghigmibma">Web Vitals</a>
+    </li>
 </ul>
