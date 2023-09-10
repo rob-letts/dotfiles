@@ -428,11 +428,11 @@
       "when": "activeEditorIsPinned"
     },
     {
-      "key": "ctrl+-",
+      "key": "ctrl+=",
       "command": "editor.emmet.action.incrementNumberByOne"
     },
     {
-      "key": "ctrl+=",
+      "key": "ctrl+-",
       "command": "editor.emmet.action.decrementNumberByOne"
     },
     {
@@ -473,24 +473,8 @@
       "command": "breadcrumbs.toggle"
     },
     {
-      "key": "shift+cmd+i",
-      "command": "workbench.panel.chat.view.copilot.focus"
-    },
-    {
-      "key": "cmd+j",
-      "command": "workbench.action.closePanel"
-    },
-    {
       "key": "ctrl+shift+`",
       "command": "workbench.action.terminal.new"
-    },
-    {
-      "key": "shift+cmd+s",
-      "command": "workbench.action.toggleStatusbarVisibility"
-    },
-    {
-      "key": "shift+cmd+a",
-      "command": "workbench.action.toggleActivityBarVisibility"
     },
     {
       "key": "shift+cmd+y",
@@ -587,5 +571,66 @@
     {
       "key": "ctrl+shift+p",
       "command": "workbench.action.unpinEditor"
+    },
+    {
+      "key": "cmd+j",
+      "command": "workbench.action.togglePanel"
+    },
+    {
+      "key": "cmd+m",
+      "command": "workbench.action.toggleMaximizedPanel"
+    },
+    {
+      "key": "cmd+]",
+      "command": "-editor.action.indentLines",
+      "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+      "key": "cmd+]",
+      "command": "workbench.action.nextPanelView"
+    },
+    {
+      "key": "cmd+[",
+      "command": "workbench.action.previousPanelView"
+    },
+    {
+      "key": "cmd+[",
+      "command": "-editor.action.outdentLines",
+      "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+      "key": "ctrl+`",
+      "command": "-workbench.action.terminal.toggleTerminal",
+      "when": "terminal.active"
+    },
+    {
+      "key": "ctrl+shift+-",
+      "command": "editor.emmet.action.decrementNumberByTen"
+    },
+    {
+      "key": "ctrl+shift+-",
+      "command": "-workbench.action.navigateForward",
+      "when": "canNavigateForward"
+    },
+    {
+      "key": "ctrl+shift+=",
+      "command": "editor.emmet.action.incrementNumberByTen"
+    },
+    {
+      "key": "shift+cmd+s",
+      "command": "workbench.action.toggleStatusbarVisibility"
+    },
+    {
+      "key": "shift+cmd+a",
+      "command": "workbench.action.toggleActivityBarVisibility"
+    },
+    {
+      "key": "shift+cmd+e",
+      "command": "workbench.explorer.fileView.focus"
+    },
+    {
+      "key": "shift+cmd+e",
+      "command": "-workbench.view.explorer",
+      "when": "viewContainer.workbench.view.explorer.enabled"
     }
   ]
