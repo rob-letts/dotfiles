@@ -1,63 +1,58 @@
-- bat
-- broot
-- charmbracelet/tap/skate
-- cmake
-- cowsay
-- deno
-- diff-so-fancy
-- dooit
-- duf
-- dust
-- exa
-- fd
-- fontforge
-- fx
-- gh
-- git-delta
-- gitui
-- glow
-- gnu-sed
-- gum
-- helix
-- httpie
-- imagemagick
-- jesseduffield/lazydocker/lazydocker
-- jesseduffield/lazynpm/lazynpm
-- jq
-- jsonpp
-- lazygit
-- lf
-- lolcat
-- lsd
-- luarocks
-- micro
-- mono-libgdiplus
-- mprocs
-- mysql
-- navi
-- ncdu
-- ncspot
-- neofetch
-- neovim
-- nvm
-- pcre
-- protobuf
-- python@3.10
-- ripgrep
-- rs/tap/curlie
-- rust
-- shopify/shopify/shopify-cli
-- slides
-- starship
-- tealdeer
-- tig
-- tree
-- typescript
-- utf8proc
-- vhs
-- withgraphite/tap/graphite
-- wtfutil
-- zellij
-- zsh-async
-- zsh-autosuggestions
-- zsh-syntax-highlighting
+abseil
+bat
+charmbracelet/tap/skate
+cmake
+cowsay
+deno
+diff-so-fancy
+dooit
+duf
+dust
+exa
+fd
+fontforge
+fx
+gh
+git-delta
+gitui
+glow
+gum
+helix
+httpie
+imagemagick
+jesseduffield/lazydocker/lazydocker
+jesseduffield/lazynpm/lazynpm
+jsoncpp
+lazygit
+lf
+lolcat
+lsd
+luarocks
+micro
+mono-libgdiplus
+mprocs
+mysql
+navi
+ncdu
+ncspot
+neofetch
+neovim
+nvm
+oniguruma
+python@3.10
+ripgrep
+rust
+shopify/shopify/shopify-cli
+slides
+starship
+tealdeer
+tig
+tree
+typescript
+utf8proc
+vhs
+wtfutil
+zellij
+zsh-async
+zsh-autosuggestions
+zsh-syntax-highlighting
