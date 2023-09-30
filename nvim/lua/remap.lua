@@ -2,6 +2,7 @@ vim.keymap.set('n', '<leader>e', '<cmd>Ex<CR>')
 vim.keymap.set('n', '<leader>x', '<cmd>Mason<CR>')
 vim.keymap.set('n', '<leader>z', '<cmd>Lazy<CR>')
 vim.keymap.set('n', '<leader>l', '<cmd>EslintFixAll<CR>')
+vim.keymap.set('n', '<leader>?', '<cmd>WhichKey<CR>')
 
 vim.keymap.set('n', '<leader>t', '<cmd>Telescope<CR>')
 vim.keymap.set('n', '<leader>m', '<cmd>Telescope diagnostics<CR>')
@@ -15,13 +16,11 @@ vim.keymap.set('n', '<leader>a', '<cmd>AdvancedGitSearch<CR>')
 vim.keymap.set('n', '<leader>.', '<cmd>CodeActionMenu<CR>')
 vim.keymap.set('n', '<leader>h', '<cmd>lua vim.lsp.buf.hover()<CR>')
 vim.keymap.set('n', '<leader>d', '<cmd>lua vim.diagnostic.open_float()<CR>')
-vim.keymap.set('n', '<leader>}', '<cmd>lua vim.diagnostic.goto_next()<CR>')
-vim.keymap.set('n', '<leader>{', '<cmd>lua vim.diagnostic.goto_prev()<CR>')
+vim.keymap.set('n', '<leader>q', '<cmd>copen<CR>')
 
 vim.keymap.set('n', '<leader>f', '<cmd>lua vim.lsp.buf.format()<CR>')
 vim.keymap.set('n', '<leader>r', '<cmd>lua vim.lsp.buf.rename()<CR>')
 vim.keymap.set('n', '<leader>s', '<cmd>lua vim.lsp.buf.signature_help()<CR>')
-
 
 vim.keymap.set('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>')
 vim.keymap.set('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>')
@@ -30,14 +29,9 @@ vim.keymap.set('n', 'gt', '<cmd>lua vim.lsp.buf.type_definition()<CR>')
 
 vim.keymap.set('n', '<leader>c', '<cmd>let @+ = expand(\'%:p\')<CR>')
 
+vim.keymap.set('n', '<leader>}', '<cmd>lua vim.diagnostic.goto_next()<CR>')
+vim.keymap.set('n', '<leader>{', '<cmd>lua vim.diagnostic.goto_prev()<CR>')
 vim.keymap.set('n', '<leader>]', '<cmd>bn<CR>')
 vim.keymap.set('n', '<leader>[', '<cmd>bp<CR>')
-vim.keymap.set('n', '<leader>q', '<cmd>copen<CR>')
 vim.keymap.set('n', '<leader>)', '<cmd>cn<CR>')
 vim.keymap.set('n', '<leader>(', '<cmd>cp<CR>')
-
-vim.keymap.set('n', '<Up>', '<nop>')
-vim.keymap.set('n', '<Down>', '<nop>')
-vim.keymap.set('n', '<Left>', '<nop>')
-vim.keymap.set('n', '<Right>', '<nop>')
-
