@@ -9,51 +9,51 @@ nvim_autopairs.setup()
 nvim_ts_autotag.setup()
 
 cmp.event:on(
-    'confirm_done',
-    cmp_autopairs.on_confirm_done()
+	'confirm_done',
+	cmp_autopairs.on_confirm_done()
 )
 
 cmp.setup({
-    snippet = {
-	expand = function(args)
-	    luasnip.lsp_expand(args.body)
-	end,
-    },
-    window = {
-	completion = cmp.config.window.bordered(),
-	documentation = cmp.config.window.bordered(),
-    },
-    mapping = cmp.mapping.preset.insert({
-	['<C-Space>'] = cmp.mapping.complete(),
-	['<CR>'] = cmp.mapping.confirm({ select = true }),
-    }),
-    sources = cmp.config.sources({
-	{ name = 'nvim_lsp' },
-	{ name = 'luasnip' },
-    }, {
-	{ name = 'buffer' },
-    }),
-    formatting = {
-	format = lspkind.cmp_format({
-	    mode = 'symbol',
-	    maxwidth = 50,
-	    ellipsis_char = '...'
-	})
-    }
+	snippet = {
+		expand = function(args)
+			luasnip.lsp_expand(args.body)
+		end,
+	},
+	window = {
+		completion = cmp.config.window.bordered(),
+		documentation = cmp.config.window.bordered(),
+	},
+	mapping = cmp.mapping.preset.insert({
+		['<C-Space>'] = cmp.mapping.complete(),
+		['<CR>'] = cmp.mapping.confirm({ select = true }),
+	}),
+	sources = cmp.config.sources({
+		{ name = 'nvim_lsp' },
+		{ name = 'luasnip' },
+	}, {
+		{ name = 'buffer' },
+	}),
+	formatting = {
+		format = lspkind.cmp_format({
+			mode = 'symbol',
+			maxwidth = 50,
+			ellipsis_char = '...'
+		})
+	}
 })
 
 cmp.setup.cmdline({ '/', '?' }, {
-    mapping = cmp.mapping.preset.cmdline(),
-    sources = {
-	{ name = 'buffer' }
-    }
+	mapping = cmp.mapping.preset.cmdline(),
+	sources = {
+		{ name = 'buffer' }
+	}
 })
 
 cmp.setup.cmdline(':', {
-    mapping = cmp.mapping.preset.cmdline(),
-    sources = cmp.config.sources({
-	{ name = 'path' }
-    }, {
-	{ name = 'cmdline' }
-    })
+	mapping = cmp.mapping.preset.cmdline(),
+	sources = cmp.config.sources({
+		{ name = 'path' }
+	}, {
+		{ name = 'cmdline' }
+	})
 })
