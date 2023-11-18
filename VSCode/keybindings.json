@@ -545,10 +545,6 @@
     "when": "textInputFocus"
   },
   {
-    "key": "shift+cmd+t",
-    "command": "workbench.action.toggleTabsVisibility"
-  },
-  {
     "key": "shift+alt+cmd+up",
     "command": "editor.action.insertCursorAbove",
     "when": "editorTextFocus"
@@ -571,10 +567,6 @@
   {
     "key": "ctrl+shift+p",
     "command": "workbench.action.unpinEditor"
-  },
-  {
-    "key": "cmd+j",
-    "command": "workbench.action.closePanel"
   },
   {
     "key": "cmd+]",
@@ -628,5 +620,70 @@
     "key": "shift+cmd+e",
     "command": "-workbench.view.explorer",
     "when": "viewContainer.workbench.view.explorer.enabled"
+  },
+  {
+    "key": "cmd+m",
+    "command": "workbench.action.toggleMaximizedPanel"
+  },
+  {
+    "key": "cmd+j",
+    "command": "workbench.action.togglePanel"
+  },
+  {
+    "key": "cmd+g m",
+    "command": "editor.action.jumpToBracket",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+cmd+\\",
+    "command": "-editor.action.jumpToBracket",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+k shift+cmd+left",
+    "command": "-workbench.action.moveEditorLeftInGroup"
+  },
+  {
+    "key": "cmd+k shift+cmd+right",
+    "command": "-workbench.action.moveEditorRightInGroup"
+  },
+  {
+    "key": "shift+cmd+j",
+    "command": "rust-analyzer.joinLines",
+    "when": "editorTextFocus && editorLangId == 'rust'"
+  },
+  {
+    "key": "ctrl+shift+j",
+    "command": "-rust-analyzer.joinLines",
+    "when": "editorTextFocus && editorLangId == 'rust'"
+  },
+  {
+    "key": "shift+cmd+0",
+    "command": "workbench.action.firstEditorInGroup"
+  },
+  {
+    "key": "shift+cmd+t",
+    "command": "workbench.action.hideEditorTabs",
+    "when": "editorTabsVisible"
+  },
+  {
+    "key": "shift+cmd+t",
+    "command": "workbench.action.showMultipleEditorTabs",
+    "when": "!editorTabsVisible"
+  },
+  {
+    "key": "shift+cmd+\\",
+    "command": "-workbench.action.terminal.focusTabs",
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported || terminalHasBeenCreated && terminalTabsFocus || terminalProcessSupported && terminalTabsFocus"
+  },
+  {
+    "key": "ctrl+`",
+    "command": "workbench.action.terminal.focus",
+    "when": "accessibilityModeEnabled && accessibleViewOnLastLine && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibilityModeEnabled && accessibleViewOnLastLine && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'"
+  },
+  {
+    "key": "cmd+down",
+    "command": "-workbench.action.terminal.focus",
+    "when": "accessibilityModeEnabled && accessibleViewOnLastLine && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibilityModeEnabled && accessibleViewOnLastLine && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'"
   }
 ]
