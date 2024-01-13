@@ -1,3 +1,4 @@
+local actions = require('telescope.actions')
 local telescope = require('telescope')
 
 telescope.setup {
@@ -5,6 +6,11 @@ telescope.setup {
 		layout_strategy = 'vertical',
 		file_ignore_patterns = {
 			'node_modules'
+		},
+		mappings = {
+			i = {
+				["<C-q>"] = actions.smart_send_to_qflist + actions.open_qflist
+			},
 		}
 	},
 	extensions = {
