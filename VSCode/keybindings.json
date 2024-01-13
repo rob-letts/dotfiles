@@ -47,10 +47,6 @@
   },
   {
     "key": "shift+cmd+h",
-    "command": "postman-for-vscode.sidebar-panel.focus"
-  },
-  {
-    "key": "shift+cmd+h",
     "command": "-workbench.action.replaceInFiles"
   },
   {
@@ -478,10 +474,6 @@
   },
   {
     "key": "shift+cmd+y",
-    "command": "outline.focus"
-  },
-  {
-    "key": "shift+cmd+y",
     "command": "-workbench.debug.action.toggleRepl",
     "when": "workbench.panel.repl.view.active"
   },
@@ -566,7 +558,8 @@
   },
   {
     "key": "ctrl+shift+p",
-    "command": "workbench.action.unpinEditor"
+    "command": "workbench.action.unpinEditor",
+    "when": "activeEditorIsPinned"
   },
   {
     "key": "cmd+]",
@@ -685,5 +678,30 @@
     "key": "cmd+down",
     "command": "-workbench.action.terminal.focus",
     "when": "accessibilityModeEnabled && accessibleViewOnLastLine && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibilityModeEnabled && accessibleViewOnLastLine && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'"
+  },
+  {
+    "key": "shift+cmd+i",
+    "command": "-workbench.action.quickchat.toggle",
+    "when": "hasChatProvider"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "workbench.action.openRecent"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "-workbench.action.openRecent"
+  },
+  {
+    "key": "shift+cmd+i",
+    "command": "volar.action.showComponentMeta"
+  },
+  {
+    "key": "alt+0",
+    "command": "git.unstageAll"
+  },
+  {
+    "key": "shift+cmd+y",
+    "command": "workbench.panel.chat.view.copilot.focus"
   }
 ]
