@@ -1,19 +1,14 @@
 <ul>
-  <li>
+<li>
     <a href="https://chrome.google.com/webstore/detail/1password-%E2%80%93-password-mana/aeblfdkhhhdcdjpifhhbdiojplfjncoa">
       1Password – Password Manager
     </a>
-    </li>
-  <li>
-    <a href="https://chrome.google.com/webstore/detail/always-clear-downloads-2/jcajchndfkmnaefkhoaoiagemplbfffn">
-      Always Clear Downloads 2
-    </a>
-    </li>
+  </li>
   <li>
     <a href="https://chrome.google.com/webstore/detail/capo-get-your-%EF%B9%A4%F0%9D%9A%91%F0%9D%9A%8E%F0%9D%9A%8A%F0%9D%9A%8D%EF%B9%A5/ohabpnaccigjhkkebjofhpmebofgpbeb">
       Capo: get your head in order
     </a>
-    </li>
+  </li>
   <li>
     <a href="https://chrome.google.com/webstore/detail/css-stacking-context-insp/apjeljpachdcjkgnamgppgfkmddadcki">
       CSS Stacking Context inspector
@@ -50,10 +45,10 @@
     </a>
   </li>
   <li>
-    <a href="https://chrome.google.com/webstore/detail/privacy-badger/pkehgijcmpdhfbdbbnkijodmdjhbjlgp">
-      Privacy Badger
+  <a href="https://chromewebstore.google.com/detail/save-to-pocket/niloccemoadcdkdjlinkgdfekeahmflj">
+      Save To Pocket
     </a>
-    </li>
+  </li>
   <li>
     <a href="https://chrome.google.com/webstore/detail/scroll-driven-animations/ojihehfngalmpghicjgbfdmloiifhoce">
       Scroll-Driven Animations Debugger
@@ -83,7 +78,11 @@
     <a href="https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd">
       Vue.js devtools
     </a>
-  </li>
+  <<li>
+    <a href="https://chromewebstore.google.com/detail/vue-telescope/neaebjphlfplgdhedjdhcnpjkndddbpd">
+      Vue Telescope
+    </a>
+  </li>/li>
   <li>
     <a href="https://chrome.google.com/webstore/detail/web-vitals/ahfhijdlegdabablpippeagghigmibma">
       Web Vitals

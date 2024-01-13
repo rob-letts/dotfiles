@@ -16,6 +16,7 @@ gh
 git-delta
 gitui
 glow
+go
 gum
 helix
 httpie
@@ -25,6 +26,8 @@ jesseduffield/lazynpm/lazynpm
 jsoncpp
 lazygit
 lf
+libgit2@1.6
+llvm@16
 lolcat
 lsd
 luarocks
@@ -38,7 +41,6 @@ ncspot
 neofetch
 neovim
 nvm
-oniguruma
 python@3.10
 ripgrep
 rust
@@ -51,8 +53,10 @@ tree
 typescript
 utf8proc
 vhs
+walk
 wtfutil
+yazi
 zellij
 zsh-async
 zsh-autosuggestions
-zsh-syntax-highlighting
+zsh-syntax-highlightingsh-syntax-highlighting
