@@ -18,18 +18,17 @@ export TERM=xterm-256color
 alias ts="tig status"
 alias gb="git branch | fzf | xargs git checkout"
 alias gp="git push"
-alias gl="git log $1 --author=\"rob-letts\" --oneline --pretty=format:\"%C(green)%h%C(reset)%x09%an%x09%C(magenta)%ad%C(reset)%x09%s\" --date=short"
+alias gl="git log --pretty=\"%C(red)%h %Creset%C(yellow)%d %Creset%s %C(cyan)(%ar)%Creset\""
 alias glo="git log --oneline"
 alias gbd="git branch -D"
 alias gco="git checkout"
-alias git-history="fzf | xargs git-file-history"
 alias git-pr="gh pr view --w"
 alias git-prs="gh pr list | fzf --preview 'gh pr view {1}' --preview-window 'down'"
 alias git-recent="git log --oneline -30 | fzf"
 alias git-current="git branch --show-current | pbcopy"
 alias git-get="git branch -a | fzf | pbcopy"
 alias git-ignore="git update-index --assume-unchanged" # file name
-alias git-no-ignore="git update-index --no-assume-unchanged" # file name 
+alias git-no-ignore="git update-index --no-assume-unchanged" # file name
 alias git-config="nvim ~/.gitconfig"
 
 # Aliases: Redirections
@@ -60,10 +59,11 @@ alias get-process-id="sudo lsof -i" # Add :portNumber
 alias kill-process="kill -9" # Add PID
 
 # Aliases: Navigation
-alias dv="cd ~/Dev"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias dc="cd ~/Documents"
+alias dv="cd ~/Dev"
+alias percy="cd ~/Personal"
 
 # Aliases: Utilities
 alias raycast="open /Applications/Raycast.app"
@@ -88,5 +88,3 @@ fi
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 source /Users/rob/.docker/init-zsh.sh || true # Added by Docker Desktop
-
-source /Users/rob/Library/Application\ Support/org.dystroy.broot/launcher/bash/br

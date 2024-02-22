@@ -45,11 +45,6 @@
     </a>
   </li>
   <li>
-  <a href="https://chromewebstore.google.com/detail/save-to-pocket/niloccemoadcdkdjlinkgdfekeahmflj">
-      Save To Pocket
-    </a>
-  </li>
-  <li>
     <a href="https://chrome.google.com/webstore/detail/scroll-driven-animations/ojihehfngalmpghicjgbfdmloiifhoce">
       Scroll-Driven Animations Debugger
     </a>
@@ -57,11 +52,6 @@
   <li>
     <a href="https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne">
       Stylus
-    </a>
-  </li>
-  <li>
-    <a href="https://chrome.google.com/webstore/detail/tab-pinner-keyboard-short/mbcjcnomlakhkechnbhmfjhnnllpbmlh">
-      Tab Pinner
     </a>
   </li>
   <li>
@@ -78,11 +68,7 @@
     <a href="https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd">
       Vue.js devtools
     </a>
-  <<li>
-    <a href="https://chromewebstore.google.com/detail/vue-telescope/neaebjphlfplgdhedjdhcnpjkndddbpd">
-      Vue Telescope
-    </a>
-  </li>/li>
+  </li>
   <li>
     <a href="https://chrome.google.com/webstore/detail/web-vitals/ahfhijdlegdabablpippeagghigmibma">
       Web Vitals

@@ -41,4 +41,11 @@
       "{ \"extends\": \"stylelint-config-standard\" }"
     ]
   },
+  "pl": {
+    "scope": "rust",
+    "prefix": "pl",
+    "body": [
+      "println!(\"{:?}\", $0);"
+    ]
+  }
 }

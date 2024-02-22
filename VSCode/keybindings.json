@@ -262,7 +262,7 @@
     "command": "-workbench.action.gotoLine"
   },
   {
-    "key": "cmd+g p",
+    "key": "cmd+e",
     "command": "editor.action.marker.next",
     "when": "editorFocus"
   },
@@ -651,10 +651,6 @@
     "when": "editorTextFocus && editorLangId == 'rust'"
   },
   {
-    "key": "shift+cmd+0",
-    "command": "workbench.action.firstEditorInGroup"
-  },
-  {
     "key": "shift+cmd+t",
     "command": "workbench.action.hideEditorTabs",
     "when": "editorTabsVisible"
@@ -703,5 +699,22 @@
   {
     "key": "shift+cmd+y",
     "command": "workbench.panel.chat.view.copilot.focus"
+  },
+  {
+    "key": "shift+cmd+0",
+    "command": "workbench.action.evenEditorWidths"
+  },
+  {
+    "key": "ctrl+cmd+v",
+    "command": "toggleVim"
+  },
+  {
+    "key": "cmd+e",
+    "command": "-editor.action.toggleScreenReaderAccessibilityMode",
+    "when": "accessibilityHelpIsShown"
+  },
+  {
+    "key": "cmd+e",
+    "command": "-actions.findWithSelection"
   }
 ]

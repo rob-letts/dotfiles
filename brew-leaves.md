@@ -1,5 +1,6 @@
 abseil
 bat
+cask
 charmbracelet/tap/skate
 cmake
 cowsay
@@ -59,4 +60,4 @@ yazi
 zellij
 zsh-async
 zsh-autosuggestions
-zsh-syntax-highlightingsh-syntax-highlighting
+zsh-syntax-highlighting
