@@ -66,6 +66,7 @@ alias dv="cd ~/Dev"
 alias percy="cd ~/Personal"
 
 # Aliases: Utilities
+alias search="Rg . | fzf"
 alias raycast="open /Applications/Raycast.app"
 alias dev="npm run dev"
 alias lint="npm run lint"
