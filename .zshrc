@@ -28,7 +28,7 @@ alias git-recent="git log --oneline -30 | fzf"
 alias git-current="git branch --show-current | pbcopy"
 alias git-get="git branch -a | fzf | pbcopy"
 alias git-ignore="git update-index --assume-unchanged" # file name
-alias git-no-ignore="git update-index --no-assume-unchanged" # file name
+alias git-no-ignore="git update-index --no-assume-unchanged" # file name 
 alias git-config="nvim ~/.gitconfig"
 
 # Aliases: Redirections

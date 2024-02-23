@@ -55,6 +55,11 @@
     </a>
   </li>
   <li>
+    <a href="https://chromewebstore.google.com/detail/tab-pinner-keyboard-short/mbcjcnomlakhkechnbhmfjhnnllpbmlh">
+      Tab Pinner
+    </a>
+  </li>
+  <li>
     <a href="https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm">
       uBlock Origin
     </a>
