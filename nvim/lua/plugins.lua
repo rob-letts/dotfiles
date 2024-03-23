@@ -61,7 +61,6 @@ require("lazy").setup({
 		'nvim-telescope/telescope-fzf-native.nvim',
 		build = 'make'
 	},
-	{ 'aaronhallaert/advanced-git-search.nvim' },
 
 	-- UI
 	{
@@ -98,5 +97,14 @@ require("lazy").setup({
 	{ 'github/copilot.vim' },
 	{ 'weilbith/nvim-code-action-menu' },
 	{ 'nacro90/numb.nvim' },
-	{ 'subnut/nvim-ghost.nvim' }
+	{ 'subnut/nvim-ghost.nvim' },
+	{
+		"NeogitOrg/neogit",
+		dependencies = {
+			"nvim-lua/plenary.nvim",
+			"sindrets/diffview.nvim",
+			"ibhagwan/fzf-lua"
+		},
+		config = true
+	}
 })
