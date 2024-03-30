@@ -1,63 +1,64 @@
-abseil
-bat
-cask
-charmbracelet/tap/skate
-cmake
-cowsay
-deno
-diff-so-fancy
-dooit
-duf
-dust
-exa
-fd
-fontforge
-fx
-gh
-git-delta
-gitui
-glow
-go
-gum
-helix
-httpie
-imagemagick
-jesseduffield/lazydocker/lazydocker
-jesseduffield/lazynpm/lazynpm
-jsoncpp
-lazygit
-lf
-libgit2@1.6
-llvm@16
-lolcat
-lsd
-luarocks
-micro
-mono-libgdiplus
-mprocs
-mysql
-navi
-ncdu
-ncspot
-neofetch
-neovim
-nvm
-python@3.10
-ripgrep
-rust
-shopify/shopify/shopify-cli
-slides
-starship
-tealdeer
-tig
-tree
-typescript
-utf8proc
-vhs
-walk
-wtfutil
-yazi
-zellij
-zsh-async
-zsh-autosuggestions
-zsh-syntax-highlighting
+- abseil
+- bat
+- cask
+- charmbracelet/tap/skate
+- cmake
+- cowsay
+- deno
+- diff-so-fancy
+- dooit
+- duf
+- dust
+- exa
+- fd
+- fontforge
+- fx
+- gh
+- git-delta
+- gitui
+- glow
+- go
+- gum
+- helix
+- httpie
+- imagemagick
+- jesseduffield/lazydocker/lazydocker
+- jesseduffield/lazynpm/lazynpm
+- jsoncpp
+- lazygit
+- lf
+- libgit2@1.6
+- libpthread-stubs
+- llvm@16
+- lolcat
+- lsd
+- luarocks
+- micro
+- mono-libgdiplus
+- mprocs
+- mysql
+- navi
+- ncdu
+- ncspot
+- neofetch
+- neovim
+- nvm
+- python@3.10
+- ripgrep
+- rust
+- shopify/shopify/shopify-cli
+- slides
+- starship
+- tealdeer
+- tig
+- tree
+- typescript
+- utf8proc
+- vhs
+- walk
+- wtfutil
+- yazi
+- zellij
+- zsh-async
+- zsh-autosuggestions
+- zsh-syntax-highlighting
