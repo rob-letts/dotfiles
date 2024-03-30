@@ -14,7 +14,6 @@ lspconfig.cssls.setup { capabilities = capabilities }
 lspconfig.volar.setup { capabilities = capabilities }
 lspconfig.eslint.setup { capabilities = capabilities }
 lspconfig.jsonls.setup { capabilities = capabilities }
-lspconfig['rust_analyzer'].setup {  capabilities = capabilities }
 
 lspconfig.lua_ls.setup {
   settings = {
@@ -29,7 +28,6 @@ lspconfig.lua_ls.setup {
 
 lspconfig.denols.setup {
   capabilities = capabilities,
-  on_attach = on_attach,
   root_dir = lspconfig.util.root_pattern("deno.json", "deno.jsonc"),
   settings = {
     deno = {
@@ -42,7 +40,6 @@ lspconfig.denols.setup {
 
 lspconfig.tsserver.setup {
   capabilities = capabilities,
-  on_attach = on_attach,
   root_dir = lspconfig.util.root_pattern("package.json"),
   single_file_support = false
 }
