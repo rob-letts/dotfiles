@@ -62,6 +62,12 @@ require("lazy").setup({
 		build = 'make'
 	},
 
+	{
+		'ThePrimeagen/harpoon',
+		branch = "harpoon2",
+		dependencies = {"nvim-lua/plenary.nvim"}
+	},
+
 	-- UI
 	{
 		'catppuccin/nvim',
@@ -80,15 +86,6 @@ require("lazy").setup({
 	},
 
 	-- Utilities
-	{
-		"folke/which-key.nvim",
-		event = "VeryLazy",
-		init = function()
-			vim.o.timeout = true
-			vim.o.timeoutlen = 300
-		end,
-		opts = {}
-	},
 	{ 'tpope/vim-surround' },
 	{ 'tpope/vim-repeat' },
 	{ 'tpope/vim-sleuth' },
