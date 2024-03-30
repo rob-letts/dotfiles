@@ -36,6 +36,8 @@ vim.keymap.set('n', '<leader>e', '<cmd>Ex<CR>')
 vim.keymap.set('n', '<leader>}', '<cmd>lua vim.diagnostic.goto_next()<CR>')
 vim.keymap.set('n', '<leader>{', '<cmd>lua vim.diagnostic.goto_prev()<CR>')
 vim.keymap.set('n', '<leader>w', '<cmd>bd<CR>')
+vim.keymap.set('n', '<C-u>', '<C-u>zz')
+vim.keymap.set('n', '<C-d>', '<C-d>zz')
 
 -- QUICKFIX
 vim.keymap.set('n', '<leader>q', '<cmd>copen<CR>')

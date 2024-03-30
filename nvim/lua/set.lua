@@ -8,7 +8,7 @@ vim.opt.cursorlineopt = 'line'
 vim.opt.signcolumn = 'yes'
 vim.opt.clipboard = 'unnamedplus'
 
-vim.opt.scrolloff = 4
+vim.opt.scrolloff = 8
 vim.opt.updatetime = 300
 vim.opt.tabstop = 4
 
