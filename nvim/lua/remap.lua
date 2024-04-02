@@ -23,7 +23,6 @@ vim.keymap.set('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>')
 vim.keymap.set('n', 'gt', '<cmd>lua vim.lsp.buf.type_definition()<CR>')
 
 -- UTILITY
-vim.keymap.set('n', '<leader>n', '<cmd>Neogit<CR>')
 vim.keymap.set('n', '<leader>c', '<cmd>let @+ = expand(\'%:p\')<CR>')
 vim.keymap.set('n', '<leader>s', '<cmd>write<CR>')
 vim.keymap.set('n', '<leader>w', '<cmd>bd<CR>')

@@ -94,13 +94,5 @@ require("lazy").setup({
 	{ 'github/copilot.vim' },
 	{ 'weilbith/nvim-code-action-menu' },
 	{ 'nacro90/numb.nvim' },
-	{ 'subnut/nvim-ghost.nvim' },
-	{
-		"NeogitOrg/neogit",
-		dependencies = {
-			"nvim-lua/plenary.nvim",
-			"nvim-telescope/telescope.nvim"
-		},
-		config = true
-	}
+	{ 'subnut/nvim-ghost.nvim' }
 })
