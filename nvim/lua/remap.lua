@@ -44,3 +44,10 @@ vim.keymap.set('n', '<leader>[', '<cmd>bp<CR>')
 vim.keymap.set('n', '<leader>q', '<cmd>copen<CR>')
 vim.keymap.set('n', '<leader>)', '<cmd>cn<CR>')
 vim.keymap.set('n', '<leader>(', '<cmd>cp<CR>')
+
+-- PRIME
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+vim.keymap.set("n", "n", "nzzzv")
+vim.keymap.set("n", "N", "Nzzzv")
+vim.keymap.set("x", "<leader>v", [["_dP]])

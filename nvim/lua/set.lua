@@ -22,6 +22,7 @@ vim.opt.relativenumber = true
 vim.opt.smarttab = true
 vim.opt.autoindent = true
 vim.opt.hidden = true
+vim.opt.incsearch = true
 vim.opt.backup = false
 vim.opt.writebackup = false
 vim.opt.ignorecase = true
