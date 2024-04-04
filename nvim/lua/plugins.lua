@@ -94,5 +94,12 @@ require("lazy").setup({
 	{ 'github/copilot.vim' },
 	{ 'weilbith/nvim-code-action-menu' },
 	{ 'nacro90/numb.nvim' },
-	{ 'subnut/nvim-ghost.nvim' }
+	{ 'subnut/nvim-ghost.nvim' },
+
+	{
+		"kdheepak/lazygit.nvim",
+		cmd = { "LazyGit", "LazyGitConfig" },
+		dependencies = { "nvim-lua/plenary.nvim" },
+		keys = {{ "<leader>v", "<cmd>LazyGit<cr>", desc = "LazyGit" }}
+	},
 })
