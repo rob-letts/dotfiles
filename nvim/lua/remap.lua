@@ -1,52 +1,54 @@
+local keymap = vim.keymap
+
 -- PLUGINS
-vim.keymap.set('n', '<leader>x', '<cmd>Mason<CR>')
-vim.keymap.set('n', '<leader>z', '<cmd>Lazy<CR>')
-vim.keymap.set('n', '<leader>l', '<cmd>EslintFixAll<CR>')
+keymap.set('n', '<leader>x', '<cmd>Mason<CR>')
+keymap.set('n', '<leader>z', '<cmd>Lazy<CR>')
+keymap.set('n', '<leader>l', '<cmd>EslintFixAll<CR>')
 
 -- TELESCOPE
-vim.keymap.set('n', '<leader>t', '<cmd>Telescope<CR>')
-vim.keymap.set('n', '<leader>m', '<cmd>Telescope diagnostics<CR>')
-vim.keymap.set('n', '<leader>j', '<cmd>Telescope jumplist<CR>')
-vim.keymap.set('n', '<leader>p', '<cmd>Telescope find_files<CR>')
-vim.keymap.set('n', '<leader>g', '<cmd>Telescope live_grep<CR>')
-vim.keymap.set('n', '<leader>b', '<cmd>Telescope buffers<CR>')
-vim.keymap.set('n', '<leader>o', '<cmd>Telescope lsp_document_symbols<CR>')
+keymap.set('n', '<leader>t', '<cmd>Telescope<CR>')
+keymap.set('n', '<leader>m', '<cmd>Telescope diagnostics<CR>')
+keymap.set('n', '<leader>j', '<cmd>Telescope jumplist<CR>')
+keymap.set('n', '<leader>p', '<cmd>Telescope find_files<CR>')
+keymap.set('n', '<leader>g', '<cmd>Telescope live_grep<CR>')
+keymap.set('n', '<leader>b', '<cmd>Telescope buffers<CR>')
+keymap.set('n', '<leader>o', '<cmd>Telescope lsp_document_symbols<CR>')
 
 -- LSP
-vim.keymap.set('n', '<leader>f', '<cmd>lua vim.lsp.buf.format()<CR>')
-vim.keymap.set('n', '<leader>r', '<cmd>lua vim.lsp.buf.rename()<CR>')
+keymap.set('n', '<leader>f', '<cmd>lua lsp.buf.format()<CR>')
+keymap.set('n', '<leader>r', '<cmd>lua lsp.buf.rename()<CR>')
 
 -- GOTO
-vim.keymap.set('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>')
-vim.keymap.set('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>')
-vim.keymap.set('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>')
-vim.keymap.set('n', 'gt', '<cmd>lua vim.lsp.buf.type_definition()<CR>')
+keymap.set('n', 'gd', '<cmd>lua lsp.buf.definition()<CR>')
+keymap.set('n', 'gr', '<cmd>lua lsp.buf.references()<CR>')
+keymap.set('n', 'gi', '<cmd>lua lsp.buf.implementation()<CR>')
+keymap.set('n', 'gt', '<cmd>lua lsp.buf.type_definition()<CR>')
 
 -- UTILITY
-vim.keymap.set('n', '<leader>c', '<cmd>let @+ = expand(\'%:p\')<CR>')
-vim.keymap.set('n', '<leader>s', '<cmd>write<CR>')
-vim.keymap.set('n', '<leader>w', '<cmd>bd<CR>')
-vim.keymap.set('n', '<leader>.', '<cmd>CodeActionMenu<CR>')
-vim.keymap.set('n', '<leader>d', '<cmd>lua vim.diagnostic.open_float()<CR>')
-vim.keymap.set('n', '<leader>h', '<cmd>lua vim.lsp.buf.hover()<CR>')
+keymap.set('n', '<leader>c', '<cmd>let @+ = expand(\'%:p\')<CR>')
+keymap.set('n', '<leader>s', '<cmd>write<CR>')
+keymap.set('n', '<leader>w', '<cmd>bd<CR>')
+keymap.set('n', '<leader>.', '<cmd>CodeActionMenu<CR>')
+keymap.set('n', '<leader>d', '<cmd>lua diagnostic.open_float()<CR>')
+keymap.set('n', '<leader>h', '<cmd>lua lsp.buf.hover()<CR>')
 
 -- NAVIGATION
-vim.keymap.set('n', '<leader>e', '<cmd>Ex<CR>')
-vim.keymap.set('n', '<leader>}', '<cmd>lua vim.diagnostic.goto_next()<CR>')
-vim.keymap.set('n', '<leader>{', '<cmd>lua vim.diagnostic.goto_prev()<CR>')
-vim.keymap.set('n', '<C-u>', '<C-u>zz')
-vim.keymap.set('n', '<C-d>', '<C-d>zz')
-vim.keymap.set('n', '<leader>]', '<cmd>bn<CR>')
-vim.keymap.set('n', '<leader>[', '<cmd>bp<CR>')
+keymap.set('n', '<leader>e', '<cmd>Ex<CR>')
+keymap.set('n', '<leader>}', '<cmd>lua diagnostic.goto_next()<CR>')
+keymap.set('n', '<leader>{', '<cmd>lua diagnostic.goto_prev()<CR>')
+keymap.set('n', '<C-u>', '<C-u>zz')
+keymap.set('n', '<C-d>', '<C-d>zz')
+keymap.set('n', '<leader>]', '<cmd>bn<CR>')
+keymap.set('n', '<leader>[', '<cmd>bp<CR>')
 
 -- QUICKFIX
-vim.keymap.set('n', '<leader>q', '<cmd>copen<CR>')
-vim.keymap.set('n', '<leader>)', '<cmd>cn<CR>')
-vim.keymap.set('n', '<leader>(', '<cmd>cp<CR>')
+keymap.set('n', '<leader>q', '<cmd>copen<CR>')
+keymap.set('n', '<leader>)', '<cmd>cn<CR>')
+keymap.set('n', '<leader>(', '<cmd>cp<CR>')
 
 -- PRIME
-vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
-vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
-vim.keymap.set("n", "n", "nzzzv")
-vim.keymap.set("n", "N", "Nzzzv")
-vim.keymap.set("x", "<leader>v", [["_dP]])
+keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+keymap.set("n", "n", "nzzzv")
+keymap.set("n", "N", "Nzzzv")
+keymap.set("x", "<leader>v", [["_dP]])

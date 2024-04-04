@@ -1,36 +1,40 @@
-vim.g.mapleader = ' '
-
-vim.g.netrw_banner = 0
-
-vim.opt.encoding = 'utf-8'
-vim.opt.fillchars = 'eob: '
-vim.opt.cursorlineopt = 'line'
-vim.opt.signcolumn = 'yes'
-vim.opt.clipboard = 'unnamedplus'
-
-vim.opt.scrolloff = 8
-vim.opt.updatetime = 300
-vim.opt.tabstop = 4
-
-vim.opt.cursorline = true
-vim.opt.wrap = false
-vim.opt.termguicolors = true
-vim.opt.showmode = false
-vim.opt.showcmd = false
-vim.opt.number = true
-vim.opt.relativenumber = true
-vim.opt.smarttab = true
-vim.opt.autoindent = true
-vim.opt.hidden = true
-vim.opt.incsearch = true
-vim.opt.backup = false
-vim.opt.writebackup = false
-vim.opt.ignorecase = true
-vim.opt.autoread = true
-
-vim.opt.completeopt = {'menu', 'menuone', 'noselect'}
-
+local g = vim.g
+local opt = vim.opt
 local api = vim.api
+
+g.mapleader = ' '
+g.netrw_banner = 0
+
+opt.encoding = 'utf-8'
+opt.fillchars = 'eob: '
+opt.cursorlineopt = 'line'
+opt.signcolumn = 'yes'
+opt.clipboard = 'unnamedplus'
+
+opt.scrolloff = 8
+opt.updatetime = 300
+opt.tabstop = 4
+
+opt.cursorline = true
+opt.wrap = false
+opt.termguicolors = true
+opt.showmode = false
+opt.showcmd = false
+opt.number = true
+opt.relativenumber = true
+opt.smarttab = true
+opt.autoindent = true
+opt.hidden = true
+opt.incsearch = true
+opt.backup = false
+opt.writebackup = false
+opt.ignorecase = true
+opt.smartcase = true
+opt.autoread = true
+opt.backspace = 'indent,eol,start'
+
+opt.completeopt = {'menu', 'menuone', 'noselect'}
+
 local yankGrp = api.nvim_create_augroup("YankHighlight", { clear = true })
 api.nvim_create_autocmd("TextYankPost", {
   command = "silent! lua vim.highlight.on_yank()",
