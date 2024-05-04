@@ -1,11 +1,23 @@
 <ul>
-<li>
-    <a href="https://chrome.google.com/webstore/detail/1password-%E2%80%93-password-mana/aeblfdkhhhdcdjpifhhbdiojplfjncoa">
+  <li>
+    <a
+      href="https://chrome.google.com/webstore/detail/1password-%E2%80%93-password-mana/aeblfdkhhhdcdjpifhhbdiojplfjncoa">
       1Password – Password Manager
     </a>
   </li>
   <li>
-    <a href="https://chrome.google.com/webstore/detail/capo-get-your-%EF%B9%A4%F0%9D%9A%91%F0%9D%9A%8E%F0%9D%9A%8A%F0%9D%9A%8D%EF%B9%A5/ohabpnaccigjhkkebjofhpmebofgpbeb">
+    <a href="https://chromewebstore.google.com/detail/accessibility-insights-fo/pbjjkligggfmakdaogkfomddhfmpjeni">
+      Accessibility Insights for Web
+    </a>
+  </li>
+  <li>
+    <a href="https://chromewebstore.google.com/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd">
+      axe DevTools - Web Accessibility Testing
+    </a>
+  </li>
+  <li>
+    <a
+      href="https://chrome.google.com/webstore/detail/capo-get-your-%EF%B9%A4%F0%9D%9A%91%F0%9D%9A%8E%F0%9D%9A%8A%F0%9D%9A%8D%EF%B9%A5/ohabpnaccigjhkkebjofhpmebofgpbeb">
       Capo: get your head in order
     </a>
   </li>
@@ -13,12 +25,17 @@
     <a href="https://chrome.google.com/webstore/detail/css-stacking-context-insp/apjeljpachdcjkgnamgppgfkmddadcki">
       CSS Stacking Context inspector
     </a>
-    </li>
+  </li>
   <li>
     <a href="https://chrome.google.com/webstore/detail/ghosttext/godiecgffnchndlihlpaajjcplehddca">
       GhostText
     </a>
-    </li>
+  </li>
+  <li>
+    <a href="https://chromewebstore.google.com/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi">
+      HeadingsMap
+    </a>
+  </li>
   <li>
     <a href="https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh">
       JSON Viewer

@@ -10,7 +10,7 @@
     "scope": "vue",
     "prefix": "sfc-tt",
     "body": [
-      "<script setup></script>\n<template></template>\n<script></script>\n<style scoped lang=\"scss\"></style>\n"
+      "<script setup></script>\n\n<template>\n\t<p>SFC TT</p>\n</template>\n\n<script></script>\n\n<style scoped lang=\"scss\"></style>\n"
     ]
   },
   "deno-settings": {
@@ -41,11 +41,11 @@
       "{ \"extends\": \"stylelint-config-standard\" }"
     ]
   },
-  "pl": {
-    "scope": "rust",
-    "prefix": "pl",
+  "jsdoc": {
+    "scope": "vue, javascript, typescript",
+    "prefix": "jsdoc",
     "body": [
-      "println!(\"{:?}\", $0);"
+      "/**\n * TODO:\n * @returns \n */"
     ]
   }
 }

@@ -478,10 +478,6 @@
     "when": "workbench.panel.repl.view.active"
   },
   {
-    "key": "shift+cmd+g",
-    "command": "workbench.view.scm"
-  },
-  {
     "key": "ctrl+shift+g",
     "command": "-workbench.view.scm",
     "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
@@ -501,10 +497,6 @@
   {
     "key": "cmd+0",
     "command": "-workbench.action.focusSideBar"
-  },
-  {
-    "key": "shift+cmd+r",
-    "command": "volar.vue.findAllFileReferences"
   },
   {
     "key": "alt+1",
@@ -689,10 +681,6 @@
     "command": "-workbench.action.openRecent"
   },
   {
-    "key": "shift+cmd+i",
-    "command": "volar.action.showComponentMeta"
-  },
-  {
     "key": "alt+0",
     "command": "git.unstageAll"
   },
@@ -716,5 +704,51 @@
   {
     "key": "cmd+e",
     "command": "-actions.findWithSelection"
+  },
+  {
+    "key": "shift+cmd+i",
+    "command": "outline.focus"
+  },
+  {
+    "key": "ctrl+shift+right",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "alt+cmd+right",
+    "command": "-workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+shift+left",
+    "command": "workbench.action.previousEditor"
+  },
+  {
+    "key": "alt+cmd+left",
+    "command": "-workbench.action.previousEditor"
+  },
+  {
+    "key": "shift+cmd+=",
+    "command": "-workbench.action.zoomIn"
+  },
+  {
+    "key": "shift+cmd+=",
+    "command": "workbench.action.navigateToLastEditLocation"
+  },
+  {
+    "key": "cmd+k cmd+q",
+    "command": "-workbench.action.navigateToLastEditLocation"
+  },
+  {
+    "key": "shift+cmd+g",
+    "command": "workbench.action.quickTextSearch"
+  },
+  {
+    "key": "shift+cmd+g",
+    "command": "-workbench.action.terminal.findPrevious",
+    "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocusInAny && terminalHasBeenCreated || terminalFocusInAny && terminalProcessSupported"
+  },
+  {
+    "key": "shift+cmd+g",
+    "command": "-workbench.action.terminal.openDetectedLink",
+    "when": "accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal'"
   }
 ]

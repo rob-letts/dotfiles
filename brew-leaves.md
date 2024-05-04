@@ -1,6 +1,7 @@
 - abseil
 - bat
 - cask
+- charmbracelet/tap/freeze
 - charmbracelet/tap/skate
 - cmake
 - cowsay
@@ -24,6 +25,8 @@
 - imagemagick
 - jesseduffield/lazydocker/lazydocker
 - jesseduffield/lazynpm/lazynpm
+- jnv
+- jq
 - jsoncpp
 - lazygit
 - lf

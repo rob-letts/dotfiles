@@ -55,7 +55,7 @@ require("lazy").setup({
 	{ 'junegunn/fzf' },
 	{
 		'nvim-telescope/telescope.nvim',
-		tag = '0.1.4'
+		tag = '0.1.4',
 	},
 	{
 		'nvim-telescope/telescope-fzf-native.nvim',
@@ -94,8 +94,6 @@ require("lazy").setup({
 	{ 'github/copilot.vim' },
 	{ 'weilbith/nvim-code-action-menu' },
 	{ 'nacro90/numb.nvim' },
-	{ 'subnut/nvim-ghost.nvim' },
-
 	{
 		"kdheepak/lazygit.nvim",
 		cmd = { "LazyGit", "LazyGitConfig" },
