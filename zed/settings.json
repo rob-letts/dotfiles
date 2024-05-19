@@ -1,0 +1,29 @@
+{
+  "autosave": "on_focus_change",
+  "base_keymap": "VSCode",
+  "buffer_font_family": "MonoLisa Nerd Font",
+  "buffer_font_size": 18,
+  "collaboration_panel": {
+    "dock": "right"
+  },
+  "default_dock_anchor": "expanded",
+  "file_types": {
+    "CSS": ["scss"]
+  },
+  "format_on_save": "off",
+  "project_panel": {
+    "dock": "left"
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "terminal": {
+    "dock": "left"
+  },
+  "theme": "Catppuccin Mocha - No Italics",
+  "toolbar": {
+    "quick_actions": false,
+    "breadcrumbs": false
+  }
+}
