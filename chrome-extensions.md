@@ -96,4 +96,9 @@
       Web Vitals
     </a>
   </li>
+  <li>
+    <a href="https://chromewebstore.google.com/detail/youtube-custom-speed/kmfcinojnfabkpndlgomnfjllgeppegb">
+      Youtube Custom Speed
+    </a>
+  </li>
 </ul>

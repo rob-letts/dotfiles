@@ -5,8 +5,7 @@
   <li><a href="https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp">C#</a></li>
   <li><a href="https://marketplace.visualstudio.com/items?itemName=Catppuccin.catppuccin-vsc">Catppuccin for VSCode</a></li>
   <li><a href="https://marketplace.visualstudio.com/items?itemName=Catppuccin.catppuccin-vsc-icons">Catppuccin Icons for VSCode</a></li>
-  <li><a href="https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight">Color Highlight</a></li>
-  <li><a href="https://marketplace.visualstudio.com/items?itemName=denoland.vscode-deno">Deno</a></li>
+  <li><a href="https://marketplace.visualstudio.com/items?itemName=adpyke.codesnap">CodeSnap</a></li>
   <li><a href="https://marketplace.visualstudio.com/items?itemName=leo-labs.dotnet">dotnet</a></li>
   <li><a href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint">ESLint</a></li>
   <li><a href="https://marketplace.visualstudio.com/items?itemName=sleistner.vscode-fileutils">File Utils</a></li>
@@ -18,14 +17,9 @@
   <li><a href="https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css">HTML CSS Support</a></li>
   <li><a href="https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion">IntelliSense for CSS class names in HTML</a></li>
   <li><a href="https://marketplace.visualstudio.com/items?itemName=yay.lntoggle">Line Numbers Toggle</a></li>
-  <li><a href="https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype">Paste JSON as code</a></li>
   <li><a href="https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense">Path Intellisense</a></li>
-  <li><a href="https://marketplace.visualstudio.com/items?itemName=usernamehw.remove-empty-lines">Remove empty lines</a></li>
-  <li><a href="https://marketplace.visualstudio.com/items?itemName=jakearl.search-editor-apply-changes">Search Editor: Apply Changes</a></li>
   <li><a href="https://marketplace.visualstudio.com/items?itemName=jock.svg">SVG</a></li>
-  <li><a href="https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight">TODO Highlight</a></li>
   <li><a href="https://marketplace.visualstudio.com/items?itemName=albert.TabOut">TabOut</a></li>
-  <li><a href="https://marketplace.visualstudio.com/items?itemName=bibhasdn.unique-lines">Unique Lines</a></li>
-  <li><a href="https://marketplace.visualstudio.com/items?itemName=neptunedesign.vs-sequential-number">VS Sequential Number</a></li>
+  <li><a href="https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight">TODO Highlight</a></li>
   <li><a href="https://marketplace.visualstudio.com/items?itemName=Vue.volar">Vue Language Features (Volar)</a></li>
 </ul>
