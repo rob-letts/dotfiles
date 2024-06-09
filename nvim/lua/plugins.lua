@@ -62,12 +62,6 @@ require("lazy").setup({
 		build = 'make'
 	},
 
-	{
-		'ThePrimeagen/harpoon',
-		branch = "harpoon2",
-		dependencies = {"nvim-lua/plenary.nvim"}
-	},
-
 	-- UI
 	{
 		'catppuccin/nvim',
@@ -84,6 +78,7 @@ require("lazy").setup({
 			require('alpha').setup(require('alpha.themes.startify').config)
 		end
 	},
+	{ 'https://github.com/lewis6991/gitsigns.nvim' },
 
 	-- Utilities
 	{ 'tpope/vim-surround' },
