@@ -738,7 +738,7 @@
     "command": "-workbench.action.navigateToLastEditLocation"
   },
   {
-    "key": "shift+cmd+g",
+    "key": "shift+cmd+h",
     "command": "workbench.action.quickTextSearch"
   },
   {
@@ -750,5 +750,19 @@
     "key": "shift+cmd+g",
     "command": "-workbench.action.terminal.openDetectedLink",
     "when": "accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal'"
+  },
+  {
+    "key": "shift+cmd+g",
+    "command": "workbench.view.scm"
+  },
+  {
+    "key": "shift+alt+cmd+enter",
+    "command": "git.commit",
+    "when": "!operationInProgress"
+  },
+  {
+    "key": "shift+alt+cmd+backspace",
+    "command": "git.revertSelectedRanges",
+    "when": "!operationInProgress"
   }
 ]
