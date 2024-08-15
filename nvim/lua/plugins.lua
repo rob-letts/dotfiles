@@ -47,7 +47,6 @@ require("lazy").setup({
 	{ 'windwp/nvim-ts-autotag' },
 	{ 'windwp/nvim-autopairs' },
 
-
 	-- Navigation
 	{ 'nvim-lua/popup.nvim' },
 	{ 'nvim-lua/plenary.nvim' },
@@ -78,7 +77,6 @@ require("lazy").setup({
 			require('alpha').setup(require('alpha.themes.startify').config)
 		end
 	},
-	{ 'https://github.com/lewis6991/gitsigns.nvim' },
 
 	-- Utilities
 	{ 'tpope/vim-surround' },
@@ -89,10 +87,4 @@ require("lazy").setup({
 	{ 'github/copilot.vim' },
 	{ 'weilbith/nvim-code-action-menu' },
 	{ 'nacro90/numb.nvim' },
-	{
-		"kdheepak/lazygit.nvim",
-		cmd = { "LazyGit", "LazyGitConfig" },
-		dependencies = { "nvim-lua/plenary.nvim" },
-		keys = {{ "<leader>v", "<cmd>LazyGit<cr>", desc = "LazyGit" }}
-	},
 })

@@ -469,10 +469,6 @@
     "command": "breadcrumbs.toggle"
   },
   {
-    "key": "ctrl+shift+`",
-    "command": "workbench.action.terminal.new"
-  },
-  {
     "key": "shift+cmd+y",
     "command": "-workbench.debug.action.toggleRepl",
     "when": "workbench.panel.repl.view.active"
@@ -481,10 +477,6 @@
     "key": "ctrl+shift+g",
     "command": "-workbench.view.scm",
     "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
-  },
-  {
-    "key": "cmd+t",
-    "command": "workbench.action.createTerminalEditor"
   },
   {
     "key": "cmd+0",
@@ -764,5 +756,14 @@
     "key": "shift+alt+cmd+backspace",
     "command": "git.revertSelectedRanges",
     "when": "!operationInProgress"
+  },
+  {
+    "key": "ctrl+shift+`",
+    "command": "-workbench.action.terminal.new",
+    "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+  },
+  {
+    "key": "cmd+t",
+    "command": "workbench.action.createTerminalEditor"
   }
 ]

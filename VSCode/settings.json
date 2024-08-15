@@ -102,12 +102,7 @@
   "git.openRepositoryInParentFolders": "always",
   "git.showActionButton": { "commit": false, "publish": false, "sync": false },
   "git.showCommitInput": false,
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": false
-  },
+  "github.copilot.enable": { "*": true, "plaintext": false, "markdown": false, "scminput": false },
   "keyboard.touchbar.enabled": false,
   "less.hover.references": false,
   "less.validate": false,

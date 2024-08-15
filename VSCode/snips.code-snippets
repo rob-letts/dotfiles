@@ -10,7 +10,7 @@
     "scope": "vue",
     "prefix": "sfc-tt",
     "body": [
-      "<script setup></script>\n\n<template>\n\t<p>SFC TT</p>\n</template>\n\n<script></script>\n\n<style scoped lang=\"scss\"></style>\n"
+      "<script setup></script>\n\n<template>\n\t<p>SFC TT</p>\n</template>\n\n<script>\nexport default {\n\tdata () {\n\t\treturn {};\n\t}\n};\n</script>\n\n<style scoped lang=\"scss\"></style>\n"
     ]
   },
   "deno-settings": {
