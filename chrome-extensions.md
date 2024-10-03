@@ -21,8 +21,18 @@
     </a>
   </li>
   <li>
+    <a href="https://chromewebstore.google.com/detail/scroll-driven-animations/ojihehfngalmpghicjgbfdmloiifhoce">
+      Scroll Driven Animations Debugger
+    </a>
+  </li>
+  <li>
     <a href="https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne">
       Stylus
+    </a>
+  </li>
+  <li>
+    <a href="https://chromewebstore.google.com/detail/tab-pinner-keyboard-short/mbcjcnomlakhkechnbhmfjhnnllpbmlh">
+      Tab Pinner
     </a>
   </li>
   <li>

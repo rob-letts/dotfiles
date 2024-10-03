@@ -1,5 +1,4 @@
 - VSCode
-- Arc
 - Kitty
 - RunJS
 - Screen Studio
