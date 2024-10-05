@@ -6,6 +6,7 @@
   <li><a href="https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit">C# Dev Kit</a></li>
   <li><a href="https://marketplace.visualstudio.com/items?itemName=Catppuccin.catppuccin-vsc">Catppuccin for VSCode</a></li>
   <li><a href="https://marketplace.visualstudio.com/items?itemName=Catppuccin.catppuccin-vsc-icons">Catppuccin Icons for VSCode</a></li>
+  <li><a href="https://marketplace.visualstudio.com/items?itemName=adpyke.codesnap">CodeSnap</a></li>
   <li><a href="https://marketplace.visualstudio.com/items?itemName=leo-labs.dotnet">dotnet</a></li>
   <li><a href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint">ESLint</a></li>
   <li><a href="https://marketplace.visualstudio.com/items?itemName=sleistner.vscode-fileutils">File Utils</a></li>
