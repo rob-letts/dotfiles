@@ -4,6 +4,7 @@
 - Screen Studio
 - AltTab
 - Shortcat
+- CleanShot X
 - Raycast
 - Docker Desktop
 - 1Password
