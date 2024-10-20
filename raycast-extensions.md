@@ -1,0 +1,11 @@
+- Calendar
+- Change Case
+- Clipboard History
+- Color Picker
+- Define Word
+- Floating Notes
+- Search Folders
+- Search HTTP Status Codes
+- Search Web Docs (MDN)
+- ray.so
+- Window Managemement
