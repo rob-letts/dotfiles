@@ -10,3 +10,4 @@
 - 1Password
 - IINA
 - Postman
+- Notion
