@@ -765,5 +765,9 @@
   {
     "key": "cmd+t",
     "command": "workbench.action.createTerminalEditor"
+  },
+  {
+    "key": "ctrl+z",
+    "command": "workbench.action.navigateBackInNavigationLocations"
   }
 ]
