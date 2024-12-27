@@ -3,7 +3,6 @@ local telescope = require('telescope')
 
 telescope.setup {
 	defaults = {
-		-- path_display = { 'smart' },
 		layout_strategy = 'vertical',
 		file_ignore_patterns = { 'node_modules' },
 		mappings = {
