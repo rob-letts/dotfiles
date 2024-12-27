@@ -85,6 +85,5 @@ require("lazy").setup({
 	{ 'wellle/targets.vim' },
 	{ 'numToStr/Comment.nvim' },
 	{ 'github/copilot.vim' },
-	{ 'weilbith/nvim-code-action-menu' },
 	{ 'nacro90/numb.nvim' },
 })
