@@ -1,5 +1,6 @@
 - VSCode
 - Kitty
+- Ghostty
 - RunJS
 - Screen Studio
 - AltTab
@@ -10,4 +11,3 @@
 - 1Password
 - IINA
 - Postman
-- Notion
