@@ -11,5 +11,5 @@
 - 1Password
 - IINA
 - Postman
-- Color Picker
+- System Color Picker
 - Google Chrome
