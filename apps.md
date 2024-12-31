@@ -3,11 +3,13 @@
 - Ghostty
 - RunJS
 - Screen Studio
+- CleanShot X
 - AltTab
 - Shortcat
-- CleanShot X
 - Raycast
 - Docker Desktop
 - 1Password
 - IINA
 - Postman
+- Color Picker
+- Google Chrome
