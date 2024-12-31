@@ -1,7 +1,6 @@
 - Calendar
 - Change Case
 - Clipboard History
-- Color Picker
 - Define Word
 - Floating Notes
 - Search Folders
