@@ -1,15 +1,16 @@
 - VSCode
 - Kitty
-- Ghostty
 - RunJS
 - Screen Studio
 - CleanShot X
 - AltTab
 - Shortcat
 - Raycast
-- Docker Desktop
 - 1Password
 - IINA
 - Postman
-- System Color Picker
+
 - Google Chrome
+- Firefox
+- Microsoft Edge
+- Safari
