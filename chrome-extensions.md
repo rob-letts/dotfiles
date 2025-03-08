@@ -11,23 +11,13 @@
     </a>
   </li>
   <li>
-    <a href="https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh">
-      JSON Viewer
-    </a>
-  </li>
-  <li>
-    <a href="https://chrome.google.com/webstore/detail/postman-interceptor/aicmkgpgakddgnaphhhpliifpcfhicfo">
-      Postman Interceptor
-    </a>
-  </li>
     <a href="https://chromewebstore.google.com/detail/tab-pinner-keyboard-short/mbcjcnomlakhkechnbhmfjhnnllpbmlh">
-    <li>
       Tab Pinner
     </a>
   </li>
   <li>
-    <a href="https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm">
-      uBlock Origin
+    <a href="https://chromewebstore.google.com/detail/ublock-origin-lite/ddkjiahejlhfcafbddmgiahcphecmpfh">
+      uBlock Origin Lite
     </a>
   </li>
   <li>
