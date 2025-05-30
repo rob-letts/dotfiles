@@ -1,26 +1,71 @@
-- bat
-- diff-so-fancy
-- exa
-- fd
-- fx
-- gh
-- git-delta
-- glow
-- httpie
-- imagemagick
-- jesseduffield/lazydocker/lazydocker
-- jesseduffield/lazynpm/lazynpm
-- jq
-- lazygit
-- lf
-- lsd
-- navi
-- neovim
-- nvm
-- ripgrep
-- starship
-- tig
-- tree
-- zellij
-- zsh-autosuggestions
-- zsh-syntax-highlighting
+# Core
+bat
+diff-so-fancy
+eza
+fd
+fontforge
+gh
+glow
+lazygit
+lsd
+neovim
+ripgrep
+starship
+tig
+tree
+zsh-autosuggestions
+zsh-syntax-highlighting
+
+# The Rest
+azure-cli
+buf
+cask
+charmbracelet/tap/freeze
+charmbracelet/tap/skate
+cowsay
+dart-lang/dart/dart
+deno
+docker
+dooit
+duf
+dust
+fortune
+fx
+git-delta
+gitu
+go
+gum
+helix
+httpie
+imagemagick
+jesseduffield/lazydocker/lazydocker
+jesseduffield/lazynpm/lazynpm
+jnv
+jq
+lf
+lolcat
+micro
+mono-libgdiplus
+mprocs
+mysql
+navi
+ncdu
+ncspot
+neofetch
+nvm
+openvino
+php
+python@3.10
+rust
+sass/sass/sass
+shopify/shopify/shopify-cli
+slides
+tealdeer
+typescript
+vhs
+virtualenv
+walk
+wtfutil
+yazi
+zellij
+zig

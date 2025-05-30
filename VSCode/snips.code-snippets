@@ -47,5 +47,12 @@
     "body": [
       "/**\n * TODO:\n * @returns \n */"
     ]
-  }
+  },
+  "translation": {
+    "scope": "vue, javascript, typescript",
+    "prefix": "t",
+    "body": [
+      "$t(`$1`)"
+    ]
+  },
 }

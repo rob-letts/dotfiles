@@ -16,11 +16,6 @@
     </a>
   </li>
   <li>
-    <a href="https://chromewebstore.google.com/detail/ublock-origin-lite/ddkjiahejlhfcafbddmgiahcphecmpfh">
-      uBlock Origin Lite
-    </a>
-  </li>
-  <li>
     <a href="https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd">
       Vue.js devtools
     </a>

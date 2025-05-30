@@ -19,13 +19,11 @@
   <li><a href="https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion">IntelliSense for CSS class names in HTML</a></li>
   <li><a href="https://marketplace.visualstudio.com/items?itemName=yay.lntoggle">Line Numbers Toggle</a></li>
   <li><a href="https://marketplace.visualstudio.com/items?itemName=sumneko.lua">Lua</a></li>
-  <li><a href="https://marketplace.visualstudio.com/items?itemName=yidash.outline-plus">Outline Plus</a></li>
   <li><a href="https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense">Path Intellisense</a></li>
   <li><a href="https://marketplace.visualstudio.com/items?itemName=usernamehw.remove-empty-lines">Remove empty lines</a></li>
   <li><a href="https://marketplace.visualstudio.com/items?itemName=jock.svg">SVG</a></li>
   <li><a href="https://marketplace.visualstudio.com/items?itemName=albert.TabOut">TabOut</a></li>
   <li><a href="https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight">TODO Highlight</a></li>
   <li><a href="https://marketplace.visualstudio.com/items?itemName=bibhasdn.unique-lines">Unique Lines</a></li>
-  <li><a href="https://marketplace.visualstudio.com/items?itemName=neptunedesign.vs-sequential-number">VS Sequential Number</a></li>
   <li><a href="https://marketplace.visualstudio.com/items?itemName=Vue.volar">Vue - Official</a></li>
 </ul>
