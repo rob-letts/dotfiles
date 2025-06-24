@@ -15,11 +15,14 @@
   <li><a href="https://marketplace.visualstudio.com/items?itemName=pomber.git-file-history">Git File History</a></li>
   <li><a href="https://marketplace.visualstudio.com/items?itemName=GitHub.copilot">GitHub Copilot</a></li>
   <li><a href="https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat">GitHub Copilot Chat</a></li>
+  <li><a href="https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github">GitHub Pull Requests</a></li>
   <li><a href="https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css">HTML CSS Support</a></li>
   <li><a href="https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion">IntelliSense for CSS class names in HTML</a></li>
   <li><a href="https://marketplace.visualstudio.com/items?itemName=yay.lntoggle">Line Numbers Toggle</a></li>
   <li><a href="https://marketplace.visualstudio.com/items?itemName=sumneko.lua">Lua</a></li>
+  <li><a href="https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype">Paste JSON as Code</a></li>
   <li><a href="https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense">Path Intellisense</a></li>
+  <li><a href="https://marketplace.visualstudio.com/items?itemName=yoavbls.pretty-ts-errors">Pretty TypeScript Errors</a></li>
   <li><a href="https://marketplace.visualstudio.com/items?itemName=usernamehw.remove-empty-lines">Remove empty lines</a></li>
   <li><a href="https://marketplace.visualstudio.com/items?itemName=jock.svg">SVG</a></li>
   <li><a href="https://marketplace.visualstudio.com/items?itemName=albert.TabOut">TabOut</a></li>
