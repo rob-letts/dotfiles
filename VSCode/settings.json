@@ -10,7 +10,6 @@
   "[scss]": { "editor.defaultFormatter": "vscode.css-language-features" },
   "[typescript]": { "editor.defaultFormatter": "vscode.typescript-language-features" },
   "[vue]": { "editor.defaultFormatter": "Vue.volar" },
-  "breadcrumbs.enabled": false,
   "catppuccin.italicComments": false,
   "catppuccin.italicKeywords": false,
   "catppuccin.workbenchMode": "flat",
@@ -117,8 +116,6 @@
   "references.preferredLocation": "view",
   "scm.autoReveal": false,
   "scm.countBadge": "off",
-  "scm.diffDecorationsGutterPattern": { "added": true },
-  "scm.diffDecorationsGutterWidth": 3,
   "scm.showActionButton": false,
   "scss.format.spaceAroundSelectorSeparator": true,
   "scss.lint.argumentsInColorFunction": "warning",
@@ -141,7 +138,6 @@
   "vue.server.hybridMode": true,
   "window.commandCenter": false,
   "window.title": " ",
-  "workbench.activityBar.location": "hidden",
   "workbench.colorTheme": "Catppuccin Mocha",
   "workbench.editor.closeOnFileDelete": true,
   "workbench.editor.editorActionsLocation": "hidden",
@@ -155,7 +151,11 @@
   "workbench.panel.opensMaximized": "always",
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "none",
-  "workbench.statusBar.visible": false,
   "workbench.tips.enabled": false,
-  "workbench.tree.renderIndentGuides": "none"
+  "workbench.tree.renderIndentGuides": "none",
+  "git.blame.editorDecoration.enabled": false,
+  "breadcrumbs.enabled": false,
+  "workbench.statusBar.visible": false,
+  "workbench.activityBar.location": "hidden",
+  "workbench.editor.showTabs": "none"
 }
