@@ -810,18 +810,9 @@
     "when": "workbench.panel.chat.view.edits.active"
   },
   {
-    "key": "shift+cmd+h",
-    "command": "workbench.view.extension.thunder-client",
-    "when": "viewContainer.workbench.view.extension.thunder-client.enabled"
-  },
-  {
     "key": "shift+cmd+r",
     "command": "-workbench.view.extension.thunder-client",
     "when": "viewContainer.workbench.view.extension.thunder-client.enabled"
-  },
-  {
-    "key": "shift+cmd+r",
-    "command": "workbench.action.reloadWindow"
   },
   {
     "key": "cmd+[",
@@ -830,5 +821,13 @@
   {
     "key": "cmd+]",
     "command": "workbench.action.navigateForwardInEditLocations"
+  },
+  {
+    "key": "shift+cmd+h",
+    "command": "pr:github.focus"
+  },
+  {
+    "key": "shift+cmd+r",
+    "command": "prStatus:github.focus"
   }
 ]
