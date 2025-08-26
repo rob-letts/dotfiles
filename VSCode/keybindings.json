@@ -738,10 +738,6 @@
     "when": "accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal'"
   },
   {
-    "key": "shift+cmd+g",
-    "command": "workbench.view.scm"
-  },
-  {
     "key": "shift+alt+cmd+enter",
     "command": "git.commit",
     "when": "!operationInProgress"
@@ -815,19 +811,40 @@
     "when": "viewContainer.workbench.view.extension.thunder-client.enabled"
   },
   {
-    "key": "cmd+[",
-    "command": "workbench.action.navigatePreviousInEditLocations"
+    "key": "shift+cmd+t",
+    "command": "-mergeEditor.toggleBetweenInputs",
+    "when": "isMergeEditor"
   },
   {
-    "key": "cmd+]",
-    "command": "workbench.action.navigateForwardInEditLocations"
-  },
-  {
-    "key": "shift+cmd+h",
-    "command": "pr:github.focus"
+    "key": "alt+cmd+p",
+    "command": "-postman-for-vscode.sidebar-panel.focus"
   },
   {
     "key": "shift+cmd+r",
-    "command": "prStatus:github.focus"
+    "command": "postman-for-vscode.request.open",
+    "when": "postman-for-vscode:sign-in && postman-for-vscode:workspaceId:isSet && !postman-for-vscode:block-workspace-level-commands"
+  },
+  {
+    "key": "cmd+r cmd+n",
+    "command": "-postman-for-vscode.request.open",
+    "when": "postman-for-vscode:sign-in && postman-for-vscode:workspaceId:isSet && !postman-for-vscode:block-workspace-level-commands"
+  },
+  {
+    "key": "shift+cmd+h",
+    "command": "postman-for-vscode.sidebar-panel.focus"
+  },
+  {
+    "key": "shift+cmd+i",
+    "command": "outline.focus"
+  },
+  {
+    "key": "shift+cmd+i",
+    "command": "-workbench.action.chat.openAgent",
+    "when": "config.chat.agent.enabled && !chatSetupDisabled && !chatSetupHidden"
+  },
+  {
+    "key": "shift+cmd+g",
+    "command": "workbench.view.extension.github-actions",
+    "when": "viewContainer.workbench.view.extension.github-actions.enabled"
   }
 ]
