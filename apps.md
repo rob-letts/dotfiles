@@ -1,13 +1,13 @@
 - VSCode
 - Kitty
 - Google Chrome
-- CleanShot X
 
+- CleanShot X
 - AltTab
 - Shortcat
 - Raycast
-- 1Password
 
+- 1Password
 - IINA
 - Postman
 
