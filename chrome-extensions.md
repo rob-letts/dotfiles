@@ -20,4 +20,10 @@
       Vue.js devtools
     </a>
   </li>
+  <li>
+    <a href="https://chromewebstore.google.com/detail/visbug/cdockenadnadldjbbgcallicgledbeoc">
+      VisBug
+    </a>
+  </li>
 </ul>
+
