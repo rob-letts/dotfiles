@@ -22,6 +22,7 @@
   <li><a href="https://marketplace.visualstudio.com/items?itemName=Postman.postman-for-vscode">Postman</a></li>
   <li><a href="https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense">Path Intellisense</a></li>
   <li><a href="https://marketplace.visualstudio.com/items?itemName=yoavbls.pretty-ts-errors">Pretty TypeScript Errors</a></li>
+  <li><a href="https://marketplace.visualstudio.com/items?itemName=Prisma.prisma">Prisma</a></li>  
   <li><a href="https://marketplace.visualstudio.com/items?itemName=usernamehw.remove-empty-lines">Remove empty lines</a></li>
   <li><a href="https://marketplace.visualstudio.com/items?itemName=jock.svg">SVG</a></li>
   <li><a href="https://marketplace.visualstudio.com/items?itemName=albert.TabOut">TabOut</a></li>
