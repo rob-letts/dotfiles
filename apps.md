@@ -1,16 +1,10 @@
 - VSCode
 - Kitty
-- Google Chrome
-
 - CleanShot X
 - AltTab
-- Shortcat
 - Raycast
-
 - 1Password
-- IINA
-- Postman
-
+- Google Chrome
 - Firefox
 - Microsoft Edge
 - Safari
