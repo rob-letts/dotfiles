@@ -4,6 +4,7 @@
 - AltTab
 - Raycast
 - 1Password
+- Postman
 - Google Chrome
 - Firefox
 - Microsoft Edge
