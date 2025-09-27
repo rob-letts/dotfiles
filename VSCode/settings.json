@@ -1,6 +1,5 @@
 {
   "[aspnetcorerazor]": { "editor.defaultFormatter": "ms-dotnettools.csharp" },
-  "[astro]": { "editor.defaultFormatter": "astro-build.astro-vscode" },
   "[css]": { "editor.defaultFormatter": "vscode.css-language-features" },
   "[html]": { "editor.defaultFormatter": "vscode.html-language-features" },
   "[javascript]": { "editor.defaultFormatter": "vscode.typescript-language-features" },
@@ -61,7 +60,7 @@
   "editor.letterSpacing": 0.75,
   "editor.lightbulb.enabled": "off",
   "editor.lineHeight": 40,
-  "editor.lineNumbers": "off",
+  "editor.lineNumbers": "on",
   "editor.minimap.enabled": false,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.occurrencesHighlight": "off",
@@ -134,7 +133,6 @@
   "terminal.integrated.fontWeightBold": "normal",
   "terminal.integrated.tabs.enabled": false,
   "vue.autoInsert.bracketSpacing": false,
-  "vue.server.hybridMode": true,
   "window.commandCenter": false,
   "window.title": " ",
   "workbench.colorTheme": "Catppuccin Mocha",
@@ -157,8 +155,11 @@
   "terminal.integrated.suggest.enabled": true,
   "editor.stickyScroll.enabled": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "postman.mcp.notifications.postmanMCP": false,
-  "breadcrumbs.enabled": false,
+  "files.associations": { "*.css": "tailwindcss", },
+  "editor.quickSuggestions": { "strings": "on" },
+  "[github-actions-workflow]": { "editor.defaultFormatter": "redhat.vscode-yaml" },
   "workbench.statusBar.visible": false,
+  "workbench.editor.showTabs": "none",
+  "breadcrumbs.enabled": false,
   "workbench.activityBar.location": "hidden"
 }
