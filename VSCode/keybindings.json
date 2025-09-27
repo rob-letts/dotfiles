@@ -588,10 +588,6 @@
     "command": "workbench.action.toggleStatusbarVisibility"
   },
   {
-    "key": "shift+cmd+a",
-    "command": "workbench.action.toggleActivityBarVisibility"
-  },
-  {
     "key": "shift+cmd+e",
     "command": "workbench.explorer.fileView.focus"
   },
@@ -820,18 +816,9 @@
     "command": "-postman-for-vscode.sidebar-panel.focus"
   },
   {
-    "key": "shift+cmd+r",
-    "command": "postman-for-vscode.request.open",
-    "when": "postman-for-vscode:sign-in && postman-for-vscode:workspaceId:isSet && !postman-for-vscode:block-workspace-level-commands"
-  },
-  {
     "key": "cmd+r cmd+n",
     "command": "-postman-for-vscode.request.open",
     "when": "postman-for-vscode:sign-in && postman-for-vscode:workspaceId:isSet && !postman-for-vscode:block-workspace-level-commands"
-  },
-  {
-    "key": "shift+cmd+h",
-    "command": "postman-for-vscode.sidebar-panel.focus"
   },
   {
     "key": "shift+cmd+i",
@@ -843,8 +830,26 @@
     "when": "config.chat.agent.enabled && !chatSetupDisabled && !chatSetupHidden"
   },
   {
-    "key": "shift+cmd+g",
+    "key": "shift+cmd+h",
     "command": "workbench.view.extension.github-actions",
     "when": "viewContainer.workbench.view.extension.github-actions.enabled"
+  },
+  {
+    "key": "shift+cmd+g",
+    "command": "workbench.scm.focus"
+  },
+  {
+    "key": "shift+cmd+a",
+    "command": "-notification.acceptPrimaryAction",
+    "when": "notificationFocus || notificationToastsVisible"
+  },
+  {
+    "key": "shift+cmd+a",
+    "command": "-workbench.action.chat.focusConfirmation",
+    "when": "accessibilityModeEnabled && chatIsEnabled"
+  },
+  {
+    "key": "shift+cmd+a",
+    "command": "workbench.action.toggleActivityBarVisibility"
   }
 ]
