@@ -26,6 +26,7 @@ alias git-config="nvim ~/.gitconfig"
 alias stash="fzf | xargs git stash push"
 alias ignore="git update-index --assume-unchanged" # file name
 alias no-ignore="git update-index --no-assume-unchanged" # file name
+alias dps="docker ps -a --format=\"table {{.ID}}\t{{.Names}}\t{{.Image}}\t{{.Status}}\""
 
 # Aliases: Redirections
 alias vim="nvim"
