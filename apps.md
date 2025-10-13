@@ -6,3 +6,4 @@
 - brew install --cask cleanshot
 - brew install --cask alt-tab
 - brew install --cask postman
+- brew install --cask appcleaner
