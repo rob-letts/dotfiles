@@ -1,11 +1,8 @@
-- VSCode
-- Kitty
-- CleanShot X
-- AltTab
-- Raycast
-- 1Password
-- Postman
-- Google Chrome
-- Firefox
-- Microsoft Edge
-- Safari
+- /bin/bash -c "$(curl -fsSL [https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh](https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh))"
+- brew install --cask raycast
+- brew install --cask kitty
+- brew install --cask visual-studio-code
+- brew install --cask google-chrome
+- brew install --cask cleanshot
+- brew install --cask alt-tab
+- brew install --cask postman
