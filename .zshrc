@@ -1,8 +1,6 @@
 # Prompt
 eval "$(starship init zsh)"
 
-source ~/.work-env
-
 # Fuzzy Finder
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -24,9 +22,6 @@ alias git-current="git branch --show-current | pbcopy"
 alias git-get="git branch -a | fzf | pbcopy"
 alias git-config="nvim ~/.gitconfig"
 alias stash="fzf | xargs git stash push"
-alias ignore="git update-index --assume-unchanged" # file name
-alias no-ignore="git update-index --no-assume-unchanged" # file name
-alias dps="docker ps -a --format=\"table {{.ID}}\t{{.Names}}\t{{.Image}}\t{{.Status}}\""
 
 # Aliases: Redirections
 alias vim="nvim"
@@ -35,15 +30,11 @@ alias lsa="ls -a"
 alias lsf="lsd -d */"
 alias tree="lsd --tree"
 alias cat="bat"
-alias lg="lazygit"
-alias ld="lazydocker"
-alias z="zellij attach --create dev"
 
 # Aliases: Tool Management
 alias fzfn="fzf | xargs nvim"
 alias aliases="bat ~/.zshrc"
 alias nvim-config="cd ~/.config/nvim && nvim"
-alias zellij-config="nvim ~/.config/zellij"
 alias starship-config="nvim ~/.config/starship.toml"
 alias zsh-config="nvim ~/.zshrc"
 alias zsh-source="source ~/.zshrc"
@@ -63,6 +54,7 @@ alias dv="cd ~/Dev"
 alias percy="cd ~/Personal"
 
 # Aliases: Utilities
+alias dps="docker ps -a --format=\"table {{.ID}}\t{{.Names}}\t{{.Image}}\t{{.Status}}\""
 alias wipe="rm ~/Desktop/Screen*"
 alias raycast="open /Applications/Raycast.app"
 alias dist="npm run dist"
