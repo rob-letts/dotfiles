@@ -1,0 +1,4 @@
+- [Change Case](https://www.raycast.com/erics118/change-case)
+- [HTTP Status Codes](https://www.raycast.com/Alex_/http-status-codes)
+- [Search Web Docs](https://www.raycast.com/krzysztofzuraw/search-mdn)
+- [Search Can I Use](https://www.raycast.com/thomaslombart/can-i-use)
