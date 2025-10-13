@@ -1,15 +1,16 @@
-bat
-diff-so-fancy
-docker
-eza
-fd
-gh
-glow
-lsd
-python@3.10
-ripgrep
-starship
-tig
-tree
-zsh-autosuggestions
-zsh-syntax-highlighting
+brew install git
+brew install diff-so-fancy
+brew install docker
+brew install eza
+brew install fd
+brew install fzf
+brew install gh
+brew install python@3.14
+brew install glow
+brew install lsd
+brew install ripgrep
+brew install starship
+brew install tig
+brew install tree
+brew install zsh-autosuggestions
+brew install zsh-syntax-highlighting
