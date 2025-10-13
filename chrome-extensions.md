@@ -11,13 +11,13 @@
     </a>
   </li>
   <li>
-    <a href="https://chromewebstore.google.com/detail/tab-pinner-keyboard-short/mbcjcnomlakhkechnbhmfjhnnllpbmlh">
-      Tab Pinner
+    <a href="https://chromewebstore.google.com/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa">
+      JSON Formatter
     </a>
   </li>
   <li>
-    <a href="https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd">
-      Vue.js devtools
+    <a href="https://chromewebstore.google.com/detail/tab-pinner-keyboard-short/mbcjcnomlakhkechnbhmfjhnnllpbmlh">
+      Tab Pinner
     </a>
   </li>
   <li>
@@ -25,5 +25,9 @@
       VisBug
     </a>
   </li>
+  <li>
+    <a href="https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd">
+      Vue.js devtools
+    </a>
+  </li>
 </ul>
-
