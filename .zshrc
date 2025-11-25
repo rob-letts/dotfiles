@@ -1,9 +1,6 @@
 # Prompt
 eval "$(starship init zsh)"
 
-# Fuzzy Finder
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 # Environment Variables
 export FZF_DEFAULT_OPTS='--preview "bat --style=numbers --color=always --line-range :500 {}" --pointer="→" --color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 --color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc --color=marker:#f5e0dc,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8'
 export BAT_THEME="Catppuccin-mocha"
@@ -22,6 +19,7 @@ alias git-current="git branch --show-current | pbcopy"
 alias git-get="git branch -a | fzf | pbcopy"
 alias git-config="nvim ~/.gitconfig"
 alias stash="fzf | xargs git stash push"
+alias git-clean="git branch | grep -v 'main' | xargs git branch -D"
 
 # Aliases: Redirections
 alias vim="nvim"
@@ -30,6 +28,7 @@ alias lsa="ls -a"
 alias lsf="lsd -d */"
 alias tree="lsd --tree"
 alias cat="bat"
+alias lg="lazygit"
 
 # Aliases: Tool Management
 alias fzfn="fzf | xargs nvim"
@@ -51,19 +50,15 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias dc="cd ~/Documents"
 alias dv="cd ~/Dev"
-alias percy="cd ~/Personal"
 
 # Aliases: Utilities
 alias dps="docker ps -a --format=\"table {{.ID}}\t{{.Names}}\t{{.Image}}\t{{.Status}}\""
-alias wipe="rm ~/Desktop/Screen*"
 alias raycast="open /Applications/Raycast.app"
 alias dist="npm run dist"
 alias dev="npm run dev"
 alias e2e="npm run test:e2e"
-alias tldrf='tldr --list | fzf --preview "tldr {1} --color=always" --preview-window=right,70% | xargs tldr'
 alias search="Rg . | fzf"
 alias lint="npm run lint"
-alias turtle="cowsay -f turtle $my_message && say --voice=\"Samantha\" $my_message"
 
 # Autocomplete
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
