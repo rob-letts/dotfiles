@@ -21,8 +21,8 @@
     </a>
   </li>
   <li>
-    <a href="https://chromewebstore.google.com/detail/visbug/cdockenadnadldjbbgcallicgledbeoc">
-      VisBug
+    <a href="https://chromewebstore.google.com/detail/unhook-remove-youtube-rec/khncfooichmfjbepaaaebmommgaepoid">
+      Unhook
     </a>
   </li>
   <li>
