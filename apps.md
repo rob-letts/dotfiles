@@ -3,5 +3,9 @@
 - brew install --cask kitty
 - brew install --cask visual-studio-code
 - brew install --cask google-chrome
+- brew install --cask firefox
 - brew install --cask cleanshot
 - brew install --cask appcleaner
+- brew install --cask notion
+- brew install --cask alt-tab
+- brew install --cask 1password
