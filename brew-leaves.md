@@ -8,6 +8,7 @@
 - brew install fd
 - brew install fzf
 - brew install gh
+- brew install git-delta
 - brew install python@3.14
 - brew install glow
 - brew install imagemagick
