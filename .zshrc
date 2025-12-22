@@ -3,7 +3,6 @@ eval "$(starship init zsh)"
 
 # Environment Variables
 export FZF_DEFAULT_OPTS='--preview "bat --style=numbers --color=always --line-range :500 {}" --pointer="→" --color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 --color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc --color=marker:#f5e0dc,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8'
-export BAT_THEME="Catppuccin-mocha"
 export EDITOR=nvim
 export GIT_EDITOR="$EDITOR"
 export VISUAL="$EDITOR"
@@ -23,11 +22,10 @@ alias git-clean="git branch | grep -v 'main' | xargs git branch -D"
 
 # Aliases: Redirections
 alias vim="nvim"
-alias ls="exa --icons -l"
-alias lsa="ls -a"
-alias lsf="lsd -d */"
 alias tree="lsd --tree"
 alias cat="bat"
+alias ls="lsd"
+alias lsa="lsd -a"
 alias lg="lazygit"
 
 # Aliases: Tool Management
@@ -43,7 +41,7 @@ alias mouse-speed="defaults write -g com.apple.mouse.scaling 5.0"
 alias keyspeed-read="defaults read -g KeyRepeat -int 1 && defaults read -g InitialKeyRepeat -int 12"
 alias keyspeed-write="defaults write -g KeyRepeat -int 1 && defaults write -g InitialKeyRepeat -int 12"
 alias get-process-id="sudo lsof -i" # Add :portNumber
-alias kill-process="kill -9" # Add PID
+alias kill-process="kill -9 || echo 'Failed to kill process'" # Add PID
 
 # Aliases: Navigation
 alias dl="cd ~/Downloads"
@@ -56,8 +54,8 @@ alias dps="docker ps -a --format=\"table {{.ID}}\t{{.Names}}\t{{.Image}}\t{{.Sta
 alias raycast="open /Applications/Raycast.app"
 alias dist="npm run dist"
 alias dev="npm run dev"
+alias test="npm run test"
 alias e2e="npm run test:e2e"
-alias search="Rg . | fzf"
 alias lint="npm run lint"
 
 # Autocomplete
@@ -73,4 +71,8 @@ fi
 # Syntax Highlighting
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-source /Users/rob/.docker/init-zsh.sh || true # Added by Docker Desktop
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export PATH="$HOME/.local/bin:$PATH"
