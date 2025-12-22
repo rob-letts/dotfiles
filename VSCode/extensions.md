@@ -11,6 +11,7 @@
   <li><a href="https://marketplace.visualstudio.com/items?itemName=github.vscode-github-actions">GitHub Actions</a></li>
   <li><a href="https://marketplace.visualstudio.com/items?itemName=GitHub.copilot">GitHub Copilot</a></li>
   <li><a href="https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat">GitHub Copilot Chat</a></li>
+  <li><a href="https://marketplace.visualstudio.com/items?itemName=golang.Go">Go</a></li>
   <li><a href="https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css">HTML CSS Support</a></li>
   <li><a href="https://marketplace.visualstudio.com/items?itemName=yay.lntoggle">Line Numbers Toggle</a></li>
   <li><a href="https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense">Path Intellisense</a></li>
