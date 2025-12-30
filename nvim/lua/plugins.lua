@@ -17,27 +17,28 @@ require("lazy").setup({
 	-- Treesitter
 	{
 		'nvim-treesitter/nvim-treesitter',
+		branch = 'master',  -- Use stable master branch instead of rewrite
 		lazy = false,
 		build = ':TSUpdate',
 		config = function()
-			-- Install parsers
-			require('nvim-treesitter').install({
-				'html', 'css', 'javascript', 'json', 'markdown',
-				'scss', 'typescript', 'vim', 'vue', 'lua'
-			})
-
-			-- Enable treesitter highlighting for all filetypes
-			vim.api.nvim_create_autocmd('FileType', {
-				pattern = '*',
-				callback = function(args)
-					-- Skip large files
-					local max_filesize = 100 * 1024 -- 100 KB
-					local ok, stats = pcall(vim.loop.fs_stat, vim.api.nvim_buf_get_name(args.buf))
-					if ok and stats and stats.size > max_filesize then
-						return
-					end
-					pcall(vim.treesitter.start, args.buf)
-				end
+			require('nvim-treesitter.configs').setup({
+				ensure_installed = {
+					'html', 'css', 'javascript', 'json',
+					'scss', 'typescript', 'vim', 'vue', 'lua'
+				},
+				sync_install = false,
+				auto_install = true,
+				highlight = {
+					enable = true,
+					disable = function(lang, buf)
+						local max_filesize = 100 * 1024 -- 100 KB
+						local ok, stats = pcall(vim.loop.fs_stat, vim.api.nvim_buf_get_name(buf))
+						if ok and stats and stats.size > max_filesize then
+							return true
+						end
+					end,
+					additional_vim_regex_highlighting = false,
+				}
 			})
 		end
 	},
