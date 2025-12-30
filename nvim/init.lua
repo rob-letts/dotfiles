@@ -2,7 +2,6 @@ require('set')
 require('remap')
 require('plugins')
 --
-require('plugins.treesitter')
 require('plugins.lsp')
 require('plugins.auto-complete')
 require('plugins.telescope')

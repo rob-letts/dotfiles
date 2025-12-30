@@ -17,10 +17,29 @@ require("lazy").setup({
 	-- Treesitter
 	{
 		'nvim-treesitter/nvim-treesitter',
-		build = function()
-			pcall(require('nvim-treesitter.install').update { with_sync = true })
-		end,
-		dependencies = { 'nvim-treesitter/nvim-treesitter-textobjects' }
+		lazy = false,
+		build = ':TSUpdate',
+		config = function()
+			-- Install parsers
+			require('nvim-treesitter').install({
+				'html', 'css', 'javascript', 'json', 'markdown',
+				'scss', 'typescript', 'vim', 'vue', 'lua'
+			})
+
+			-- Enable treesitter highlighting for all filetypes
+			vim.api.nvim_create_autocmd('FileType', {
+				pattern = '*',
+				callback = function(args)
+					-- Skip large files
+					local max_filesize = 100 * 1024 -- 100 KB
+					local ok, stats = pcall(vim.loop.fs_stat, vim.api.nvim_buf_get_name(args.buf))
+					if ok and stats and stats.size > max_filesize then
+						return
+					end
+					pcall(vim.treesitter.start, args.buf)
+				end
+			})
+		end
 	},
 
 	-- LSP
