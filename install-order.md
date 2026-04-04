@@ -6,5 +6,3 @@
 6. [VSCode Snippets](https://github.com/rob-letts/dotfiles/blob/main/VSCode/snips.code-snippets)
 7. [Starship](https://github.com/rob-letts/dotfiles/blob/main/starship.toml)
 8. [.zshrc](https://github.com/rob-letts/dotfiles/blob/main/.zshrc)
-9. [Raycast Installs](https://github.com/rob-letts/dotfiles/blob/main/Raycast/installs.md)
-10. [Raycast Commands](https://github.com/rob-letts/dotfiles/blob/main/Raycast/commands.md)
