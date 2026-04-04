@@ -5,6 +5,9 @@ keymap.set('n', '<leader>x', '<cmd>Mason<CR>')
 keymap.set('n', '<leader>z', '<cmd>Lazy<CR>')
 keymap.set('n', '<leader>l', '<cmd>EslintFixAll<CR>')
 
+-- SNACKS
+keymap.set('n', '<leader>lg', function() Snacks.lazygit() end)
+
 -- TELESCOPE
 keymap.set('n', '<leader>t', '<cmd>Telescope<CR>')
 keymap.set('n', '<leader>m', '<cmd>Telescope diagnostics<CR>')
@@ -28,7 +31,7 @@ keymap.set('n', 'gt', '<cmd>lua vim.lsp.buf.type_definition()<CR>')
 keymap.set('n', '<leader>c', '<cmd>let @+ = expand(\'%:p\')<CR>')
 keymap.set('n', '<leader>s', '<cmd>write<CR>')
 keymap.set('n', '<leader>w', '<cmd>bd<CR>')
-keymap.set('n', '<leader>.', '<cmd>CodeActionMenu<CR>')
+keymap.set('n', '<leader>.', '<cmd>lua vim.lsp.buf.code_action()<CR>')
 keymap.set('n', '<leader>d', '<cmd>lua vim.diagnostic.open_float()<CR>')
 keymap.set('n', '<leader>h', '<cmd>lua vim.lsp.buf.hover()<CR>')
 

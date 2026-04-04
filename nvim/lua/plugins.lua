@@ -54,6 +54,11 @@ require("lazy").setup({
 			'williamboman/mason-lspconfig.nvim',
 		},
 	},
+	{
+		'folke/lazydev.nvim',
+		ft = 'lua',
+		opts = {},
+	},
 
 	-- Completion
 	{
@@ -72,6 +77,16 @@ require("lazy").setup({
 			snippets = { preset = 'luasnip' },
 			sources = {
 				default = { 'lsp', 'path', 'snippets', 'buffer' },
+				per_filetype = {
+					lua = { 'lazydev', 'lsp', 'path', 'snippets', 'buffer' },
+				},
+				providers = {
+					lazydev = {
+						name = 'LazyDev',
+						module = 'lazydev.integrations.blink',
+						score_offset = 100,
+					},
+				},
 			},
 			cmdline = {
 				sources = { 'cmdline' },
@@ -110,6 +125,8 @@ require("lazy").setup({
 		lazy = false,
 		opts = {
 			dashboard = { enabled = true },
+			notifier = { enabled = true },
+			lazygit = { enabled = true },
 		},
 	},
 
@@ -123,6 +140,13 @@ require("lazy").setup({
 			{ '<leader>aa', '<cmd>ClaudeCodeDiffAccept<cr>', desc = 'Accept diff' },
 			{ '<leader>ad', '<cmd>ClaudeCodeDiffDeny<cr>',   desc = 'Deny diff' },
 		},
+	},
+
+	-- Markdown
+	{
+		'MeanderingProgrammer/render-markdown.nvim',
+		dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' },
+		opts = {},
 	},
 
 	-- Utilities
