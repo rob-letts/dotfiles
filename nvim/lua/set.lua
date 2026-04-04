@@ -4,6 +4,7 @@ local api = vim.api
 
 g.mapleader = ' '
 g.netrw_banner = 0
+g.copilot_proxy_strict_ssl = false
 
 opt.encoding = 'utf-8'
 opt.fillchars = 'eob: '
@@ -24,7 +25,6 @@ opt.number = true
 opt.relativenumber = true
 opt.smarttab = true
 opt.autoindent = true
-opt.hidden = true
 opt.incsearch = true
 opt.backup = false
 opt.writebackup = false
@@ -37,6 +37,6 @@ opt.completeopt = {'menu', 'menuone', 'noselect'}
 
 local yankGrp = api.nvim_create_augroup("YankHighlight", { clear = true })
 api.nvim_create_autocmd("TextYankPost", {
-  command = "silent! lua vim.highlight.on_yank()",
   group = yankGrp,
+  callback = function() vim.highlight.on_yank() end,
 })

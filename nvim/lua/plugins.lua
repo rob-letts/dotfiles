@@ -1,6 +1,6 @@
 -- Plugin Manager
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-if not vim.loop.fs_stat(lazypath) then
+if not vim.uv.fs_stat(lazypath) then
 	vim.fn.system({
 		"git",
 		"clone",
@@ -32,7 +32,7 @@ require("lazy").setup({
 					enable = true,
 					disable = function(lang, buf)
 						local max_filesize = 100 * 1024 -- 100 KB
-						local ok, stats = pcall(vim.loop.fs_stat, vim.api.nvim_buf_get_name(buf))
+						local ok, stats = pcall(vim.uv.fs_stat, vim.api.nvim_buf_get_name(buf))
 						if ok and stats and stats.size > max_filesize then
 							return true
 						end
@@ -70,11 +70,8 @@ require("lazy").setup({
 	-- Navigation
 	{ 'nvim-lua/popup.nvim' },
 	{ 'nvim-lua/plenary.nvim' },
-	{ 'junegunn/fzf.vim' },
-	{ 'junegunn/fzf' },
 	{
 		'nvim-telescope/telescope.nvim',
-		tag = '0.1.4',
 	},
 	{
 		'nvim-telescope/telescope-fzf-native.nvim',
@@ -87,7 +84,6 @@ require("lazy").setup({
 		name = 'catppuccin'
 	},
 	{ 'nvim-lualine/lualine.nvim' },
-	{ 'ryanoasis/vim-devicons' },
 	{ 'kyazdani42/nvim-web-devicons' },
 	{ 'onsails/lspkind.nvim' },
 	{
@@ -98,12 +94,35 @@ require("lazy").setup({
 		end
 	},
 
+	-- AI
+	{ 'github/copilot.vim' },
+	{
+		'coder/claudecode.nvim',
+		dependencies = { 'folke/snacks.nvim' },
+		config = true,
+		keys = {
+			-- { '<leader>a',  nil,                               desc = 'AI/Claude Code' },
+			-- { '<leader>ac', '<cmd>ClaudeCode<cr>',             desc = 'Toggle Claude' },
+			-- { '<leader>af', '<cmd>ClaudeCodeFocus<cr>',        desc = 'Focus Claude' },
+			-- { '<leader>ar', '<cmd>ClaudeCode --resume<cr>',    desc = 'Resume Claude' },
+			-- { '<leader>aC', '<cmd>ClaudeCode --continue<cr>',  desc = 'Continue Claude' },
+			-- { '<leader>ab', '<cmd>ClaudeCodeAdd %<cr>',        desc = 'Add current buffer' },
+			-- { '<leader>as', '<cmd>ClaudeCodeSend<cr>',         mode = 'v', desc = 'Send to Claude' },
+			{ '<leader>aa', '<cmd>ClaudeCodeDiffAccept<cr>',   desc = 'Accept diff' },
+			{ '<leader>ad', '<cmd>ClaudeCodeDiffDeny<cr>',     desc = 'Deny diff' },
+		},
+	},
+	{ 'folke/snacks.nvim' },
+
 	-- Utilities
 	{ 'tpope/vim-surround' },
 	{ 'tpope/vim-repeat' },
 	{ 'tpope/vim-sleuth' },
 	{ 'wellle/targets.vim' },
 	{ 'numToStr/Comment.nvim' },
-	{ 'github/copilot.vim' },
 	{ 'nacro90/numb.nvim' },
+	{
+		'subnut/nvim-ghost.nvim',
+		lazy = false,
+	},
 })
