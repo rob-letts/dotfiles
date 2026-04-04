@@ -19,6 +19,7 @@ alias git-get="git branch -a | fzf | pbcopy"
 alias git-config="nvim ~/.gitconfig"
 alias stash="fzf | xargs git stash push"
 alias git-clean="git branch | grep -v 'main' | xargs git branch -D"
+alias git-diff="git diff | diffnav"
 
 # Aliases: Redirections
 alias vim="nvim"
@@ -35,6 +36,7 @@ alias nvim-config="cd ~/.config/nvim && nvim"
 alias starship-config="nvim ~/.config/starship.toml"
 alias zsh-config="nvim ~/.zshrc"
 alias zsh-source="source ~/.zshrc"
+alias claude-config="nvim ~/.claude/CLAUDE.md"
 
 # Aliases: Lower Level Config
 alias mouse-speed="defaults write -g com.apple.mouse.scaling 5.0"
@@ -50,13 +52,13 @@ alias dc="cd ~/Documents"
 alias dv="cd ~/Dev"
 
 # Aliases: Utilities
-alias dps="docker ps -a --format=\"table {{.ID}}\t{{.Names}}\t{{.Image}}\t{{.Status}}\""
 alias raycast="open /Applications/Raycast.app"
-alias dist="npm run dist"
-alias dev="npm run dev"
-alias test="npm run test"
-alias e2e="npm run test:e2e"
-alias lint="npm run lint"
+alias dist="pnpm run dist"
+alias dev="pnpm run open:chrome && pnpm run dev"
+alias unit="pnpm run test:unit"
+alias unit-one="fzf | xargs pnpm exec vitest"
+alias bail="pnpm vitest run --bail 1"
+alias lint="pnpm run lint"
 
 # Autocomplete
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
