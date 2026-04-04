@@ -17,7 +17,7 @@ require("lazy").setup({
 	-- Treesitter
 	{
 		'nvim-treesitter/nvim-treesitter',
-		branch = 'master',  -- Use stable master branch instead of rewrite
+		branch = 'master',
 		lazy = false,
 		build = ':TSUpdate',
 		config = function()
@@ -55,24 +55,43 @@ require("lazy").setup({
 		},
 	},
 
-	-- Auto Complete
-	{ 'hrsh7th/nvim-cmp' },
-	{ 'hrsh7th/cmp-buffer' },
-	{ 'hrsh7th/cmp-path' },
-	{ 'hrsh7th/cmp-nvim-lsp' },
-	{ 'hrsh7th/cmp-nvim-lua' },
-	{ 'hrsh7th/cmp-cmdline' },
-	{ 'L3MON4D3/LuaSnip' },
-	{ 'saadparwaiz1/cmp_luasnip' },
-	{ 'windwp/nvim-ts-autotag' },
+	-- Completion
+	{
+		'saghen/blink.cmp',
+		version = '1.*',
+		dependencies = { { 'L3MON4D3/LuaSnip', version = 'v2.*' } },
+		opts = {
+			keymap = {
+				preset = 'default',
+				['<CR>'] = { 'accept', 'fallback' },
+				['<C-Space>'] = { 'show', 'show_documentation', 'hide_documentation' },
+			},
+			appearance = {
+				nerd_font_variant = 'mono',
+			},
+			snippets = { preset = 'luasnip' },
+			sources = {
+				default = { 'lsp', 'path', 'snippets', 'buffer' },
+			},
+			cmdline = {
+				sources = { 'cmdline' },
+			},
+			completion = {
+				documentation = { auto_show = true, auto_show_delay_ms = 200 },
+				accept = { auto_brackets = { enabled = true } },
+				menu = { border = 'rounded' },
+			},
+		},
+	},
+
+	-- Editing
 	{ 'windwp/nvim-autopairs' },
+	{ 'windwp/nvim-ts-autotag' },
+	{ 'kylechui/nvim-surround', version = '*', event = 'VeryLazy', config = true },
 
 	-- Navigation
-	{ 'nvim-lua/popup.nvim' },
 	{ 'nvim-lua/plenary.nvim' },
-	{
-		'nvim-telescope/telescope.nvim',
-	},
+	{ 'nvim-telescope/telescope.nvim' },
 	{
 		'nvim-telescope/telescope-fzf-native.nvim',
 		build = 'make'
@@ -84,14 +103,14 @@ require("lazy").setup({
 		name = 'catppuccin'
 	},
 	{ 'nvim-lualine/lualine.nvim' },
-	{ 'kyazdani42/nvim-web-devicons' },
-	{ 'onsails/lspkind.nvim' },
+	{ 'nvim-tree/nvim-web-devicons' },
 	{
-		'goolord/alpha-nvim',
-		dependencies = { 'kyazdani42/nvim-web-devicons' },
-		config = function()
-			require('alpha').setup(require('alpha.themes.startify').config)
-		end
+		'folke/snacks.nvim',
+		priority = 1000,
+		lazy = false,
+		opts = {
+			dashboard = { enabled = true },
+		},
 	},
 
 	-- AI
@@ -101,25 +120,14 @@ require("lazy").setup({
 		dependencies = { 'folke/snacks.nvim' },
 		config = true,
 		keys = {
-			-- { '<leader>a',  nil,                               desc = 'AI/Claude Code' },
-			-- { '<leader>ac', '<cmd>ClaudeCode<cr>',             desc = 'Toggle Claude' },
-			-- { '<leader>af', '<cmd>ClaudeCodeFocus<cr>',        desc = 'Focus Claude' },
-			-- { '<leader>ar', '<cmd>ClaudeCode --resume<cr>',    desc = 'Resume Claude' },
-			-- { '<leader>aC', '<cmd>ClaudeCode --continue<cr>',  desc = 'Continue Claude' },
-			-- { '<leader>ab', '<cmd>ClaudeCodeAdd %<cr>',        desc = 'Add current buffer' },
-			-- { '<leader>as', '<cmd>ClaudeCodeSend<cr>',         mode = 'v', desc = 'Send to Claude' },
-			{ '<leader>aa', '<cmd>ClaudeCodeDiffAccept<cr>',   desc = 'Accept diff' },
-			{ '<leader>ad', '<cmd>ClaudeCodeDiffDeny<cr>',     desc = 'Deny diff' },
+			{ '<leader>aa', '<cmd>ClaudeCodeDiffAccept<cr>', desc = 'Accept diff' },
+			{ '<leader>ad', '<cmd>ClaudeCodeDiffDeny<cr>',   desc = 'Deny diff' },
 		},
 	},
-	{ 'folke/snacks.nvim' },
 
 	-- Utilities
-	{ 'tpope/vim-surround' },
-	{ 'tpope/vim-repeat' },
 	{ 'tpope/vim-sleuth' },
 	{ 'wellle/targets.vim' },
-	{ 'numToStr/Comment.nvim' },
 	{ 'nacro90/numb.nvim' },
 	{
 		'subnut/nvim-ghost.nvim',

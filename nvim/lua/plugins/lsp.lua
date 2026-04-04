@@ -12,7 +12,7 @@ require('mason-lspconfig').setup({
   }
 })
 
-local capabilities = require('cmp_nvim_lsp').default_capabilities()
+local capabilities = require('blink.cmp').get_lsp_capabilities()
 
 vim.g.markdown_fenced_languages = {
   "ts=typescript"
