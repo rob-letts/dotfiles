@@ -461,10 +461,6 @@
     "when": "terminalAccessibleBufferFocus && terminalHasBeenCreated || terminalAccessibleBufferFocus && terminalProcessSupported"
   },
   {
-    "key": "cmd+j",
-    "command": "-workbench.action.togglePanel"
-  },
-  {
     "key": "shift+cmd+b",
     "command": "breadcrumbs.toggle"
   },
@@ -601,10 +597,6 @@
     "command": "workbench.action.toggleMaximizedPanel"
   },
   {
-    "key": "cmd+j",
-    "command": "workbench.action.togglePanel"
-  },
-  {
     "key": "cmd+g m",
     "command": "editor.action.jumpToBracket",
     "when": "editorTextFocus"
@@ -668,10 +660,6 @@
   {
     "key": "alt+0",
     "command": "git.unstageAll"
-  },
-  {
-    "key": "shift+cmd+y",
-    "command": "workbench.panel.chat.view.copilot.focus"
   },
   {
     "key": "shift+cmd+0",
@@ -817,10 +805,6 @@
   },
   {
     "key": "shift+cmd+i",
-    "command": "outline.focus"
-  },
-  {
-    "key": "shift+cmd+i",
     "command": "-workbench.action.chat.openAgent",
     "when": "config.chat.agent.enabled && !chatSetupDisabled && !chatSetupHidden"
   },
@@ -846,5 +830,68 @@
   {
     "key": "shift+cmd+a",
     "command": "workbench.action.toggleActivityBarVisibility"
-  }
+  },
+  {
+    "key": "shift+cmd+i",
+    "command": "-workbench.action.chat.openagent",
+    "when": "config.chat.agent.enabled && !chatSetupDisabled && !chatSetupHidden"
+  },
+  {
+    "key": "shift+cmd+escape",
+    "command": "-claude-vscode.editor.open",
+    "when": "!config.claudeCode.useTerminal"
+  },
+  {
+    "key": "shift+cmd+y",
+    "command": "-chatEditor.action.accept",
+    "when": "chatEdits.hasEditorModifications && chatEdits.isGlobalEditingSession && editorFocus && !chatEdits.isCurrentlyBeingModified || chatEdits.hasEditorModifications && chatEdits.isGlobalEditingSession && notebookEditorFocused && !chatEdits.isCurrentlyBeingModified"
+  },
+  {
+    "key": "shift+cmd+y",
+    "command": "-chatEditor.action.accept",
+    "when": "chatEdits.hasEditorModifications && editorFocus && !chatEdits.isCurrentlyBeingModified || chatEdits.hasEditorModifications && notebookEditorFocused && !chatEdits.isCurrentlyBeingModified"
+  },
+  {
+    "key": "shift+cmd+i",
+    "command": "outline.focus"
+  },
+  {
+    "key": "cmd+escape",
+    "command": "-claude-vscode.focus",
+    "when": "editorTextFocus && !config.claudeCode.useTerminal"
+  },
+  {
+    "key": "cmd+k c",
+    "command": "-workbench.files.action.compareWithClipboard"
+  },
+  {
+    "key": "shift+cmd+y",
+    "command": "workbench.panel.chat.view.copilot.focus"
+  },
+  {
+    "key": "cmd+y",
+    "command": "-chatEditor.action.acceptHunk",
+    "when": "chatEdits.cursorInChangeRange && chatEdits.hasEditorModifications && editorFocus && !chatEdits.isCurrentlyBeingModified || chatEdits.cursorInChangeRange && chatEdits.hasEditorModifications && notebookCellListFocused && !chatEdits.isCurrentlyBeingModified"
+  },
+  {
+    "key": "cmd+y",
+    "command": "claude-vscode.focus"
+  },
+  {
+    "key": "shift+cmd+r",
+    "command": "pr:github.focus"
+  },
+  {
+    "key": "shift+cmd+r",
+    "command": "-workbench.action.browser.hardReload",
+    "when": "browserFocused && activeEditor == 'workbench.editor.browser'"
+},
+{
+    "key": "shift+enter",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+        "text": "\u001b\r"
+    },
+    "when": "terminalFocus"
+}
 ]
