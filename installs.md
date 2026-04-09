@@ -57,4 +57,5 @@
 - brew install --cask orbstack
 - brew install --cask postman
 - brew install --cask raycast
+- brew install --cask shortcat
 - brew install --cask visual-studio-code
