@@ -132,22 +132,6 @@ require("lazy").setup({
 
 	-- AI
 	{ 'github/copilot.vim' },
-	{
-		'coder/claudecode.nvim',
-		dependencies = { 'folke/snacks.nvim' },
-		config = true,
-		keys = {
-			{ '<leader>aa', '<cmd>ClaudeCodeDiffAccept<cr>', desc = 'Accept diff' },
-			{ '<leader>ad', '<cmd>ClaudeCodeDiffDeny<cr>',   desc = 'Deny diff' },
-		},
-	},
-
-	-- Markdown
-	{
-		'MeanderingProgrammer/render-markdown.nvim',
-		dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' },
-		opts = {},
-	},
 
 	-- Utilities
 	{ 'tpope/vim-sleuth' },
