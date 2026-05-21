@@ -1,9 +1,11 @@
 - /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 - brew install anomalyco/tap/opencode
+- brew install atlassian/acli/acli
 - brew install awscli
 - brew install bat
 - brew install colima
 - brew install coreutils
+- brew install datadog-labs/pack/pup
 - brew install diff-so-fancy
 - brew install dlvhdr/formulae/diffnav
 - brew install docker
@@ -12,12 +14,13 @@
 - brew install fzf
 - brew install gemini-cli
 - brew install gh
-- brew install git
-- brew install git-delta
+<!-- - brew install git -->
+<!-- - brew install git-delta -->
 - brew install glow
 - brew install go
 - brew install golang-migrate
 - brew install gromgit/brewtils/taproom
+- brew install hashicorp/tap/terraform
 - brew install helix
 - brew install imagemagick
 - brew install kubernetes-cli
@@ -25,15 +28,16 @@
 - brew install localstack
 - brew install lsd
 - brew install neovim
-- brew install node
+<!-- - brew install node -->
 - brew install nvm
 - brew install pandoc
+- brew install pgcli
 - brew install pnpm
-- brew install python@3.14
-- brew install ripgrep
+- brew install pnpm@10
+<!-- - brew install python@3.14 -->
+<!-- - brew install ripgrep -->
 - brew install sops
 - brew install starship
-- brew install terraform
 - brew install tig
 - brew install tree
 - brew install yazi
@@ -44,18 +48,18 @@
 - brew install --cask alt-tab
 - brew install --cask appcleaner
 - brew install --cask aws-vault-binary
+- brew install --cask claude
 - brew install --cask cleanshot
 - brew install --cask dev-tool
 - brew install --cask firefox
 - brew install --cask font-fira-code
 - brew install --cask font-fira-code-nerd-font
 - brew install --cask ghostty
-- brew install --cask google-chrome
+<!-- - brew install --cask google-chrome -->
 - brew install --cask keybase
-- brew install --cask kitty
 - brew install --cask notion
 - brew install --cask orbstack
-- brew install --cask postman
+<!-- - brew install --cask postman -->
 - brew install --cask raycast
 - brew install --cask shortcat
 - brew install --cask visual-studio-code

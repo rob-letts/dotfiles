@@ -1,3 +1,7 @@
+fpath=("/Users/rob.letts/.zsh/completions" $fpath)
+autoload -Uz compinit
+compinit
+
 # Prompt
 eval "$(starship init zsh)"
 
@@ -22,12 +26,14 @@ alias git-clean="git branch | grep -v 'main' | xargs git branch -D"
 alias git-diff="git diff | diffnav"
 
 # Aliases: Redirections
+alias o="opencode"
+alias n="nvim"
+alias l="lazygit"
 alias vim="nvim"
 alias tree="lsd --tree"
 alias cat="bat"
 alias ls="lsd"
 alias lsa="lsd -a"
-alias lg="lazygit"
 
 # Aliases: Tool Management
 alias fzfn="fzf | xargs nvim"
@@ -50,14 +56,18 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias dc="cd ~/Documents"
 alias dv="cd ~/Dev"
+alias fe="cd ~/Dev/***"
+alias be="cd ~/Dev/***"
 
 # Aliases: Utilities
 alias raycast="open /Applications/Raycast.app"
 alias dist="pnpm run dist"
 alias dev="pnpm run open:chrome && pnpm run dev"
 alias unit="pnpm run test:unit"
-alias unit-one="fzf | xargs pnpm exec vitest"
+alias be-test="go test ~/Dev/***/..."
+alias be-test-log="go test ~/Dev/***/... -v"
 alias bail="pnpm vitest run --bail 1"
+alias e2e="pnpm run test:playwright"
 alias lint="pnpm run lint"
 
 # Autocomplete
@@ -78,3 +88,28 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 export PATH="$HOME/.local/bin:$PATH"
+
+alias python=python3
+
+
+# Terminal autocomplete fix
+autoload -Uz compinit && compinit
+
+
+autoload -U +X bashcompinit && bashcompinit
+
+function p() {
+  local pr_id
+  pr_id=$(gh pr list | fzf --preview 'gh pr view {1}' | awk '{print $1}')
+  [[ -n "$pr_id" ]] && gh pr diff "$pr_id" | diffnav
+}
+
+# Alias for yazi so exiting it passes the pwd to the parent shell
+function y() {
+  local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+  yazi "$@" --cwd-file="$tmp"
+  if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+    builtin cd -- "$cwd"
+  fi
+  rm -f -- "$tmp"
+}
