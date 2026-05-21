@@ -3,8 +3,6 @@ local opt = vim.opt
 local api = vim.api
 
 g.mapleader = ' '
-g.netrw_banner = 0
-g.copilot_proxy_strict_ssl = false
 
 opt.encoding = 'utf-8'
 opt.fillchars = 'eob: '

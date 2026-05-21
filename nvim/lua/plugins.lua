@@ -105,11 +105,19 @@ require("lazy").setup({
 	{ 'kylechui/nvim-surround', version = '*', event = 'VeryLazy', config = true },
 
 	-- Navigation
-	{ 'nvim-lua/plenary.nvim' },
-	{ 'nvim-telescope/telescope.nvim' },
+	{
+		'nvim-telescope/telescope.nvim',
+		dependencies = { 'nvim-lua/plenary.nvim' },
+	},
 	{
 		'nvim-telescope/telescope-fzf-native.nvim',
 		build = 'make'
+	},
+
+	-- Git
+	{
+		'lewis6991/gitsigns.nvim',
+		opts = {},
 	},
 
 	-- UI
@@ -119,26 +127,18 @@ require("lazy").setup({
 	},
 	{ 'nvim-lualine/lualine.nvim' },
 	{ 'nvim-tree/nvim-web-devicons' },
+
+	-- Navigation
 	{
-		'folke/snacks.nvim',
-		priority = 1000,
-		lazy = false,
+		'mikavilpas/yazi.nvim',
+		event = 'VeryLazy',
 		opts = {
-			dashboard = { enabled = true },
-			notifier = { enabled = true },
-			lazygit = { enabled = true },
+			open_for_directories = true,
 		},
 	},
-
-	-- AI
-	{ 'github/copilot.vim' },
 
 	-- Utilities
 	{ 'tpope/vim-sleuth' },
 	{ 'wellle/targets.vim' },
 	{ 'nacro90/numb.nvim' },
-	{
-		'subnut/nvim-ghost.nvim',
-		lazy = false,
-	},
 })

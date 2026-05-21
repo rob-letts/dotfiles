@@ -5,9 +5,6 @@ keymap.set('n', '<leader>x', '<cmd>Mason<CR>')
 keymap.set('n', '<leader>z', '<cmd>Lazy<CR>')
 keymap.set('n', '<leader>l', '<cmd>EslintFixAll<CR>')
 
--- SNACKS
-keymap.set('n', '<leader>lg', function() Snacks.lazygit() end)
-
 -- TELESCOPE
 keymap.set('n', '<leader>t', '<cmd>Telescope<CR>')
 keymap.set('n', '<leader>m', '<cmd>Telescope diagnostics<CR>')
@@ -36,7 +33,7 @@ keymap.set('n', '<leader>d', '<cmd>lua vim.diagnostic.open_float()<CR>')
 keymap.set('n', '<leader>h', '<cmd>lua vim.lsp.buf.hover()<CR>')
 
 -- NAVIGATION
-keymap.set('n', '<leader>e', '<cmd>Ex<CR>')
+keymap.set('n', '<leader>e', '<cmd>Yazi<CR>')
 keymap.set('n', '<leader>}', function() vim.diagnostic.jump({ count = 1 }) end)
 keymap.set('n', '<leader>{', function() vim.diagnostic.jump({ count = -1 }) end)
 keymap.set('n', '<leader>]', '<cmd>bn<CR>')
