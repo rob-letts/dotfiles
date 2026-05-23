@@ -16,7 +16,6 @@ opt.tabstop = 4
 
 opt.cursorline = true
 opt.wrap = false
-opt.termguicolors = true
 opt.showmode = false
 opt.showcmd = false
 opt.number = true

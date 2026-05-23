@@ -1,16 +1,4 @@
 require('mason').setup()
-require('mason-lspconfig').setup({
-  ensure_installed = {
-    'html',
-    'emmet_ls',
-    'cssls',
-    'eslint',
-    'jsonls',
-    'ts_ls',
-    'lua_ls',
-    'vue_ls'
-  }
-})
 
 local capabilities = require('blink.cmp').get_lsp_capabilities()
 
@@ -50,7 +38,7 @@ local servers = {
     filetypes = { 'vue' },
     init_options = {
       typescript = {
-        tsdk = vim.fn.expand('$HOME/.local/share/nvim/mason/packages/typescript-language-server/node_modules/typescript/lib')
+        tsdk = vim.fn.expand('$HOME/.local/share/nvim/mason/packages/vue-language-server/node_modules/typescript/lib')
       }
     }
   },

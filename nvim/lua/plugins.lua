@@ -51,7 +51,6 @@ require("lazy").setup({
 				'williamboman/mason.nvim',
 				config = true
 			},
-			'williamboman/mason-lspconfig.nvim',
 		},
 	},
 	{
@@ -88,9 +87,7 @@ require("lazy").setup({
 					},
 				},
 			},
-			cmdline = {
-				sources = { 'cmdline' },
-			},
+	
 			completion = {
 				documentation = { auto_show = true, auto_show_delay_ms = 200 },
 				accept = { auto_brackets = { enabled = true } },
@@ -128,7 +125,7 @@ require("lazy").setup({
 	{ 'nvim-lualine/lualine.nvim' },
 	{ 'nvim-tree/nvim-web-devicons' },
 
-	-- Navigation
+	-- File Explorer
 	{
 		'mikavilpas/yazi.nvim',
 		event = 'VeryLazy',

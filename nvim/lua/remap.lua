@@ -3,7 +3,7 @@ local keymap = vim.keymap
 -- PLUGINS
 keymap.set('n', '<leader>x', '<cmd>Mason<CR>')
 keymap.set('n', '<leader>z', '<cmd>Lazy<CR>')
-keymap.set('n', '<leader>l', '<cmd>EslintFixAll<CR>')
+keymap.set('n', '<leader>l', '<cmd>LspEslintFixAll<CR>')
 
 -- TELESCOPE
 keymap.set('n', '<leader>t', '<cmd>Telescope<CR>')
@@ -15,7 +15,7 @@ keymap.set('n', '<leader>b', '<cmd>Telescope buffers<CR>')
 keymap.set('n', '<leader>o', '<cmd>Telescope lsp_document_symbols<CR>')
 
 -- LSP
-keymap.set('n', '<leader>f', '<cmd>lua vim.lsp.buf.format()<CR>')
+keymap.set('n', '<leader>f', '<cmd>lua vim.lsp.buf.format({ async = true })<CR>')
 keymap.set('n', '<leader>r', '<cmd>lua vim.lsp.buf.rename()<CR>')
 
 -- GOTO
@@ -34,8 +34,6 @@ keymap.set('n', '<leader>h', '<cmd>lua vim.lsp.buf.hover()<CR>')
 
 -- NAVIGATION
 keymap.set('n', '<leader>e', '<cmd>Yazi<CR>')
-keymap.set('n', '<leader>}', function() vim.diagnostic.jump({ count = 1 }) end)
-keymap.set('n', '<leader>{', function() vim.diagnostic.jump({ count = -1 }) end)
 keymap.set('n', '<leader>]', '<cmd>bn<CR>')
 keymap.set('n', '<leader>[', '<cmd>bp<CR>')
 
