@@ -1,0 +1,4 @@
+theme = catppuccin-mocha.conf
+keybind = cmd+r=prompt_surface_title
+keybind = ctrl+l=clear_screen
+desktop-notifications = true
