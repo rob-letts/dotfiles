@@ -134,6 +134,25 @@ require("lazy").setup({
 		},
 	},
 
+	-- Hover
+	{
+		'lewis6991/hover.nvim',
+		config = function()
+			require('hover').config({
+				providers = {
+					'hover.providers.diagnostic',
+					'hover.providers.lsp',
+					'hover.providers.man',
+					'hover.providers.dictionary',
+				},
+				preview_opts = {
+					border = 'rounded',
+				},
+				title = true,
+			})
+		end,
+	},
+
 	-- Utilities
 	{ 'tpope/vim-sleuth' },
 	{ 'wellle/targets.vim' },

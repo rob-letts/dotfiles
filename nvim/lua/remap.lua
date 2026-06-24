@@ -30,7 +30,7 @@ keymap.set('n', '<leader>s', '<cmd>write<CR>')
 keymap.set('n', '<leader>w', '<cmd>bd<CR>')
 keymap.set('n', '<leader>.', '<cmd>lua vim.lsp.buf.code_action()<CR>')
 keymap.set('n', '<leader>d', '<cmd>lua vim.diagnostic.open_float()<CR>')
-keymap.set('n', '<leader>h', '<cmd>lua vim.lsp.buf.hover()<CR>')
+keymap.set('n', '<leader>h', function() require('hover').open() end)
 
 -- NAVIGATION
 keymap.set('n', '<leader>e', '<cmd>Yazi<CR>')
