@@ -1,6 +1,11 @@
+source ~/.orbstack/shell/init.zsh 2>/dev/null || :
+
+# Completions
 fpath=("/Users/rob.letts/.zsh/completions" $fpath)
-autoload -Uz compinit
-compinit
+
+# Autocomplete
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+FPATH="/opt/homebrew/share/zsh/site-functions:${FPATH}"
 
 # Prompt
 eval "$(starship init zsh)"
@@ -10,7 +15,6 @@ export FZF_DEFAULT_OPTS='--preview "bat --style=numbers --color=always --line-ra
 export EDITOR=nvim
 export GIT_EDITOR="$EDITOR"
 export VISUAL="$EDITOR"
-export TERM=xterm-256color
 
 # Aliases: Version Control
 alias ts="tig status"
@@ -21,14 +25,12 @@ alias gco="git checkout"
 alias git-current="git branch --show-current | pbcopy"
 alias git-get="git branch -a | fzf | pbcopy"
 alias git-config="nvim ~/.gitconfig"
-alias stash="fzf | xargs git stash push"
+alias stash="{ git diff --name-only; git ls-files --others --exclude-standard; } | fzf --multi | xargs git stash push -u --"
 alias git-clean="git branch | grep -v 'main' | xargs git branch -D"
 alias git-diff="git diff | diffnav"
 
 # Aliases: Redirections
-alias o="opencode"
-alias n="nvim"
-alias l="lazygit"
+alias lg="lazygit"
 alias vim="nvim"
 alias tree="lsd --tree"
 alias cat="bat"
@@ -37,7 +39,6 @@ alias lsa="lsd -a"
 
 # Aliases: Tool Management
 alias fzfn="fzf | xargs nvim"
-alias aliases="bat ~/.zshrc"
 alias nvim-config="cd ~/.config/nvim && nvim"
 alias starship-config="nvim ~/.config/starship.toml"
 alias zsh-config="nvim ~/.zshrc"
@@ -56,51 +57,58 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias dc="cd ~/Documents"
 alias dv="cd ~/Dev"
-alias fe="cd ~/Dev/***"
-alias be="cd ~/Dev/***"
+alias config="cd ~/.config"
 
 # Aliases: Utilities
 alias raycast="open /Applications/Raycast.app"
-alias dist="pnpm run dist"
 alias dev="pnpm run open:chrome && pnpm run dev"
 alias unit="pnpm run test:unit"
-alias be-test="go test ~/Dev/***/..."
-alias be-test-log="go test ~/Dev/***/... -v"
 alias bail="pnpm vitest run --bail 1"
 alias e2e="pnpm run test:playwright"
-alias lint="pnpm run lint"
-
-# Autocomplete
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-if type brew &>/dev/null
-then
-  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
-
-  autoload -Uz compinit
-  compinit
-fi
 
 # Syntax Highlighting
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# Node Version Manager (lazy-loaded)
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+lazy_nvm() {
+  unset -f nvm node npm npx
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+}
+nvm() { lazy_nvm; nvm "$@"; }
+node() { lazy_nvm; node "$@"; }
+npm() { lazy_nvm; npm "$@"; }
+npx() { lazy_nvm; npx "$@"; }
 
+
+# Path
 export PATH="$HOME/.local/bin:$PATH"
-
 alias python=python3
+export GOPATH=~/go
+export PATH="$GOPATH/bin:$PATH"
+export GOPROXY=https://proxy.golang.org,direct
 
+# Work Environment (tokens, private config)
+[[ -f ~/.work-env ]] && source ~/.work-env
 
-# Terminal autocomplete fix
+# Init Dotenv
+dotenv() {
+    set -o allexport
+    [[ -f .env ]] &&
+    source .env
+    set +o allexport
+}
+
+# Terminal Autocomplete Fix
 autoload -Uz compinit && compinit
-
-
 autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /opt/homebrew/bin/terraform terraform
 
+# Helper: PR Viewer
 function p() {
   local pr_id
-  pr_id=$(gh pr list | fzf --preview 'gh pr view {1}' | awk '{print $1}')
+  pr_id=$(gh pr list | fzf --preview 'gh pr view {1} --json title,body,author --jq "\"Author: \" + .author.login + \"\n\n\" + .title + \"\n\n\" + .body"' | awk '{print $1}')
   [[ -n "$pr_id" ]] && gh pr diff "$pr_id" | diffnav
 }
 
